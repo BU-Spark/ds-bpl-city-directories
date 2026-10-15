@@ -1,2 +1,9 @@
 *_jp2.zip
 *_orig_jp2.tar
+
+# Re-downloadable A-sample scans and original API responses.
+/data/a_sample/images/
+/data/a_sample/source/
+*.part
+__pycache__/
+.DS_Store
