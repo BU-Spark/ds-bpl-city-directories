@@ -58,6 +58,28 @@ the locator list must be reviewed separately against the new scan.
 
 ## Files
 
+### Fresh OCR comparison in Colab
+
+Use [`03_tesseract_vs_ia_colab.ipynb`](../../scripts/03_tesseract_vs_ia_colab.ipynb)
+on Colab CPU and [`04_dots_mocr_vs_ia_colab.ipynb`](../../scripts/04_dots_mocr_vs_ia_colab.ipynb)
+on Colab GPU. Both are standalone English notebooks with identical source-image
+review regions and output schemas. See [OCR_REVIEW.md](../../scripts/OCR_REVIEW.md)
+for the short run/review instructions and the native-TSV line-grouping correction.
+
+The notebooks create `review.html` with the source crops, model outputs and human
+transcription fields side by side. Reviewers can export/import a reviewed CSV
+across OCR runs and calculate CER/WER only on verified human references. Source
+images, model outputs and human corrections remain separate. Generated review
+packs live under `fa26/data/ocr_review/` locally, or under `/content/` in Colab.
+
+The user completed the original Tesseract context runs on 2026-10-22. Those
+outputs can be reprocessed into the new review format without rerunning OCR.
+Fresh same-crop inference is a separate experiment; dots.mocr has not been run
+on a GPU in this workspace. The existing field parser and 53-person extraction
+outputs are not changed by these notebooks. IA is a baseline, not ground truth.
+
+### Existing pilot files
+
 | File | Purpose |
 |---|---|
 | `images/*_p161.jpg` | Complete first A-section page, including abbreviation key |

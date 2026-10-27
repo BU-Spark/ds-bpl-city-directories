@@ -1,0 +1,26 @@
+{
+  "unit_id": "p161_L05",
+  "input_pixels_sha256": "483f1b3587f167e79dd9fceeaac3d4f7ed1b85ebb2070df79a4e6f70c10164a7",
+  "input_file_sha256": "10b2065308fca4adcc1a793a792512850c7ab1df942d2f81d341310e39ff9d1d",
+  "source_crop_size": [
+    760,
+    182
+  ],
+  "vision_image_sizes": [
+    [
+      756,
+      168
+    ]
+  ],
+  "image_grid_thw": [
+    [
+      1,
+      12,
+      54
+    ]
+  ],
+  "generated_tokens": 111,
+  "seconds": 5.087,
+  "status": "completed",
+  "notes": "No generated word/line boxes are invented. Region is the actual input crop."
+}

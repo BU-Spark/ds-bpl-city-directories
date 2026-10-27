@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+ <head>
+  <title></title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+  <meta name='ocr-system' content='tesseract 5.3.4' />
+  <meta name='ocr-capabilities' content='ocr_page ocr_carea ocr_par ocr_line ocrx_word ocrp_wconf'/>
+ </head>
+ <body>
+  <div class='ocr_page' id='page_1' title='image "/content/bpl_tesseract_p161_v2/inputs/p161_L02.png"; bbox 0 0 760 161; ppageno 0; scan_res 70 70'>
+   <div class='ocr_carea' id='block_1_1' title="bbox 79 1 730 161">
+    <p class='ocr_par' id='par_1_1' lang='eng' title="bbox 79 1 663 25">
+     <span class='ocr_line' id='line_1_1' title="bbox 79 1 663 25; baseline 0 -4; x_size 24; x_descenders 4; x_ascenders 6">
+      <span class='ocrx_word' id='word_1_1' title='bbox 79 3 99 21; x_wconf 94'>A</span>
+      <span class='ocrx_word' id='word_1_2' title='bbox 112 2 170 21; x_wconf 31'>DH</span>
+      <span class='ocrx_word' id='word_1_3' title='bbox 183 2 322 25; x_wconf 95'>Publishing</span>
+      <span class='ocrx_word' id='word_1_4' title='bbox 333 2 369 21; x_wconf 95'>Co</span>
+      <span class='ocrx_word' id='word_1_5' title='bbox 380 2 456 21; x_wconf 96'>music</span>
+      <span class='ocrx_word' id='word_1_6' title='bbox 469 1 497 21; x_wconf 96'>40</span>
+      <span class='ocrx_word' id='word_1_7' title='bbox 509 3 578 22; x_wconf 96'>State</span>
+      <span class='ocrx_word' id='word_1_8' title='bbox 588 7 625 21; x_wconf 96'>rm</span>
+      <span class='ocrx_word' id='word_1_9' title='bbox 637 2 663 21; x_wconf 96'>41</span>
+     </span>
+    </p>
+
+    <p class='ocr_par' id='par_1_2' lang='eng' title="bbox 82 25 730 70">
+     <span class='ocr_line' id='line_1_2' title="bbox 82 25 730 48; baseline -0.002 -3; x_size 23; x_descenders 4; x_ascenders 5">
+      <span class='ocrx_word' id='word_1_10' title='bbox 82 26 99 45; x_wconf 96'>A</span>
+      <span class='ocrx_word' id='word_1_11' title='bbox 117 25 241 45; x_wconf 93'>STORRS</span>
+      <span class='ocrx_word' id='word_1_12' title='bbox 259 25 281 44; x_wconf 90'>&amp;</span>
+      <span class='ocrx_word' id='word_1_13' title='bbox 298 25 432 44; x_wconf 92'>BEMENT</span>
+      <span class='ocrx_word' id='word_1_14' title='bbox 450 25 492 44; x_wconf 95'>CO</span>
+      <span class='ocrx_word' id='word_1_15' title='bbox 506 30 579 48; x_wconf 95'>paper</span>
+      <span class='ocrx_word' id='word_1_16' title='bbox 594 25 730 44; x_wconf 96'>warehouse</span>
+     </span>
+     <span class='ocr_line' id='line_1_3' title="bbox 157 47 582 70; baseline 0 -3; x_size 25.433912; x_descenders 5.4339128; x_ascenders 6">
+      <span class='ocrx_word' id='word_1_17' title='bbox 157 47 260 67; x_wconf 93'>140-150</span>
+      <span class='ocrx_word' id='word_1_18' title='bbox 271 47 442 67; x_wconf 88'>Federal—See</span>
+      <span class='ocrx_word' id='word_1_19' title='bbox 452 52 512 70; x_wconf 96'>page</span>
+      <span class='ocrx_word' id='word_1_20' title='bbox 523 47 582 67; x_wconf 96'>3033</span>
+     </span>
+    </p>
+
+    <p class='ocr_par' id='par_1_3' lang='eng' title="bbox 80 70 597 93">
+     <span class='ocr_line' id='line_1_4' title="bbox 80 70 597 93; baseline 0 -3; x_size 25.433912; x_descenders 5.4339128; x_ascenders 6">
+      <span class='ocrx_word' id='word_1_21' title='bbox 80 71 99 90; x_wconf 90'>A</span>
+      <span class='ocrx_word' id='word_1_22' title='bbox 111 72 140 90; x_wconf 90'>W</span>
+      <span class='ocrx_word' id='word_1_23' title='bbox 152 71 206 93; x_wconf 56'>Mfg</span>
+      <span class='ocrx_word' id='word_1_24' title='bbox 217 66 246 100; x_wconf 96'>Co</span>
+      <span class='ocrx_word' id='word_1_25' title='bbox 239 71 383 93; x_wconf 96'>wrenches</span>
+      <span class='ocrx_word' id='word_1_26' title='bbox 397 70 437 89; x_wconf 96'>120</span>
+      <span class='ocrx_word' id='word_1_27' title='bbox 448 71 511 90; x_wconf 95'>Milk</span>
+      <span class='ocrx_word' id='word_1_28' title='bbox 521 76 557 90; x_wconf 95'>rm</span>
+      <span class='ocrx_word' id='word_1_29' title='bbox 569 71 597 90; x_wconf 95'>85</span>
+     </span>
+    </p>
+
+    <p class='ocr_par' id='par_1_4' lang='eng' title="bbox 80 93 729 120">
+     <span class='ocr_line' id='line_1_5' title="bbox 80 93 729 120; baseline 0 -7; x_size 27; x_descenders 7; x_ascenders 6">
+      <span class='ocrx_word' id='word_1_30' title='bbox 80 95 131 113; x_wconf 87'>Aab</span>
+      <span class='ocrx_word' id='word_1_31' title='bbox 143 94 179 113; x_wconf 87'>Co</span>
+      <span class='ocrx_word' id='word_1_32' title='bbox 189 94 237 113; x_wconf 96'>real</span>
+      <span class='ocrx_word' id='word_1_33' title='bbox 248 96 324 120; x_wconf 49'>estate</span>
+      <span class='ocrx_word' id='word_1_34' title='bbox 338 94 363 113; x_wconf 95'>19</span>
+      <span class='ocrx_word' id='word_1_35' title='bbox 375 94 437 113; x_wconf 95'>Milk</span>
+      <span class='ocrx_word' id='word_1_36' title='bbox 447 99 484 113; x_wconf 96'>rm</span>
+      <span class='ocrx_word' id='word_1_37' title='bbox 494 94 522 113; x_wconf 95'>41</span>
+      <span class='ocrx_word' id='word_1_38' title='bbox 606 94 643 116; x_wconf 74'>(55</span>
+      <span class='ocrx_word' id='word_1_39' title='bbox 656 93 729 116; x_wconf 95'>Kilby</span>
+     </span>
+    </p>
+
+    <p class='ocr_par' id='par_1_5' lang='eng' title="bbox 80 116 729 139">
+     <span class='ocr_line' id='line_1_6' title="bbox 80 116 729 139; baseline -0.002 -3; x_size 23; x_descenders 4; x_ascenders 6">
+      <span class='ocrx_word' id='word_1_40' title='bbox 80 117 175 136; x_wconf 93'>Aachen</span>
+      <span class='ocrx_word' id='word_1_41' title='bbox 187 117 206 136; x_wconf 93'>&amp;</span>
+      <span class='ocrx_word' id='word_1_42' title='bbox 218 117 319 135; x_wconf 96'>Munich</span>
+      <span class='ocrx_word' id='word_1_43' title='bbox 331 117 383 136; x_wconf 96'>Fire</span>
+      <span class='ocrx_word' id='word_1_44' title='bbox 394 117 435 135; x_wconf 96'>Ins</span>
+      <span class='ocrx_word' id='word_1_45' title='bbox 445 117 481 136; x_wconf 95'>Co</span>
+      <span class='ocrx_word' id='word_1_46' title='bbox 492 117 518 136; x_wconf 93'>of</span>
+      <span class='ocrx_word' id='word_1_47' title='bbox 527 116 729 139; x_wconf 88'>Aix-la-Chapelle</span>
+     </span>
+    </p>
+
+    <p class='ocr_par' id='par_1_6' lang='eng' title="bbox 79 139 730 161">
+     <span class='ocr_line' id='line_1_7' title="bbox 79 139 730 161; baseline -0.002 -2; x_size 24.433912; x_descenders 5.4339128; x_ascenders 5">
+      <span class='ocrx_word' id='word_1_48' title='bbox 79 140 149 159; x_wconf 96'>Aalto</span>
+      <span class='ocrx_word' id='word_1_49' title='bbox 161 140 175 159; x_wconf 95'>J</span>
+      <span class='ocrx_word' id='word_1_50' title='bbox 186 139 256 159; x_wconf 92'>tailor</span>
+      <span class='ocrx_word' id='word_1_51' title='bbox 266 140 283 158; x_wconf 92'>h</span>
+      <span class='ocrx_word' id='word_1_52' title='bbox 294 140 320 159; x_wconf 96'>61</span>
+      <span class='ocrx_word' id='word_1_53' title='bbox 333 139 425 161; x_wconf 85'>Myrtle</span>
+      <span class='ocrx_word' id='word_1_54' title='bbox 618 140 666 161; x_wconf 95'>fren</span>
+      <span class='ocrx_word' id='word_1_55' title='bbox 679 140 730 158; x_wconf 95'>Rox</span>
+     </span>
+    </p>
+   </div>
+  </div>
+ </body>
+</html>

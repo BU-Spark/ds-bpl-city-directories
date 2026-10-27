@@ -1,0 +1,263 @@
+{
+  "engine": "tesseract",
+  "version": "tesseract 5.3.4\n leptonica-1.82.0\n  libgif 5.2.1 : libjpeg 8d (libjpeg-turbo 2.1.5) : libpng 1.6.43 : libtiff 4.5.1 : zlib 1.3 : libwebp 1.3.2 : libopenjp2 2.5.0\n Found AVX2\n Found AVX\n Found FMA\n Found SSE4.1\n Found OpenMP 201511\n Found libarchive 3.7.2 zlib/1.3 liblzma/5.4.5 bz2lib/1.0.8 liblz4/1.9.4 libzstd/1.5.5\n Found libcurl/8.5.0 OpenSSL/3.0.13 zlib/1.3 brotli/1.1.0 zstd/1.5.5 libidn2/2.3.7 libpsl/0.21.2 (+libidn2/2.3.7) libssh/0.10.6/openssl/zlib nghttp2/1.59.0 librtmp/2.3 OpenLDAP/2.6.10\n",
+  "language_listing": "List of available languages in \"/usr/share/tesseract-ocr/5/tessdata/\" (2):\neng\nosd\n",
+  "english_model_sha256": "7d4322bd2a7749724879683fc3912cb542f19906c83bcc1a52132556427170b2",
+  "oem": 1,
+  "psm": 6,
+  "units_sha256": "1199d23cd1b17b1f5d584f73352e8ee6003b9b1efae45d702fcc1adc007f39d7",
+  "runs": [
+    {
+      "unit_id": "p161_L01",
+      "command": [
+        "/usr/bin/tesseract",
+        "/content/bpl_tesseract_p161_v2/inputs/p161_L01.png",
+        "/content/bpl_tesseract_p161_v2/ocr/tesseract_units/p161_L01/raw",
+        "-l",
+        "eng",
+        "--oem",
+        "1",
+        "--psm",
+        "6",
+        "txt",
+        "tsv",
+        "hocr"
+      ],
+      "returncode": 0,
+      "seconds": 1.062,
+      "input_pixels_sha256": "3d31eb73d559a048d5e7fb7ba56bf03a67bacbe1b89813900a63490a78bb23d8",
+      "input_file_sha256": "18549625ce1627fd265e224eeb428373ebb02845a405c7ba406d45dee8223a7c"
+    },
+    {
+      "unit_id": "p161_L02",
+      "command": [
+        "/usr/bin/tesseract",
+        "/content/bpl_tesseract_p161_v2/inputs/p161_L02.png",
+        "/content/bpl_tesseract_p161_v2/ocr/tesseract_units/p161_L02/raw",
+        "-l",
+        "eng",
+        "--oem",
+        "1",
+        "--psm",
+        "6",
+        "txt",
+        "tsv",
+        "hocr"
+      ],
+      "returncode": 0,
+      "seconds": 1.681,
+      "input_pixels_sha256": "6bd9a4d521ab1b1c4c681878c8cf2745bc5315f5412f256be91675826a570c71",
+      "input_file_sha256": "3098bfbdeb113138e285a57fca1376955d578a7128087f01d374cc622d0f0bf7"
+    },
+    {
+      "unit_id": "p161_L03",
+      "command": [
+        "/usr/bin/tesseract",
+        "/content/bpl_tesseract_p161_v2/inputs/p161_L03.png",
+        "/content/bpl_tesseract_p161_v2/ocr/tesseract_units/p161_L03/raw",
+        "-l",
+        "eng",
+        "--oem",
+        "1",
+        "--psm",
+        "6",
+        "txt",
+        "tsv",
+        "hocr"
+      ],
+      "returncode": 0,
+      "seconds": 1.448,
+      "input_pixels_sha256": "22178c4fd0edd39e000a6694edf90d954d7d9fbadfccf02c0a62ec7fe9ebd226",
+      "input_file_sha256": "f60d455bbd6215a7f64d0f80738e5c358e0103495ae9d3e2f6b429b1a59e2c34"
+    },
+    {
+      "unit_id": "p161_L04",
+      "command": [
+        "/usr/bin/tesseract",
+        "/content/bpl_tesseract_p161_v2/inputs/p161_L04.png",
+        "/content/bpl_tesseract_p161_v2/ocr/tesseract_units/p161_L04/raw",
+        "-l",
+        "eng",
+        "--oem",
+        "1",
+        "--psm",
+        "6",
+        "txt",
+        "tsv",
+        "hocr"
+      ],
+      "returncode": 0,
+      "seconds": 0.941,
+      "input_pixels_sha256": "24baba4bb3031cc23e799e0910a1c1d27e6932feefea94127a7bfb62467e521a",
+      "input_file_sha256": "8d0085f36ef5ea87d51b38ca331b149a681507cff56f198572341b8e126e0a9f"
+    },
+    {
+      "unit_id": "p161_L05",
+      "command": [
+        "/usr/bin/tesseract",
+        "/content/bpl_tesseract_p161_v2/inputs/p161_L05.png",
+        "/content/bpl_tesseract_p161_v2/ocr/tesseract_units/p161_L05/raw",
+        "-l",
+        "eng",
+        "--oem",
+        "1",
+        "--psm",
+        "6",
+        "txt",
+        "tsv",
+        "hocr"
+      ],
+      "returncode": 0,
+      "seconds": 1.004,
+      "input_pixels_sha256": "483f1b3587f167e79dd9fceeaac3d4f7ed1b85ebb2070df79a4e6f70c10164a7",
+      "input_file_sha256": "10b2065308fca4adcc1a793a792512850c7ab1df942d2f81d341310e39ff9d1d"
+    },
+    {
+      "unit_id": "p161_L06",
+      "command": [
+        "/usr/bin/tesseract",
+        "/content/bpl_tesseract_p161_v2/inputs/p161_L06.png",
+        "/content/bpl_tesseract_p161_v2/ocr/tesseract_units/p161_L06/raw",
+        "-l",
+        "eng",
+        "--oem",
+        "1",
+        "--psm",
+        "6",
+        "txt",
+        "tsv",
+        "hocr"
+      ],
+      "returncode": 0,
+      "seconds": 0.804,
+      "input_pixels_sha256": "bda609b86616eca0cfd5716c7faa8176d7544c39b19f8961cee00e476d6c8622",
+      "input_file_sha256": "72602740d73e84739d47049d5479537a95940d8a8ed3f1b9612a12119c89ac6f"
+    },
+    {
+      "unit_id": "p161_R01",
+      "command": [
+        "/usr/bin/tesseract",
+        "/content/bpl_tesseract_p161_v2/inputs/p161_R01.png",
+        "/content/bpl_tesseract_p161_v2/ocr/tesseract_units/p161_R01/raw",
+        "-l",
+        "eng",
+        "--oem",
+        "1",
+        "--psm",
+        "6",
+        "txt",
+        "tsv",
+        "hocr"
+      ],
+      "returncode": 0,
+      "seconds": 0.885,
+      "input_pixels_sha256": "e5efe9c3dbaefce7c3805e2d0db6639b304606f51651f6c08995bc51792cd7ac",
+      "input_file_sha256": "350160ea9834d9709767adcbfddf28f4bae5d0941b1d566fa6ec3f9c0c96953a"
+    },
+    {
+      "unit_id": "p161_R02",
+      "command": [
+        "/usr/bin/tesseract",
+        "/content/bpl_tesseract_p161_v2/inputs/p161_R02.png",
+        "/content/bpl_tesseract_p161_v2/ocr/tesseract_units/p161_R02/raw",
+        "-l",
+        "eng",
+        "--oem",
+        "1",
+        "--psm",
+        "6",
+        "txt",
+        "tsv",
+        "hocr"
+      ],
+      "returncode": 0,
+      "seconds": 0.939,
+      "input_pixels_sha256": "c3f83899953d71cfdc0e67989398dc87eeeb91a83d869ecf2191beaae064e461",
+      "input_file_sha256": "0e34dc44637c26fed2388c9179f5ea5469cadb6e3ccfdda203382660fd320ccb"
+    },
+    {
+      "unit_id": "p161_R03",
+      "command": [
+        "/usr/bin/tesseract",
+        "/content/bpl_tesseract_p161_v2/inputs/p161_R03.png",
+        "/content/bpl_tesseract_p161_v2/ocr/tesseract_units/p161_R03/raw",
+        "-l",
+        "eng",
+        "--oem",
+        "1",
+        "--psm",
+        "6",
+        "txt",
+        "tsv",
+        "hocr"
+      ],
+      "returncode": 0,
+      "seconds": 1.009,
+      "input_pixels_sha256": "211f1109b42679bef7f19f9872158331ef3e78d854e1c4bf76e30b806ee74deb",
+      "input_file_sha256": "8bdfa29bd7daa8fb102ea1f1ba0122075a3100c3175e329dcde99b5d3b80e99f"
+    },
+    {
+      "unit_id": "p161_R04",
+      "command": [
+        "/usr/bin/tesseract",
+        "/content/bpl_tesseract_p161_v2/inputs/p161_R04.png",
+        "/content/bpl_tesseract_p161_v2/ocr/tesseract_units/p161_R04/raw",
+        "-l",
+        "eng",
+        "--oem",
+        "1",
+        "--psm",
+        "6",
+        "txt",
+        "tsv",
+        "hocr"
+      ],
+      "returncode": 0,
+      "seconds": 0.882,
+      "input_pixels_sha256": "065823c5d4f40e315d517e5b5a53f83feab8dc0519061ecbf4af0730a9768184",
+      "input_file_sha256": "780888ff9cf564700f7116e81bbaf93f023283c29d8baa5876549a0f1515a00c"
+    },
+    {
+      "unit_id": "p161_R05",
+      "command": [
+        "/usr/bin/tesseract",
+        "/content/bpl_tesseract_p161_v2/inputs/p161_R05.png",
+        "/content/bpl_tesseract_p161_v2/ocr/tesseract_units/p161_R05/raw",
+        "-l",
+        "eng",
+        "--oem",
+        "1",
+        "--psm",
+        "6",
+        "txt",
+        "tsv",
+        "hocr"
+      ],
+      "returncode": 0,
+      "seconds": 0.983,
+      "input_pixels_sha256": "c07b6c0fc28a94ab2ed399ec67824b3240194b3da599c7e317434cf632657a03",
+      "input_file_sha256": "1ca168b0c37c7630c1b2d00d51c8b410f00725b610364d41f21c101cc7eba52d"
+    },
+    {
+      "unit_id": "p161_R06",
+      "command": [
+        "/usr/bin/tesseract",
+        "/content/bpl_tesseract_p161_v2/inputs/p161_R06.png",
+        "/content/bpl_tesseract_p161_v2/ocr/tesseract_units/p161_R06/raw",
+        "-l",
+        "eng",
+        "--oem",
+        "1",
+        "--psm",
+        "6",
+        "txt",
+        "tsv",
+        "hocr"
+      ],
+      "returncode": 0,
+      "seconds": 0.817,
+      "input_pixels_sha256": "2a43a131b8c316dd69f4ed4ba792f8fa7f508b5386058b9c026979e075d08af0",
+      "input_file_sha256": "b558cfb6132836bb06d2a5ebae195b5224d1d94eb7f9be337c170860d242163a"
+    }
+  ]
+}

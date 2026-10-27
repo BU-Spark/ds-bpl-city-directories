@@ -1,0 +1,26 @@
+{
+  "unit_id": "p161_R03",
+  "input_pixels_sha256": "211f1109b42679bef7f19f9872158331ef3e78d854e1c4bf76e30b806ee74deb",
+  "input_file_sha256": "8bdfa29bd7daa8fb102ea1f1ba0122075a3100c3175e329dcde99b5d3b80e99f",
+  "source_crop_size": [
+    920,
+    182
+  ],
+  "vision_image_sizes": [
+    [
+      924,
+      168
+    ]
+  ],
+  "image_grid_thw": [
+    [
+      1,
+      12,
+      66
+    ]
+  ],
+  "generated_tokens": 106,
+  "seconds": 5.053,
+  "status": "completed",
+  "notes": "No generated word/line boxes are invented. Region is the actual input crop."
+}

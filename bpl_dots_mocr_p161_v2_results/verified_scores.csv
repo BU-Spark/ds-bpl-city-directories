@@ -1,0 +1,3 @@
+﻿method,verified_units,total_review_units,character_errors,gold_characters,CER,word_errors,gold_words,WER,exact_units,failed_or_missing_units
+dots_mocr_units,0,12,0,0,,0,0,,0,0
+ia_existing,0,12,0,0,,0,0,,0,0

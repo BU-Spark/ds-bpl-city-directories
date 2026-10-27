@@ -4,6 +4,8 @@
 # Re-downloadable A-sample scans and original API responses.
 /data/a_sample/images/
 /data/a_sample/source/
+# Reproducible OCR review packs and inference artifacts.
+/data/ocr_review/
 *.part
 __pycache__/
 .DS_Store

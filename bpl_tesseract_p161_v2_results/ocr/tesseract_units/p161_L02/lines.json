@@ -1,0 +1,86 @@
+[
+  {
+    "column": "L",
+    "native_line_id": "1:1:1:1",
+    "text": "A DH Publishing Co music 40 State rm 41",
+    "cy": 1832.5,
+    "bbox": [
+      79,
+      1822,
+      663,
+      1846
+    ]
+  },
+  {
+    "column": "L",
+    "native_line_id": "1:1:2:1",
+    "text": "A STORRS & BEMENT CO paper warehouse",
+    "cy": 1855.5,
+    "bbox": [
+      82,
+      1846,
+      730,
+      1869
+    ]
+  },
+  {
+    "column": "L",
+    "native_line_id": "1:1:2:2",
+    "text": "140-150 Federal—See page 3033",
+    "cy": 1878.0,
+    "bbox": [
+      157,
+      1868,
+      582,
+      1891
+    ]
+  },
+  {
+    "column": "L",
+    "native_line_id": "1:1:3:1",
+    "text": "A W Mfg Co wrenches 120 Milk rm 85",
+    "cy": 1902.0,
+    "bbox": [
+      80,
+      1887,
+      597,
+      1921
+    ]
+  },
+  {
+    "column": "L",
+    "native_line_id": "1:1:4:1",
+    "text": "Aab Co real estate 19 Milk rm 41 (55 Kilby",
+    "cy": 1924.75,
+    "bbox": [
+      80,
+      1914,
+      729,
+      1941
+    ]
+  },
+  {
+    "column": "L",
+    "native_line_id": "1:1:5:1",
+    "text": "Aachen & Munich Fire Ins Co of Aix-la-Chapelle",
+    "cy": 1947.5,
+    "bbox": [
+      80,
+      1937,
+      729,
+      1960
+    ]
+  },
+  {
+    "column": "L",
+    "native_line_id": "1:1:6:1",
+    "text": "Aalto J tailor h 61 Myrtle fren Rox",
+    "cy": 1970.5,
+    "bbox": [
+      79,
+      1960,
+      730,
+      1982
+    ]
+  }
+]
