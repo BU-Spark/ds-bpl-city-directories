@@ -1,0 +1,2 @@
+Pillow>=11,<14
+nbformat>=5.10,<6

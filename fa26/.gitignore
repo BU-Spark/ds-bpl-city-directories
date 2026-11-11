@@ -1,11 +1,9 @@
 *_jp2.zip
 *_orig_jp2.tar
 
-# Re-downloadable A-sample scans and original API responses.
-/data/a_sample/images/
-/data/a_sample/source/
-# Reproducible OCR review packs and inference artifacts.
-/data/ocr_review/
+# Transfer ZIPs/model weights stay outside the canonical source folder.
+/data/ocr/*.zip
+/data/ocr_model_cache/
 *.part
 __pycache__/
 .DS_Store

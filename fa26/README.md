@@ -1,78 +1,87 @@
+# BPL OCR · printed pages 161–167
 
-<h1 align="center">
-  <br>
-  <a href="https://www.bu.edu/spark/" target="_blank"><img src="https://www.bu.edu/spark/files/2023/08/logo.png" alt="BUSpark" width="200"></a>
-  <br>
-  Project README Template <change to project name>
-  <br>
-</h1>
+One hosted Colab notebook and one shared Python file produce line-by-line OCR
+from the same seven scans. Select Tesseract, dots.mocr, EasyOCR, PaddleOCR English
+v5, or Qwen3-VL-2B. This workflow outputs recognized text only.
 
-<h4 align="center">A template for the project readme file. </h4> <change to repo short description>
-
-<p align="center">
-  <a href="#key-features">Key Features</a> •
-  <a href="#how-to-use">How To Use</a> •
-  <a href="#project-description">Project Description</a> •
-  <a href="#data-locations">Data Locations</a>
-</p>
-
-## Key Features
-In this section you will be including a list of key features of your code/project.
-
-You should also include a short description of what each part of your code does. (Detailed description in the readme of each directory, if applicable)
-* /path/to/directory - function and description
-  - Key notes
-* /path/to/script - function and description
-  - Key notes
-* Lorem Ipsum - Dolor Sit Amet
-  - Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-* Duis Aute Irure Dolor
-  - Excepteur sint occaecat
-* Excepteur Sint Occaecat
-  - Curabitur efficitur, nunc non ultricies gravida, felis purus posuere eros, sed faucibus sapien est nec quam. Nulla at nisl nisl.
- 
-## How To Use
-
-To clone and run this application, you'll need <a href="https://git-scm.com" target="_blank">Git</a>
-From your command line:
-
-```bash
-# Clone this repository
-$ git clone [repo link]
-
-# Further Instructions
-...
+```text
+scripts/ocr_colab.ipynb       The single OCR entry point
+scripts/ocr_pipeline.py       Shared source loading, five models, resume and export
+data/ocr/source/              Seven original JPEGs and one shared coordinate index
+data/ocr/results/lines.csv    Five model text columns plus sources
+data/ocr/results/models.json  Model revisions/settings and historical contexts
+data/ocr/results/status.json  Completed/empty/failed/unrun counts, not accuracy
+data/ocr/results/raw/         Exact responses and retained original native logs
+tests/test_ocr_pipeline.py    Integrity tests using fake recognizers
 ```
 
-Create a new branch from dev, add changes on the new branch you just created.
+## Run in Colab
 
-You will want to look into <a href="https://git-scm.com/docs/git-branch" target="_blank">git branch</a> and <a href="https://git-scm.com/docs/git-checkout" target="_blank">git checkout</a>
+1. Upload `scripts/ocr_colab.ipynb` to hosted Colab. Set `ENGINE` in section 1.
+   Use a fresh runtime per model. Dots and Qwen require GPU; EasyOCR uses an
+   available GPU; Tesseract and this Paddle setup use CPU. No API key is needed.
+2. Upload a ZIP of `data/ocr/`, or the latest ZIP downloaded by the notebook.
+   It contains `source/` and `results/`. Transfer ZIPs are generated on demand,
+   rather than stored beside duplicate folders in the repository.
+3. `MAX_NEW_LINES = None` processes all remaining target lines; use `6` for a
+   short trial. `FORCE = False` keeps completed outputs and retries empty,
+   failed or truncated lines. `FORCE = True` recognizes target lines again;
+   earlier raw responses and their original settings remain in the log.
+4. Download the common output ZIP in section 4. Upload that latest ZIP for the
+   next model to accumulate outputs. After interrupting, download a checkpoint
+   before Colab discards its VM.
 
-```bash
-# Create and Checkout a new branch if it doesn't exist
-$ git checkout -b your-branch main
-...
+No OCR is installed on the user's Mac. Weights stay outside the source/results
+folder and are excluded from the exported ZIP. Each model sees only line images;
+no previous OCR text, name lists or corrections enter recognition.
+
+## Sources and output
+
+`source/p161.jpg` through `p167.jpg` are the complete original scans. Hashes,
+dimensions, source URLs and frozen line geometry are kept in `source/index.json`.
+Crops exist in memory only. The index retains **1,737** historical detections;
+the public CSV has **1,573** rows. Page 161 includes only its lower directory body
+(`1645 <= original y0 < 2678`); pages 162–167 retain their existing detections.
+All models share the same coordinates/order, including any detection mistakes.
+One row is a detected scan line, not a verified physical line or a person.
+
+The CSV has exactly these columns:
+
+```text
+tesseract_text,mocr_text,easyocr_text,paddleocr_text,qwen_text,sources
 ```
 
-Open a Pull Request to dev. Add your PM and TPM as reviewers. 
+All rows remain, including unrun/failed cases. CSV whitespace is collapsed;
+exact raw strings and statuses stay internal. `sources` links to the book page.
+Existing Tesseract/mOCR outputs and native logs were migrated without rerunning.
+Historical Tesseract used full-page PSM 3; new Tesseract recognition uses shared
+line crops with PSM 7. This distinction remains in `models.json`. Existing mOCR
+used the same shared crops. The other three models have not yet produced BPL
+predictions. Blank cells are explained by `status.json` and raw records.
 
-At the end of the semester during project wrap up open a final Pull Request to main from dev branch.
- 
-## Project Description
+This workflow does not expand ditto, fix spelling, merge people, parse fields,
+score accuracy, create human reference forms or geocode.
 
-In this section, you should include the project description, either from the client or spark.
+## Maintenance
 
-Please make sure it reflects what you see on the documents (project description) you recieved.
+The notebook embeds the exact shared Python source. Regenerate after edits:
 
-* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Donec vel nunc at libero ultrices tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Mauris ut ligula nec risus posuere ultricies at et ligula. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-* Veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+```sh
+python fa26/scripts/ocr_pipeline.py --notebook
+python -m unittest discover -s fa26/tests -v
+python fa26/scripts/ocr_pipeline.py --pack fa26/data/ocr --output /tmp/bpl_ocr.zip
+```
 
-## Data locations
+`requirements.txt` contains only lightweight validation dependencies. Model
+packages are installed by Colab. Tests use fake recognizers; new model inference
+still needs a Colab smoke test. Paddle explicitly uses its English v5 recognizer.
 
-In this section, you should include the location of all of your datasets for the project (if applicable)
+Teammate materials remain separate: `scripts/api_look.ipynb` is the original
+fetch exploration; `data/1916 Boston Directory Vol. 1 (A–O)/` contains original
+OCR text datasets. They are not additional OCR pipeline entry points.
 
-<a href="dataset-documentation">Dataset Documentation</a>
-* Location 1: [location]
-  - [description]
-* Location 2: [location]
-  - [description]
+Official sources: [Tesseract](https://tesseract-ocr.github.io/tessdoc/ImproveQuality.html),
+[dots.mocr](https://huggingface.co/dots-studio/dots.mocr),
+[EasyOCR](https://www.jaided.ai/easyocr/documentation/),
+[Paddle English](https://huggingface.co/PaddlePaddle/en_PP-OCRv5_mobile_rec),
+[Qwen3-VL-2B](https://huggingface.co/Qwen/Qwen3-VL-2B-Instruct).
