@@ -1,0 +1,35 @@
+sample_id,selection_label,issues,status,image_check_note,source_page_url
+A001,Aalto J,bracket_continuation_rule,open,"The raised [ren Rox] beside this line belongs to the following Aaron Abraham L entry, not Aalto.",https://archive.org/details/bostonmassachuse1916112samp/page/161/mode/1up
+A002,Aaron Abraham L,bracket_continuation_rule,open,Join printed War- to the raised continuation ren Rox. Preserve Wash/Rox in raw fields.,https://archive.org/details/bostonmassachuse1916112samp/page/161/mode/1up
+A003,Aaron Barney,image_check_mismatch: residence_address_raw; residence_address_normalized,open,The scan reads 568; existing OCR reads 668. This is an OCR value error that regex cannot reliably repair.,https://archive.org/details/bostonmassachuse1916112samp/page/161/mode/1up
+A006,Aaron Fred,occupation_activity_not_specific_role,open,,https://archive.org/details/bostonmassachuse1916112samp/page/161/mode/1up
+A007,Aaron Harry F,bracket_continuation_rule,open,E Broadway continues Harry's entry. The raised [Broadway do] on that same physical line belongs to Herman below.,https://archive.org/details/bostonmassachuse1916112samp/page/161/mode/1up
+A008,Aaron Herman,bracket_continuation_rule; ditto_neighborhood,open,"The raised continuation completes the residence. Final do repeats S B, not the entire workplace address.",https://archive.org/details/bostonmassachuse1916112samp/page/161/mode/1up
+A011,Aaron Joseph,locality_only_residence,open,The residence is only a locality. Do not invent a street address or assign a Boston neighborhood.,https://archive.org/details/bostonmassachuse1916112samp/page/161/mode/1up
+A019,Aarons William,bracket_continuation_rule,open,,https://archive.org/details/bostonmassachuse1916112samp/page/161/mode/1up
+A020,Aaronson Abraham M,residence_not_recovered; surname_context_missing; surname_disagrees_with_selection; image_check_mismatch: surname; residence_address_raw; residence_address_normalized; neighborhood_raw; neighborhood_normalized,open,The scan supplies Aaronson and the full residence; both are absent from this entry's available OCR fragment. This missing surname also affects subsequent ditto entries.,https://archive.org/details/bostonmassachuse1916112samp/page/161/mode/1up
+A021,Aaronson Barnard,historical_status_notice; surname_context_missing; surname_disagrees_with_selection; image_check_mismatch: surname; status_detail_raw,open,"This is a death notice, not a current residence. Existing OCR repeats parts of the date.",https://archive.org/details/bostonmassachuse1916112samp/page/161/mode/1up
+A022,Aaronson David A,surname_context_missing; surname_disagrees_with_selection,open,,https://archive.org/details/bostonmassachuse1916112samp/page/161/mode/1up
+A023,Aaronson Harry A,surname_context_missing; surname_disagrees_with_selection,open,,https://archive.org/details/bostonmassachuse1916112samp/page/161/mode/1up
+A024,Aaronson Henry,occupation_activity_not_specific_role; surname_context_missing; surname_disagrees_with_selection,open,,https://archive.org/details/bostonmassachuse1916112samp/page/161/mode/1up
+A025,Aaronson Max,occupation_activity_not_specific_role; residence_not_recovered; surname_context_missing; surname_disagrees_with_selection,open,,https://archive.org/details/bostonmassachuse1916112samp/page/161/mode/1up
+A027,Abaid Alexander,ditto_entire_address,open,"Here do repeats the entire preceding work address, 23 Hudson.",https://archive.org/details/bostonmassachuse1916112samp/page/161/mode/1up
+A029,Abar Nellie M,fuzzy_name_match,open,,https://archive.org/details/bostonmassachuse1916112samp/page/161/mode/1up
+A030,Abare William H,residence_not_recovered; unclassified_pre_address_text,open,,https://archive.org/details/bostonmassachuse1916112samp/page/161/mode/1up
+A031,Abate Angelo,selected_entry_not_found_in_ocr; image_check_mismatch: surname; given_name; occupation_raw; occupation_normalized; residence_type_raw; residence_type_normalized; residence_address_raw; residence_address_normalized; neighborhood_raw; neighborhood_normalized; record_status,open,The entire selected personal entry is missing from the existing OCR. Do not fill it from the sample name list. Its missing surname anchor causes Abare to propagate into later Abate candidates.,https://archive.org/details/bostonmassachuse1916112samp/page/161/mode/1up
+A032,Abate Calogero,surname_disagrees_with_selection,open,,https://archive.org/details/bostonmassachuse1916112samp/page/161/mode/1up
+A033,Abate Filippo,fuzzy_name_match; surname_disagrees_with_selection,open,,https://archive.org/details/bostonmassachuse1916112samp/page/161/mode/1up
+A034,Abate Francesco (candymaker),surname_disagrees_with_selection,open,,https://archive.org/details/bostonmassachuse1916112samp/page/161/mode/1up
+A035,Abate Francesco (hostler),surname_disagrees_with_selection,open,,https://archive.org/details/bostonmassachuse1916112samp/page/161/mode/1up
+A036,Abate Giuseppe,surname_disagrees_with_selection,open,,https://archive.org/details/bostonmassachuse1916112samp/page/161/mode/1up
+A037,Abate John,surname_disagrees_with_selection,open,,https://archive.org/details/bostonmassachuse1916112samp/page/161/mode/1up
+A038,Abate Luigi,surname_disagrees_with_selection,open,,https://archive.org/details/bostonmassachuse1916112samp/page/161/mode/1up
+A039,Abate Salvatore,surname_disagrees_with_selection,open,,https://archive.org/details/bostonmassachuse1916112samp/page/161/mode/1up
+A041,Abazorius Anthony,ditto_neighborhood,open,Join the continuation line; do repeats only the work-address neighborhood S B.,https://archive.org/details/bostonmassachuse1916112samp/page/161/mode/1up
+A045,Abbe Elizabeth M,ditto_entire_address,open,Full-address ditto also carries the work address's Rox neighborhood into the residence. The original residence text itself only says do.,https://archive.org/details/bostonmassachuse1916112samp/page/161/mode/1up
+A046,Abbe Frederic E,locality_only_residence,open,,https://archive.org/details/bostonmassachuse1916112samp/page/161/mode/1up
+A047,Abbe Frederick R,ditto_entire_address,open,,https://archive.org/details/bostonmassachuse1916112samp/page/161/mode/1up
+A048,Abbe Henry T,residence_not_recovered,open,,https://archive.org/details/bostonmassachuse1916112samp/page/161/mode/1up
+A049,Abbe John W,selected_entry_not_found_in_ocr,open,,https://archive.org/details/bostonmassachuse1916112samp/page/161/mode/1up
+A050,Abber Annie Mrs,historical_status_notice; image_check_mismatch: status_detail_raw,open,The scan reads Malden; OCR reads Maiden. Store the removal notice separately from a current residential address.,https://archive.org/details/bostonmassachuse1916112samp/page/161/mode/1up
+A051,Abberton James F,image_check_mismatch: residence_address_raw; residence_address_normalized; neighborhood_raw; neighborhood_normalized,open,The scan's final R is omitted by OCR. A lone W does not justify inferring West Roxbury.,https://archive.org/details/bostonmassachuse1916112samp/page/161/mode/1up

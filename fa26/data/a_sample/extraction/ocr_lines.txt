@@ -1,0 +1,80 @@
+L001 [78,1662,650,20] A A Wire Co insulated wire and cables 93 Fed-
+L002 [78,1708,651,23] A B Mfg Co (Abe Borans, H F Brennan) chil-
+L003 [243,1731,259,22] dren's dresses 27 Kingston
+L004 [81,1754,647,20] A B SEE ELECTRIC ELEVATOR CO J R
+L005 [153,1777,577,22] Jackson jr mgr 4th floor 111 Devonshire
+L006 [154,1799,494,23] warehouse 163 Oliver — See page 2822
+L007 [79,1823,584,22] A D H Publishing Co music 40 State rm 41
+L008 [82,1846,648,23] A STORRS & BEMENT CO paper warehouse
+L009 [157,1869,425,22] 140-150 Federal— See page 3033
+L010 [79,1891,517,23] A W Mfg Co wrenches 120 Milk rm 85
+L011 [79,1914,650,23] Aab Co real estate 19 Milk rm 41 [55 Kilby
+L012 [80,1937,649,23] Aachen & Munich Fire Ins Co of Aix-la-Chapelle
+L013 [79,1960,650,23] Aalto J tailor h 61 Myrtle [ren Rox
+L014 [80,1983,649,22] Aaron Abraham L jeweler 1915 Wash h 624 War-
+L015 [98,2006,566,22] » Barney com trav h 668 Blue Hill av Dor
+L016 [98,2029,481,19] " Charles T salesman h 18 Haviland
+L017 [99,2052,631,23] " David J (Aaron & Bartlett) lawyer 40 Court
+L018 [156,2075,459,19] rm 1002 h 1254 Conunonwealth av
+L019 [99,2098,407,22] « Fred cigars h 77 Empire Alls
+L020 [100,2120,628,23] " Harry F salesman 40 Central rm 305 bds 737
+L021 [157,2144,574,23] E Broadway (Broadway do
+L022 [99,2166,630,23] • Herman mgr 628 E Fourth S B bds 737 E
+L023 [100,2189,441,20] " Jacob driver h 147 Chelsea E B
+L024 [100,2212,631,20] . Jacob L law student 40 Court rm 1002 bds
+L025 [159,2235,313,20] 1254 Commonwealth av
+L026 [100,2258,572,27] " Joseph porter 72 Franklin h at Stoneham
+L027 [100,2281,572,22] • Julius cigarmaker h 737 E Broadway S B
+L028 [101,2303,630,24] • Solomon E vice pres 60 State rm 316 bds 93
+L029 [158,2327,169,22] Henley Chsn
+L030 [102,2350,365,22] • Sophie M h 578 Newbury
+L031 [102,2372,536,23] " S E Co patent dealers 60 State rm 316
+L032 [102,2395,610,23] . Wolf W mgr 1022 Wash h 3 Normandy Rox
+L033 [102,2418,629,22] . & Bartlett (David J Aaron, Charles E Bart-
+L034 [225,2441,339,22] lett) lawyers 40 Court rm 1002
+L035 [84,2464,646,22] Aarons Loring E tel opr h 406 W Broadway S B
+L036 [102,2486,629,24] " Manuel H (Aarons & Golosov) 162 Hanover h
+L037 [159,2509,209,20] 884 Harrison av
+L038 [103,2532,598,22] " Samuel cigarmaker h 406 W Broadway S B
+L039 [103,2554,629,23] - William (Aarons & Fum) 671 Wash h 120
+L040 [159,2578,573,23] Warren Br (671 Wash
+L041 [103,2600,628,23] « & Finn (William Aarons, Harry Finn) jewelry
+L042 [103,2623,625,23] « & Golosov (M H Aarons, Leon Golosov)
+L043 [159,2646,282,23] clothing 162 Hanover
+R001 [904,1661,337,20] . Abraham M laborer bds
+R002 [830,1707,345,23] Barnard died Aug Aug 31 3 1915
+R003 [832,1731,491,22] David A clerk bds bds s 177 177 . Mag Magnolia Dor
+R004 [831,1753,603,22] Harry A clerk 368 i Wash Wash bds bds 37 37 :^ North Russell
+R005 [831,1776,505,23] Henry real estate h 177 Magnolia Dor
+R006 [830,1799,604,23] Max (William Pink & Co) liquors 347a Co-
+R007 [786,1868,586,27] Abaghian Leon shoecutter h 87 Mlnden Rox
+R008 [787,1891,521,20] Abaid Alexander baker 23 Hudson h do
+R009 [786,1914,512,20] Aban & Co real estate 53 State rm 930
+R010 [786,1937,593,22] Abangarez Steamship Corp 131 State rm 900
+R011 [786,1960,513,22] Abar Alice A Mrs h 1 Atherton pi Rox
+R012 [804,1983,365,19] - NeUie M h 26 Forest Rox
+R013 [786,2005,649,22] Abare William H asst sec U D Mut Fu'e Ins Co
+R014 [804,2074,436,23] - Calogero laborer h 8 Hanover i
+R015 [805,2097,383,23] " Fllippo laborer h 37 Sheafe
+R016 [805,2120,486,22] » Francesco candymaker h 99 Prmce
+R017 [805,2143,436,19] " Francesco hostler h 43 Tileston
+R018 [805,2166,631,23] « Giuseppe barber 125a North bds 31 N Bennet
+R019 [805,2188,549,23] - John blacksmith h 185 Bennington E B
+R020 [805,2211,385,23] - Luigi laborer bds H Sheafe
+R021 [805,2234,430,20] - Salvatore laborer h 10 Charter
+R022 [787,2257,544,20] Abatto Salvatore laborer h 71 Lubec E B
+R023 [786,2280,651,25] Abazorius Anthony shoe repairer 208 W B'way
+R024 [863,2303,272,19] S B h 194 Athens do
+R025 [806,2326,476,19] " Kostantas tailor h 137 Bowen S B
+R026 [787,2349,593,23] Abban Patrick A teamster h 4 Boston pi S B
+R027 [787,2372,649,23] Abbe Clarence M clerk h 497 Huntington av
+R028 [865,2396,49,18] Rox
+R029 [805,2417,568,23] " Elizabeth M physician 45 Dale Rox h do
+R030 [805,2440,631,22] " Frederic E salesman 50 Congress rm 326 bds
+R031 [862,2464,113,19] at Camb
+R032 [805,2486,631,22] " Frederick R physician 15 Sayward Dor h do
+R033 [806,2509,407,23] " Henry T buyer 90 Chauncy I
+R034 [788,2577,435,20] Abber Annie Mrs rem to Maiden
+R035 [787,2600,571,20] Abberton James F mason h 1972 Centre W
+R036 [806,2622,480,21] " Patrick driver h 1980 Centre W R
+R037 [807,2645,491,21] " T Frank 14 Fulton h 10 Cedar Ros
