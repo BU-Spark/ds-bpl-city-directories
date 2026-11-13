@@ -1,6 +1,0 @@
-(function(root){
-function normalize(value){return String(value||'').normalize('NFKC').toLowerCase().replace(/\s+/g,' ').trim()}
-function filterRecords(rows,state){const terms=normalize(state.query).split(' ').filter(Boolean);return rows.filter(r=>{if(state.page&&r.source_page!==state.page)return false;if(state.model&&r.ocr_model!==state.model)return false;const w=!!r.work_address,h=!!r.home_address;if(state.address==='both'&&!(w&&h)||state.address==='work'&&!w||state.address==='home'&&!h||state.address==='missing'&&w&&h)return false;const name=[r.name,r.name_as_printed,r.surname_context_candidate].filter(Boolean).join(' ');let hay=state.field==='name'?name:state.field==='all'?[name,r.occupation,r.work_address,r.home_address].join(' '):r[state.field];hay=normalize(hay);return terms.every(t=>hay.includes(t))})}
-function toCsv(rows,keys){const cell=v=>{v=v==null?'':Array.isArray(v)||typeof v==='object'?JSON.stringify(v):String(v);if(/^[\s]*[=+@-]/.test(v))v="'"+v;return '"'+v.replace(/"/g,'""')+'"'};return '\uFEFF'+[keys.map(cell).join(','),...rows.map(r=>keys.map(k=>cell(r[k])).join(','))].join('\r\n')}
-root.DirectorySearch={filterRecords,toCsv,normalize};if(typeof module!=='undefined')module.exports=root.DirectorySearch;
-})(typeof globalThis!=='undefined'?globalThis:this);
