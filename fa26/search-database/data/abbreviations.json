@@ -1,0 +1,42 @@
+{
+  "residence_markers": {
+    "h": "home/residence",
+    "bds": "boards; residential address",
+    "rms": "rooms; residential address"
+  },
+  "geocoding_expansions": {
+    "av": "avenue",
+    "sq": "square",
+    "rd": "road",
+    "pk": "park",
+    "ct": "court",
+    "pl": "place",
+    "rm": "room",
+    "whf": "wharf",
+    "Wash": "Washington",
+    "B'way": "Broadway",
+    "StBotolph": "Saint Botolph",
+    "Dor": "Dorchester",
+    "Rox": "Roxbury",
+    "Chsn": "Charlestown",
+    "Alls": "Allston",
+    "Somv": "Somerville",
+    "Camb": "Cambridge",
+    "B'line": "Brookline"
+  },
+  "occupation_glossary": {
+    "mgr": "manager",
+    "pres": "president",
+    "treas": "treasurer",
+    "sec": "secretary",
+    "asst": "assistant",
+    "agt": "agent",
+    "com trav": "commercial traveler",
+    "tel opr": "telephone operator"
+  },
+  "unresolved": {
+    "do": "ditto; no automatic address copying",
+    "Br": "ambiguous locality; retained",
+    "rm": "room; kept as address detail"
+  }
+}
