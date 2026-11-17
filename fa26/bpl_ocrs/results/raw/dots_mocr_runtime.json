@@ -1,0 +1,24 @@
+{
+  "model_id": "dots-studio/dots.mocr",
+  "revision": "e539fbb52280393adc081b289ec597430a0f9031",
+  "prompt": "Extract the text content from this image.",
+  "input": "one detected source line image; no Tesseract or IA text supplied",
+  "dtype": "torch.bfloat16",
+  "attention": "sdpa",
+  "do_sample": false,
+  "max_new_tokens": 256,
+  "max_pixels": 262144,
+  "layout_id": "91b03b3ac79c30ba2962cc52cdf40487288420bf9620f054187e57bd558c4cf1",
+  "original_vision_code_sha256": "f22d6251a05a03c7510d329ba1be9e959438cd54b32204eb51ccb1b56392a96f",
+  "used_vision_code_sha256": "c09f18c232bffaac87200da5a54a9acb74bf6c3fa26d686f6e5cb11cb4f65fa2",
+  "gpu": "Tesla T4",
+  "packages": {
+    "torch": "2.11.0+cu130",
+    "transformers": "4.57.6",
+    "qwen-vl-utils": "0.0.14",
+    "accelerate": "1.15.0",
+    "huggingface-hub": "0.36.2"
+  },
+  "completed": 1717,
+  "attempted_new_lines": 1737
+}

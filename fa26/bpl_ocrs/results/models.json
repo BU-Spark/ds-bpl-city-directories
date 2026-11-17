@@ -1,0 +1,283 @@
+{
+  "tesseract": {
+    "active_settings_id": "4480f53e88fa28ee18527c05a05d15712522a80b4ef023ff8beda2ed2030f480",
+    "settings_history": {
+      "4480f53e88fa28ee18527c05a05d15712522a80b4ef023ff8beda2ed2030f480": {
+        "english_model_sha256": "8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba",
+        "oem": 1,
+        "psm": 3,
+        "scale": 2,
+        "border": 10,
+        "preprocessing": "grayscale, 2x Lanczos, white border; no thresholding or denoising",
+        "Pillow": "11.3.0",
+        "engine_version": "tesseract 5.3.4\n leptonica-1.82.0\n  libgif 5.2.1 : libjpeg 8d (libjpeg-turbo 2.1.5) : libpng 1.6.43 : libtiff 4.5.1 : zlib 1.3 : libwebp 1.3.2 : libopenjp2 2.5.0\n Found AVX2\n Found AVX\n Found FMA\n Found SSE4.1\n Found OpenMP 201511\n Found libarchive 3.7.2 zlib/1.3 liblzma/5.4.5 bz2lib/1.0.8 liblz4/1.9.4 libzstd/1.5.5\n Found libcurl/8.5.0 OpenSSL/3.0.13 zlib/1.3 brotli/1.1.0 zstd/1.5.5 libidn2/2.3.7 libpsl/0.21.2 (+libidn2/2.3.7) libssh/0.10.6/openssl/zlib nghttp2/1.59.0 librtmp/2.3 OpenLDAP/2.6.10\n",
+        "origin": "Imported existing seven-page v4 run; not rerun during cleanup",
+        "input_context": "full page; native TSV line text, PSM3"
+      }
+    },
+    "imported_source_id": "e33e9fd4eadb6c9b0c0af595688c0104bfe163ae5aa97e5e0211a040f86f921c",
+    "input": "Historical full-page OCR text, not new line-crop inference.",
+    "original_files": "raw/tesseract_pages/"
+  },
+  "dots_mocr": {
+    "active_settings_id": "d2d0f5add4a1b3206116728b774c42712f63d9f28664a5266a9678ed0c6380ee",
+    "settings_history": {
+      "d2d0f5add4a1b3206116728b774c42712f63d9f28664a5266a9678ed0c6380ee": {
+        "model_id": "dots-studio/dots.mocr",
+        "revision": "e539fbb52280393adc081b289ec597430a0f9031",
+        "prompt": "Extract the text content from this image.",
+        "input": "one detected source line image; no Tesseract or IA text supplied",
+        "dtype": "torch.bfloat16",
+        "attention": "sdpa",
+        "do_sample": false,
+        "max_new_tokens": 256,
+        "max_pixels": 262144,
+        "layout_id": "91b03b3ac79c30ba2962cc52cdf40487288420bf9620f054187e57bd558c4cf1",
+        "original_vision_code_sha256": "f22d6251a05a03c7510d329ba1be9e959438cd54b32204eb51ccb1b56392a96f",
+        "used_vision_code_sha256": "c09f18c232bffaac87200da5a54a9acb74bf6c3fa26d686f6e5cb11cb4f65fa2",
+        "gpu": "Tesla T4",
+        "packages": {
+          "torch": "2.11.0+cu130",
+          "transformers": "4.57.6",
+          "qwen-vl-utils": "0.0.14",
+          "accelerate": "1.15.0",
+          "huggingface-hub": "0.36.2"
+        },
+        "completed": 1717,
+        "attempted_new_lines": 1737
+      }
+    },
+    "imported_source_id": "e33e9fd4eadb6c9b0c0af595688c0104bfe163ae5aa97e5e0211a040f86f921c",
+    "input": "Historical independent recognition of each shared line crop.",
+    "native_raw_sha256_at_import": "2b06f4cd4dec87608961695bf15430bfad4103402ffe71a6916a8295b4181162"
+  },
+  "easyocr": {
+    "active_settings_id": "963d6104cef607cd93fa97bea02180af5a8e7274e0926f48aef12c9fede3d390",
+    "settings_history": {
+      "963d6104cef607cd93fa97bea02180af5a8e7274e0926f48aef12c9fede3d390": {
+        "engine": "easyocr",
+        "adapter_version": 1,
+        "input": "one original RGB source-line crop",
+        "device_type": "cuda",
+        "precision": "float32",
+        "packages": {
+          "easyocr": "1.7.2",
+          "torch": "2.14.1+cu130",
+          "torchvision": "0.29.1+cu130",
+          "numpy": "2.4.6",
+          "Pillow": "11.3.0"
+        },
+        "recognizer": "english_g2",
+        "languages": [
+          "en"
+        ],
+        "detector": false,
+        "quantize": false,
+        "cudnn_benchmark": false,
+        "model_sha256": "e2272681d9d67a04e2dff396b6e95077bc19001f8f6d3593c307b9852e1c29e8",
+        "recognition": {
+          "decoder": "greedy",
+          "batch_size": 1,
+          "workers": 0,
+          "detail": 1,
+          "paragraph": false,
+          "contrast_ths": 0.1,
+          "adjust_contrast": 0.5,
+          "filter_ths": 0.003
+        },
+        "pipeline_code_sha256": "8da8f7a27afc4ff96aef8209fc2476f3cae20a506c957313de55e1e46ac257dd"
+      }
+    },
+    "last_runtime": {
+      "actual_device": "cuda:0",
+      "platform": "Linux-6.6.159+-x86_64-with-glibc2.39",
+      "processor": "x86_64",
+      "packages": {
+        "easyocr": "1.7.2",
+        "torch": "2.14.1+cu130",
+        "torchvision": "0.29.1+cu130",
+        "numpy": "2.4.6",
+        "Pillow": "11.3.0"
+      },
+      "gpu_name": "Tesla T4"
+    },
+    "input": "Shared original scan line crops. Existing imports retain their historical context in settings_history."
+  },
+  "paddleocr": {
+    "active_settings_id": "c4b129e89825245e4914141414e679c842257bd66e6ebb5fd0f04651c1d9fff7",
+    "settings_history": {
+      "c4b129e89825245e4914141414e679c842257bd66e6ebb5fd0f04651c1d9fff7": {
+        "engine": "paddleocr",
+        "adapter_version": 1,
+        "input": "one original RGB source-line crop",
+        "device_type": "cpu",
+        "precision": "float32",
+        "packages": {
+          "paddleocr": "3.7.0",
+          "paddlex": "3.7.2",
+          "paddlepaddle": "3.2.0",
+          "paddlepaddle-gpu": null,
+          "numpy": "2.3.5",
+          "Pillow": "11.3.0"
+        },
+        "model": "PaddlePaddle/en_PP-OCRv5_mobile_rec",
+        "recognizer": "en_PP-OCRv5_mobile_rec",
+        "revision": "267c36e24c331595590fe7bd72bde2436fd286f2",
+        "model_sha256": {
+          "config.json": "16103ac291a82fca50f0bb000d62a4b8168f6042f03c89c44cf32f241d1eb1f2",
+          "inference.json": "fd1b6ec722ea841a72d3ba43e527df1d1066d5d7808e0503ee3eec7265188753",
+          "inference.pdiparams": "3ec8a97ed6cefe8568d3e2ee90bb193299b566a7661aa4fd52d224b96b59f66b",
+          "inference.yml": "27e91d0582f40168aa218303c76e184bc78fa7a5d105aad0cfbad8458b441067"
+        },
+        "input_channels": "BGR",
+        "batch_size": 1,
+        "backend": {
+          "enable_hpi": false,
+          "engine": "paddle_static",
+          "use_tensorrt": false,
+          "precision": "fp32",
+          "enable_mkldnn": false,
+          "cpu_threads": 2,
+          "enable_cinn": false
+        },
+        "pipeline_code_sha256": "8da8f7a27afc4ff96aef8209fc2476f3cae20a506c957313de55e1e46ac257dd"
+      }
+    },
+    "last_runtime": {
+      "actual_device": "cpu",
+      "platform": "Linux-6.6.159+-x86_64-with-glibc2.39",
+      "processor": "x86_64",
+      "packages": {
+        "paddleocr": "3.7.0",
+        "paddlex": "3.7.2",
+        "paddlepaddle": "3.2.0",
+        "paddlepaddle-gpu": null,
+        "numpy": "2.3.5",
+        "Pillow": "11.3.0"
+      }
+    },
+    "input": "Shared original scan line crops. Existing imports retain their historical context in settings_history."
+  },
+  "qwen3_vl_2b": {
+    "active_settings_id": "8bf222c8b0718eaf141103466b3077e1da86ed741392801187af976bc842ddb4",
+    "settings_history": {
+      "8bf222c8b0718eaf141103466b3077e1da86ed741392801187af976bc842ddb4": {
+        "engine": "qwen3_vl_2b",
+        "adapter_version": 1,
+        "input": "one original RGB source-line crop",
+        "device_type": "cuda",
+        "precision": "float16",
+        "packages": {
+          "transformers": "4.57.6",
+          "torch": "2.14.1+cu130",
+          "torchvision": "0.29.1+cu130",
+          "accelerate": "1.15.0",
+          "numpy": "2.4.6",
+          "Pillow": "11.3.0"
+        },
+        "model": "Qwen/Qwen3-VL-2B-Instruct",
+        "revision": "89644892e4d85e24eaac8bacfd4f463576704203",
+        "dtype": "torch.float16",
+        "attention": "sdpa",
+        "prompt": "Transcribe all text in this image faithfully. Preserve printed ditto marks, abbreviations, punctuation and line breaks. Do not expand, correct, infer, or explain anything. Output only the transcription.",
+        "min_pixels": 4096,
+        "max_pixels": 262144,
+        "generation": {
+          "max_new_tokens": 256,
+          "do_sample": false,
+          "num_beams": 1,
+          "repetition_penalty": 1.0
+        },
+        "processor_sha256": "c64dd24176e1f6c5380f747d5ef4c6b5d112d10681888bea2264b0233188a47b",
+        "generation_config": {
+          "max_length": 20,
+          "max_new_tokens": null,
+          "min_length": 0,
+          "min_new_tokens": null,
+          "early_stopping": false,
+          "max_time": null,
+          "stop_strings": null,
+          "do_sample": true,
+          "num_beams": 1,
+          "use_cache": true,
+          "cache_implementation": null,
+          "cache_config": null,
+          "return_legacy_cache": null,
+          "prefill_chunk_size": null,
+          "temperature": 0.7,
+          "top_k": 20,
+          "top_p": 0.8,
+          "min_p": null,
+          "typical_p": 1.0,
+          "epsilon_cutoff": 0.0,
+          "eta_cutoff": 0.0,
+          "repetition_penalty": 1.0,
+          "encoder_repetition_penalty": 1.0,
+          "length_penalty": 1.0,
+          "no_repeat_ngram_size": 0,
+          "bad_words_ids": null,
+          "renormalize_logits": false,
+          "forced_bos_token_id": null,
+          "forced_eos_token_id": null,
+          "remove_invalid_values": false,
+          "exponential_decay_length_penalty": null,
+          "suppress_tokens": null,
+          "begin_suppress_tokens": null,
+          "sequence_bias": null,
+          "token_healing": false,
+          "guidance_scale": null,
+          "watermarking_config": null,
+          "num_return_sequences": 1,
+          "output_attentions": false,
+          "output_hidden_states": false,
+          "output_scores": false,
+          "output_logits": null,
+          "return_dict_in_generate": false,
+          "pad_token_id": 151643,
+          "bos_token_id": 151643,
+          "eos_token_id": [
+            151645,
+            151643
+          ],
+          "encoder_no_repeat_ngram_size": 0,
+          "decoder_start_token_id": null,
+          "is_assistant": false,
+          "num_assistant_tokens": 20,
+          "num_assistant_tokens_schedule": "constant",
+          "assistant_confidence_threshold": 0.4,
+          "prompt_lookup_num_tokens": null,
+          "max_matching_ngram_size": null,
+          "assistant_early_exit": null,
+          "assistant_lookbehind": 10,
+          "target_lookbehind": 10,
+          "disable_compile": false,
+          "low_memory": null,
+          "penalty_alpha": null,
+          "dola_layers": null,
+          "diversity_penalty": 0.0,
+          "num_beam_groups": 1,
+          "constraints": null,
+          "force_words_ids": null,
+          "_from_model_config": false,
+          "transformers_version": "4.57.6"
+        },
+        "pipeline_code_sha256": "8da8f7a27afc4ff96aef8209fc2476f3cae20a506c957313de55e1e46ac257dd"
+      }
+    },
+    "last_runtime": {
+      "actual_device": "cuda:0",
+      "platform": "Linux-6.6.159+-x86_64-with-glibc2.39",
+      "processor": "x86_64",
+      "packages": {
+        "transformers": "4.57.6",
+        "torch": "2.14.1+cu130",
+        "torchvision": "0.29.1+cu130",
+        "accelerate": "1.15.0",
+        "numpy": "2.4.6",
+        "Pillow": "11.3.0"
+      },
+      "gpu_name": "Tesla T4"
+    },
+    "input": "Shared original scan line crops. Existing imports retain their historical context in settings_history."
+  }
+}
