@@ -20,16 +20,15 @@
 In this section you will be including a list of key features of your code/project.
 
 You should also include a short description of what each part of your code does. (Detailed description in the readme of each directory, if applicable)
-* /path/to/directory - function and description
-  - Key notes
+* fa26/scripts/api_data_extraction_pipeline.ipynb
+  - Connects to the Internet Archive API to download raw OCR text and page images for the directory.
+  - Configuration: Currently targets the 1916 A–O volume, though the identifier can be swapped for any volume.
+  - Text Processing: Trims front matter to start at page 161 (where residential listings begin), strips blank lines/whitespace, and exports the cleaned text as A-O_raw_lines.csv.
+  - Image Handling: Downloads page scans locally. Because of file size limits, images are excluded via .gitignore (run locally as needed or configure Git LFS before pushing to GitHub).
+* fa26/scripts/accuracy_measure_pipeline.ipynb
+  - Measures how faithfully each OCR engine reproduces hand-transcribed ground truth (GT), independent of line breaks. Both texts are normalized into word streams (removing page headers, joining hyphenated line breaks, and unifying ditto marks) and aligned via word-level edit distance—ignoring trailing OCR text past the GT boundary.
 * /path/to/script - function and description
   - Key notes
-* Lorem Ipsum - Dolor Sit Amet
-  - Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-* Duis Aute Irure Dolor
-  - Excepteur sint occaecat
-* Excepteur Sint Occaecat
-  - Curabitur efficitur, nunc non ultricies gravida, felis purus posuere eros, sed faucibus sapien est nec quam. Nulla at nisl nisl.
  
 ## How To Use
 
@@ -53,26 +52,18 @@ You will want to look into <a href="https://git-scm.com/docs/git-branch" target=
 $ git checkout -b your-branch main
 ...
 ```
-
-Open a Pull Request to dev. Add your PM and TPM as reviewers. 
-
-At the end of the semester during project wrap up open a final Pull Request to main from dev branch.
  
 ## Project Description
 
-In this section, you should include the project description, either from the client or spark.
-
-Please make sure it reflects what you see on the documents (project description) you recieved.
-
-* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Donec vel nunc at libero ultrices tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Mauris ut ligula nec risus posuere ultricies at et ligula. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-* Veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Boston city directories are annual volumes listing the city's residents and businesses published from the late 1700s through the 1980s. While the scope and detail of directories entries is variable across years and publishers, a single entry typically consists of a name, address, and occupation, with the occasional inclusion of other information, such as recent moves or work versus home addresses. The original data makes heavy use of abbreviations and shorthand text. These directories are heavily used research tools in BPL’s collection, functioning as a kind of annual city census of residents and businesses. The volumes are digitized and publicly available through the Internet Archive, but their contents exist only as unstructured OCR text: searchable as a wall of words, and not usable as data.
+This project will convert the 1916 Boston Directory into a structured, geocoded dataset. Students will extract individual entries from the digitized text, parse them into discrete fields, geocode the addresses, and analyze what the resulting dataset reveals about occupational and residential patterns in 1916 Boston. The output is intended to be loadable as a geographic layer alongside the Leventhal Center's historical map tools — where the atlases record who owned property and the directories record who actually lived there, a comparison neither source supports alone. The client has confirmed that the structured dataset is the primary goal for this semester; a reusable extraction model for other years or cities is a valuable future direction, not a deliverable here.
 
 ## Data locations
 
-In this section, you should include the location of all of your datasets for the project (if applicable)
 
 <a href="dataset-documentation">Dataset Documentation</a>
-* Location 1: [location]
-  - [description]
-* Location 2: [location]
-  - [description]
+* Location 1: fa26/data/1916 Boston Directory Vol. 1 (A–O)
+  - The text file recieved from API call to Internet Archive. OCR'd text by the Interent Archive. 
+* Location 2: fa26/data/ground_truth
+  - Ground truth datasets manually transcriped from the original documents availble on the Internet Archive.
+  
