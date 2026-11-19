@@ -1,0 +1,12 @@
+name: bpl-ocr
+channels:
+  - conda-forge
+  - nodefaults
+dependencies:
+  - python=3.11
+  - tesseract=5.3.4
+  - pip
+
+# Install the Python project separately: python -m pip install -e ./fa26
+# Pillow comes from the pinned project wheel, avoiding a different conda
+# Pillow build's native-library constraints on the historical Tesseract version.

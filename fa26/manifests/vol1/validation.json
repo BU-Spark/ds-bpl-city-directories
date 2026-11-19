@@ -1,0 +1,13 @@
+{
+  "review_date": "2026-11-18",
+  "source_url": "https://iiif.archive.org/iiif/bostonmassachuse1916112samp/manifest.json",
+  "canonical_json_sha256": "7230eddc89cbb9c6de1ce567b417ea40e18a862ad131caf64bb211f9b6bd90eb",
+  "verified_access_canvases": 1538,
+  "checks": [
+    "Every accessible scandata leaf matches its IIIF JP2 member",
+    "BookReader n-index matches zero-based IIIF canvas index",
+    "All accessible native widths and heights match scandata crop sizes"
+  ],
+  "visual_checks": 15,
+  "limitation": "Boundary/anomaly checks only; not an exhaustive visual classification or OCR quality assessment."
+}

@@ -1,0 +1,227 @@
+{
+  "format": "bpl-volume-manifest-v1",
+  "manifest_id": "fb7f669e132db65533a95ab87a80cd8d3c8933e83ebfd62cd7b519b78554e331",
+  "generated_at_utc": "2026-11-18T22:54:21.270918+00:00",
+  "scanned_leaves": 1544,
+  "access_pages": 1538,
+  "ocr_roles": {
+    "excluded": 173,
+    "supplementary": 1,
+    "primary": 1370
+  },
+  "sections": {
+    "non_access_scan": 6,
+    "cover": 2,
+    "front_matter_street_directory_and_city_record": 160,
+    "late_additions_and_removals": 1,
+    "abbreviations_and_general_directory": 1,
+    "general_directory": 1369,
+    "inserted_advertisement": 2,
+    "end_matter": 3
+  },
+  "primary_printed_page_range": [
+    161,
+    1534
+  ],
+  "absent_primary_printed_labels": [
+    775,
+    776,
+    777,
+    778
+  ],
+  "issues": [
+    {
+      "type": "page_label_sources_disagree",
+      "leaf_num": 12,
+      "scandata": "2",
+      "page_numbers_json": "",
+      "resolution": "Keep both; use scandata unless a documented visual override exists."
+    },
+    {
+      "type": "page_label_sources_disagree",
+      "leaf_num": 13,
+      "scandata": "3",
+      "page_numbers_json": "",
+      "resolution": "Keep both; use scandata unless a documented visual override exists."
+    },
+    {
+      "type": "page_label_sources_disagree",
+      "leaf_num": 14,
+      "scandata": "4",
+      "page_numbers_json": "",
+      "resolution": "Keep both; use scandata unless a documented visual override exists."
+    },
+    {
+      "type": "page_label_sources_disagree",
+      "leaf_num": 15,
+      "scandata": "5",
+      "page_numbers_json": "",
+      "resolution": "Keep both; use scandata unless a documented visual override exists."
+    },
+    {
+      "type": "page_label_sources_disagree",
+      "leaf_num": 16,
+      "scandata": "6",
+      "page_numbers_json": "",
+      "resolution": "Keep both; use scandata unless a documented visual override exists."
+    },
+    {
+      "type": "page_label_sources_disagree",
+      "leaf_num": 17,
+      "scandata": "7",
+      "page_numbers_json": "",
+      "resolution": "Keep both; use scandata unless a documented visual override exists."
+    },
+    {
+      "type": "page_label_sources_disagree",
+      "leaf_num": 18,
+      "scandata": "8",
+      "page_numbers_json": "",
+      "resolution": "Keep both; use scandata unless a documented visual override exists."
+    },
+    {
+      "type": "page_label_sources_disagree",
+      "leaf_num": 19,
+      "scandata": "9",
+      "page_numbers_json": "",
+      "resolution": "Keep both; use scandata unless a documented visual override exists."
+    },
+    {
+      "type": "page_label_sources_disagree",
+      "leaf_num": 20,
+      "scandata": "10",
+      "page_numbers_json": "",
+      "resolution": "Keep both; use scandata unless a documented visual override exists."
+    },
+    {
+      "type": "page_label_sources_disagree",
+      "leaf_num": 21,
+      "scandata": "11",
+      "page_numbers_json": "",
+      "resolution": "Keep both; use scandata unless a documented visual override exists."
+    },
+    {
+      "type": "page_label_sources_disagree",
+      "leaf_num": 22,
+      "scandata": "12",
+      "page_numbers_json": "",
+      "resolution": "Keep both; use scandata unless a documented visual override exists."
+    },
+    {
+      "type": "page_label_sources_disagree",
+      "leaf_num": 23,
+      "scandata": "13",
+      "page_numbers_json": "",
+      "resolution": "Keep both; use scandata unless a documented visual override exists."
+    },
+    {
+      "type": "page_label_sources_disagree",
+      "leaf_num": 24,
+      "scandata": "14",
+      "page_numbers_json": "",
+      "resolution": "Keep both; use scandata unless a documented visual override exists."
+    },
+    {
+      "type": "page_label_sources_disagree",
+      "leaf_num": 25,
+      "scandata": "15",
+      "page_numbers_json": "",
+      "resolution": "Keep both; use scandata unless a documented visual override exists."
+    },
+    {
+      "type": "page_label_sources_disagree",
+      "leaf_num": 26,
+      "scandata": "16",
+      "page_numbers_json": "",
+      "resolution": "Keep both; use scandata unless a documented visual override exists."
+    },
+    {
+      "type": "scandata_label_gap",
+      "before_leaf": 26,
+      "after_leaf": 27,
+      "before_label": 16,
+      "after_label": 19,
+      "meaning": "A metadata pagination discontinuity; not automatically proof of missing physical pages."
+    },
+    {
+      "type": "page_label_sources_disagree",
+      "leaf_num": 27,
+      "scandata": "19",
+      "page_numbers_json": "",
+      "resolution": "Keep both; use scandata unless a documented visual override exists."
+    },
+    {
+      "type": "page_label_sources_disagree",
+      "leaf_num": 28,
+      "scandata": "20",
+      "page_numbers_json": "",
+      "resolution": "Keep both; use scandata unless a documented visual override exists."
+    },
+    {
+      "type": "page_label_sources_disagree",
+      "leaf_num": 29,
+      "scandata": "21",
+      "page_numbers_json": "",
+      "resolution": "Keep both; use scandata unless a documented visual override exists."
+    },
+    {
+      "type": "scandata_label_gap",
+      "before_leaf": 160,
+      "after_leaf": 161,
+      "before_label": 152,
+      "after_label": 159,
+      "meaning": "A metadata pagination discontinuity; not automatically proof of missing physical pages."
+    },
+    {
+      "type": "page_label_sources_disagree",
+      "leaf_num": 161,
+      "scandata": "159",
+      "page_numbers_json": "153",
+      "resolution": "Keep both; use scandata unless a documented visual override exists."
+    },
+    {
+      "type": "visual_label_override",
+      "leaf_num": 161,
+      "scandata": "159",
+      "printed_page": "153–159"
+    },
+    {
+      "type": "page_label_sources_disagree",
+      "leaf_num": 162,
+      "scandata": "160",
+      "page_numbers_json": "154",
+      "resolution": "Keep both; use scandata unless a documented visual override exists."
+    },
+    {
+      "type": "page_label_sources_disagree",
+      "leaf_num": 163,
+      "scandata": "161",
+      "page_numbers_json": "155",
+      "resolution": "Keep both; use scandata unless a documented visual override exists."
+    },
+    {
+      "type": "scandata_label_gap",
+      "before_leaf": 776,
+      "after_leaf": 777,
+      "before_label": 774,
+      "after_label": 779,
+      "meaning": "A metadata pagination discontinuity; not automatically proof of missing physical pages."
+    },
+    {
+      "type": "page_label_sources_disagree",
+      "leaf_num": 777,
+      "scandata": "779",
+      "page_numbers_json": "",
+      "resolution": "Keep both; use scandata unless a documented visual override exists."
+    },
+    {
+      "type": "page_label_sources_disagree",
+      "leaf_num": 783,
+      "scandata": "783",
+      "page_numbers_json": "",
+      "resolution": "Keep both; use scandata unless a documented visual override exists."
+    }
+  ],
+  "scope_note": "Boundary and anomaly checks, not an exhaustive visual classification of every page. Directory entries include firms and deceased/removed people as well as residents; individual records need later parsing.",
+  "ocr_completion": "No OCR completion is implied by source-manifest inclusion."
+}

@@ -1,0 +1,2 @@
+# Preserve hashed code/configuration/source snapshots across Git checkouts.
+* -text
