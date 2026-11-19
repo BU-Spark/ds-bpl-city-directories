@@ -1,87 +1,169 @@
-# BPL OCR · printed pages 161–167
+# 1916 Boston Directory · Vol. 1 (A–O)
 
-One hosted Colab notebook and one shared Python file produce line-by-line OCR
-from the same seven scans. Select Tesseract, dots.mocr, EasyOCR, PaddleOCR English
-v5, or Qwen3-VL-2B. This workflow outputs recognized text only.
+Portable **Python CLI + Tesseract on CPU** for source-traceable directory OCR.
+Start here; `bpl-ocr` is the single active entry point. No Colab is required.
 
-```text
-scripts/ocr_colab.ipynb       The single OCR entry point
-scripts/ocr_pipeline.py       Shared source loading, five models, resume and export
-data/ocr/source/              Seven original JPEGs and one shared coordinate index
-data/ocr/results/lines.csv    Five model text columns plus sources
-data/ocr/results/models.json  Model revisions/settings and historical contexts
-data/ocr/results/status.json  Completed/empty/failed/unrun counts, not accuracy
-data/ocr/results/raw/         Exact responses and retained original native logs
-tests/test_ocr_pipeline.py    Integrity tests using fake recognizers
-```
+## Progress
 
-## Run in Colab
+| Stage | Status | Evidence / next task |
+| --- | --- | --- |
+| Model selection and cleanup | Complete | [Five-model evidence](archive/model_comparison/README.md) |
+| 1. Source scope and manifest | Complete, with recorded source gaps | [Scope and pagination findings](manifests/vol1/README.md) |
+| 2. Environment and single-page CLI | Complete on macOS arm64 | [Real page-162 run](examples/leaf0164/README.md) |
+| 3. Diverse 10–20 page review | Next | Columns, margins, line boundaries and reading order |
+| 4. Batch/recovery validation | Planned | 50–100 pages, interruption, retries and resource sampling |
+| 5. Full A–O OCR | Planned | Every target page accounted for; report gaps and failures |
+| 6. OCR delivery | Planned | Documented data package for entry extraction |
 
-1. Upload `scripts/ocr_colab.ipynb` to hosted Colab. Set `ENGINE` in section 1.
-   Use a fresh runtime per model. Dots and Qwen require GPU; EasyOCR uses an
-   available GPU; Tesseract and this Paddle setup use CPU. No API key is needed.
-2. Upload a ZIP of `data/ocr/`, or the latest ZIP downloaded by the notebook.
-   It contains `source/` and `results/`. Transfer ZIPs are generated on demand,
-   rather than stored beside duplicate folders in the repository.
-3. `MAX_NEW_LINES = None` processes all remaining target lines; use `6` for a
-   short trial. `FORCE = False` keeps completed outputs and retries empty,
-   failed or truncated lines. `FORCE = True` recognizes target lines again;
-   earlier raw responses and their original settings remain in the log.
-4. Download the common output ZIP in section 4. Upload that latest ZIP for the
-   next model to accumulate outputs. After interrupting, download a checkpoint
-   before Colab discards its VM.
+**Full-volume OCR is not complete.** The CLI currently recognizes one explicitly
+requested scanned leaf per invocation. Batching and automatic continuation are
+stage 4; entry parsing and geocoding are later work.
 
-No OCR is installed on the user's Mac. Weights stay outside the source/results
-folder and are excluded from the exported ZIP. Each model sees only line images;
-no previous OCR text, name lists or corrections enter recognition.
+## Source and baseline
 
-## Sources and output
+The [source inventory](manifests/vol1/pages.csv) covers 1,544 scanned leaves:
+**1,370 primary directory pages + one supplementary additions/removals page**
+are selected for future OCR; 173 other scans are excluded. The primary section
+runs from printed p161 to p1534. Absent printed labels 775–778 and two inserted
+advertisements are documented in the [scope notes](manifests/vol1/README.md).
+Primary inclusion is not resident inclusion: firms, deaths and removals also
+appear in the general directory. A detected OCR line is not one person.
 
-`source/p161.jpg` through `p167.jpg` are the complete original scans. Hashes,
-dimensions, source URLs and frozen line geometry are kept in `source/index.json`.
-Crops exist in memory only. The index retains **1,737** historical detections;
-the public CSV has **1,573** rows. Page 161 includes only its lower directory body
-(`1645 <= original y0 < 2678`); pages 162–167 retain their existing detections.
-All models share the same coordinates/order, including any detection mistakes.
-One row is a detected scan line, not a verified physical line or a person.
+Selected configuration: **Tesseract 5.3.4, English tessdata_best, OEM 1,
+full-page PSM 3**, grayscale, 2× Lanczos, 10 px white border; Pillow 11.3.0.
+[config/vol1.json](config/vol1.json) pins the English-model revision and SHA-256.
+The CLI checks versions and weights. No extra thresholding, denoising, field
+parsing or text correction is applied.
 
-The CSV has exactly these columns:
+## Setup
 
-```text
-tesseract_text,mocr_text,easyocr_text,paddleocr_text,qwen_text,sources
-```
-
-All rows remain, including unrun/failed cases. CSV whitespace is collapsed;
-exact raw strings and statuses stay internal. `sources` links to the book page.
-Existing Tesseract/mOCR outputs and native logs were migrated without rerunning.
-Historical Tesseract used full-page PSM 3; new Tesseract recognition uses shared
-line crops with PSM 7. This distinction remains in `models.json`. Existing mOCR
-used the same shared crops. The other three models have not yet produced BPL
-predictions. Blank cells are explained by `status.json` and raw records.
-
-This workflow does not expand ditto, fix spelling, merge people, parse fields,
-score accuracy, create human reference forms or geocode.
-
-## Maintenance
-
-The notebook embeds the exact shared Python source. Regenerate after edits:
+Run from the repository root. Conda installs Python and the native OCR engine;
+the Python project separately installs its pinned Pillow wheel.
 
 ```sh
-python fa26/scripts/ocr_pipeline.py --notebook
-python -m unittest discover -s fa26/tests -v
-python fa26/scripts/ocr_pipeline.py --pack fa26/data/ocr --output /tmp/bpl_ocr.zip
+conda env create --prefix .runtime/env --file fa26/environment.yml
+conda run --prefix .runtime/env python -m pip install -e ./fa26
+conda run --prefix .runtime/env bpl-ocr --help
 ```
 
-`requirements.txt` contains only lightweight validation dependencies. Model
-packages are installed by Colab. Tests use fake recognizers; new model inference
-still needs a Colab smoke test. Paddle explicitly uses its English v5 recognizer.
+Mamba/Micromamba can use the same specification. For Micromamba, use
+`micromamba create --yes --prefix .runtime/env --file fa26/environment.yml`
+and `micromamba run --prefix .runtime/env ...` for commands.
+This workspace was validated using Micromamba 2.3.3; the local executables
+`.runtime/bin/micromamba` and `.runtime/env/bin/bpl-ocr` are already available.
+They are ignored by Git and are not required in a fresh checkout.
 
-Teammate materials remain separate: `scripts/api_look.ipynb` is the original
-fetch exploration; `data/1916 Boston Directory Vol. 1 (A–O)/` contains original
-OCR text datasets. They are not additional OCR pipeline entry points.
+[environment.yml](environment.yml) specifies the cross-platform dependencies.
+[locks/osx-arm64.explicit.txt](locks/osx-arm64.explicit.txt) additionally pins
+all 39 native package builds and SHA-256s used on this Mac. Another Apple Silicon
+Mac can pass that explicit file to the environment creation command, then
+install the Python project. Linux uses the environment specification and records
+its native-library build; Linux execution has not yet been validated.
 
-Official sources: [Tesseract](https://tesseract-ocr.github.io/tessdoc/ImproveQuality.html),
-[dots.mocr](https://huggingface.co/dots-studio/dots.mocr),
-[EasyOCR](https://www.jaided.ai/easyocr/documentation/),
-[Paddle English](https://huggingface.co/PaddlePaddle/en_PP-OCRv5_mobile_rec),
-[Qwen3-VL-2B](https://huggingface.co/Qwen/Qwen3-VL-2B-Instruct).
+## Commands
+
+Build the manifest from checked-in source snapshots, without network access:
+
+```sh
+conda run --prefix .runtime/env bpl-ocr manifest --config fa26/config/vol1.json --output fa26/manifests/vol1 --offline
+```
+
+Check versions and download/verify the pinned English weights:
+
+```sh
+conda run --prefix .runtime/env bpl-ocr doctor --config fa26/config/vol1.json --work-dir fa26/work
+```
+
+Recognize **one page**: printed 162 = scanned leaf 164 = BookReader n163.
+
+```sh
+conda run --prefix .runtime/env bpl-ocr ocr-page --manifest fa26/manifests/vol1/manifest.json --leaf 164 --work-dir fa26/work
+```
+
+`--leaf` means IA scandata `leafNum`, never the printed page or reader n-index.
+Out-of-scope leaves are rejected. Each requested JPEG is fetched at the native
+processed-JP2 crop width; actual dimensions and its SHA-256 receipt are checked.
+The full JP2 ZIP is not downloaded. Historical OCR text never enters recognition.
+
+Use `manifest --refresh` instead of `--offline` to intentionally refresh public
+metadata; review the changed manifest. Both `doctor` and `ocr-page` accept
+`--tesseract /path/to/tesseract` when the binary is outside the active environment.
+Commands also work as `python -m bpl_ocr` after installing the project.
+
+## Layout and outputs
+
+```text
+fa26/
+  config/vol1.json             Source scope and fixed settings
+  manifests/vol1/              Source snapshots, page inventory and scope checks
+  src/bpl_ocr/                 Active Python implementation and CLI
+  tests/                      Offline integrity/failure tests
+  examples/leaf0164/           One real new CLI run for review
+  archive/model_comparison/   Completed experiment evidence, read-only
+  work/                      Local downloads, weights and runs; ignored by Git
+```
+
+Each invocation creates `work/runs/<volume>/<run_id>/` with:
+
+- `raw/page.txt`, `raw/page.tsv`, `raw/page.hocr`: exact native outputs.
+- `raw/stderr.txt`, `raw/stdout.txt`: engine logs.
+- `lines.csv`: text, original-JPEG boxes, native reading order, IDs and sources.
+- `run.json`: source/config/code hashes, actual build/hardware, output checksums,
+  stage timings and completed/empty/failed/interrupted status.
+
+Source images and weights are cached, but OCR outputs are not overwritten or
+silently skipped. Failed attempts retain their records. Automatic retry/resume
+and sampled peak RAM are not implemented yet.
+
+Line boxes are unions of recognized word boxes, transformed back from the
+2×/10 px bordered image. Raw TSV/HOCR keep processed-image coordinates.
+`reading_order` preserves native TSV encounter order and is not verified column
+order. IDs belong to the page and settings; changes to code/build/segmentation
+can change IDs. `mean_word_confidence` averages nonnegative word scores on a
+0–100 scale; it is **not accuracy**. `line_scope` marks the mixed first-page
+abbreviation area but does not classify all margins or individual entries.
+
+The new ARM/native-library build is not byte-identical to historical Colab.
+The one-page example validates execution; stage 3 must verify cross-page quality.
+
+## Validation
+
+```sh
+conda run --prefix .runtime/env python -m unittest discover -s fa26/tests -v
+```
+
+Tests cover pagination/index differences, ads and supplementary scope, offline
+rebuilds and hashes, accidental PSM 7, TSV quote/column order, inverse coordinates,
+source corruption, failed processes and the evidence/example checksums. Tests do
+not replace real OCR or the team's separate ground-truth evaluation.
+
+## Optional container
+
+The [Dockerfile](Dockerfile) follows the upstream
+[Micromamba container workflow](https://micromamba-docker.readthedocs.io/en/latest/quick_start.html).
+Docker is not installed on this Mac, so the container is **not build-tested**.
+Target Linux/amd64 for this historical Tesseract release:
+
+```sh
+docker build --platform linux/amd64 -f fa26/Dockerfile -t bpl-ocr .
+docker run --rm --platform linux/amd64 bpl-ocr --help
+```
+
+For recognition, mount a writable data directory and pass its container path
+as `--work-dir` so downloads and results persist.
+
+## Git and shared data
+
+Commit code, configuration/environment, manifests, docs, tests, the small CLI
+example and the comparison evidence. `.runtime/`, `fa26/work/`, model weights
+and new production scans/results are ignored. Choose the team's shared data
+location before stage 4; an ignored local directory alone does not share data.
+
+The duplicate two-model package and Colab entry points were retired. The
+[comparison archive](archive/model_comparison/README.md) retains all five outputs,
+seven scans, raw responses, settings, method and qualitative findings.
+Teammate `scripts/api_look.ipynb` and original IA text under
+`data/1916 Boston Directory Vol. 1 (A–O)/` remain unchanged as reference materials.
+Project documents and presentations are maintained in the parent workspace.
+
+Reference: [Tesseract outputs and PSM](https://tesseract-ocr.github.io/tessdoc/Command-Line-Usage.html).

@@ -1,9 +1,12 @@
 *_jp2.zip
 *_orig_jp2.tar
 
-# Transfer ZIPs/model weights stay outside the canonical source folder.
-/data/ocr/*.zip
-/data/ocr_model_cache/
+# Production downloads, model weights, checkpoints and full OCR outputs.
+/work/
+/.venv/
+/build/
+/dist/
+*.egg-info/
 *.part
 __pycache__/
 .DS_Store

@@ -1,2 +1,7 @@
 # macOS folder metadata (all directories).
 .DS_Store
+
+# Local runtimes and caches are reproducible from fa26/environment.yml.
+/.runtime/
+/.venv/
+/.cache/

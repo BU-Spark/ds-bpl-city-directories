@@ -1,0 +1,10 @@
+.git/
+.runtime/
+.venv/
+**/__pycache__/
+**/*.egg-info/
+fa26/work/
+fa26/data/
+fa26/archive/
+fa26/examples/
+fa26/scripts/
