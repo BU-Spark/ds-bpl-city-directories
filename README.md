@@ -95,13 +95,13 @@ Volume 1 includes **1,370 primary pages + one supplementary page**. Scanned leav
 supplementary additions/removals page; p161 mixes abbreviations and directory
 text. The absent printed labels 775–778 remain documented source gaps.
 
-The master page list is `fa26/plans/1916/pages.csv`; `project.json` pins all 14
-batch plans. Page identity always includes the volume and scanned leaf, rather
-than relying on printed labels. Detailed source scope is in
-`fa26/manifests/vol1/README.md`.
+`fa26/plans/1916/project.json` pins all 14 batch plans.
+`fa26/manifests/vol1/manifest.json` contains page identities, printed labels,
+source URLs and inclusion flags. Identity includes the volume and scanned leaf.
 
-This bundle contains source code, environment specification, source snapshots,
-fixed model settings and assignment plans. Historical comparisons, old pilots,
-cached images/weights and previous OCR results are excluded. `CHECKSUMS.json`
-checks bundle integrity at startup. The development pipeline passed 36 offline
-tests; the exported bundle is also checked after ZIP extraction.
+This run-only bundle contains the runtime code, environment specification, fixed
+model configuration, source-page manifest and 14 batch plans. Source-scope
+rebuilding snapshots, visual-review tools, development locks and old evidence
+remain in the main project. `CHECKSUMS.json` checks bundle integrity at startup.
+The development pipeline passed 36 offline tests; the slim bundle is separately
+verified after ZIP extraction, including setup/status/queue command handling.
