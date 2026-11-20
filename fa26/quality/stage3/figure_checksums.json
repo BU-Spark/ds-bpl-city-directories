@@ -1,0 +1,24 @@
+{
+  "renderer_sha256": "d518607d5b2ef35ff6c34be73779b3f61d2a8bcfabef99e02aed16b7f7382d38",
+  "images": {
+    "leaf0162_bands.jpg": "332dad119d0bc1f6a0bb96e5de6ee8401310ea6dc4c1a0277b089829350db13b",
+    "leaf0163_bands.jpg": "66ede451012333fff274e2738f66ed87d551a69b05e3eefb11dfc9d38bac2171",
+    "leaf0164_bands.jpg": "a744c33892178827f694d78a7d727f3a7872432075d24ff1c15603a5d2bc9da7",
+    "leaf0302_bands.jpg": "dbbfebce114340191ad201c532ee396f33e3d796b8f88da278118a1113e1ae5a",
+    "leaf0514_bands.jpg": "a79d78605b68e7321cc58d06f566525684df3ba1b55dff83e647f11ee6748982",
+    "leaf0515_bands.jpg": "1e692df159732ece6c047a38b4a0f82ab758433aa18740353659ff59912ad0d7",
+    "leaf0776_bands.jpg": "e967f083d40e2099013d7f47f25ec67146a985c55925e45b759577da7f6d9277",
+    "leaf0777_bands.jpg": "8ffe617ee8b0c86bba1eece00df614b7fdf1ac66241e971ad7d29cc29de652f3",
+    "leaf0780_bands.jpg": "f8984ce0d2ba8bdc2cb1e6a1b4636307599f8d5eafdcb053ee347f23e4d6b7df",
+    "leaf0783_bands.jpg": "1a9f4d0499cbd232cc689d860cd5d99d6dced7a3b3b69a4352bc62d093dc5640",
+    "leaf1000_bands.jpg": "6efb4dc077a7413d266c0dfbd63e9db3e61081d8d04cc8345ff79224ad4e3acd",
+    "leaf1001_bands.jpg": "ced192669ad13f224e23e6f65c2b588e7a18007dd08c2124eb7aa84726b98bf3",
+    "leaf1200_bands.jpg": "7708bf26d849193f53960eea7d88a77eca27cd1d437918800f0c18b61c94aca5",
+    "leaf1201_bands.jpg": "31783192d42d25a0e3a670f68e75a8644b2997ee3c5e688ea160f5a3fdc96375",
+    "leaf1533_bands.jpg": "e06c3548e35a50f10188ef72192f45a8511caeb7a03f336b3a04d8064d6043a9",
+    "leaf1534_bands.jpg": "ab921899c24b43b4ecfcb0a713a1b020f0abe37c28c2ef0e0687eb7e3db32906",
+    "overview_1.jpg": "3c0d7a37ea45c111658b0ddd2f2a03c83833411a7db9440ce3718b784f968a76",
+    "overview_2.jpg": "a04150025ed1faf8bcd7def1195e7b850c3d9168f93662a0608f99bd2a6dbdfd"
+  },
+  "display_note": "Source crops preserve native color and pixels before JPEG report encoding. Overviews are resized overlays. OCR lines remain unchanged; cropped bands are not exhaustive ground truth."
+}

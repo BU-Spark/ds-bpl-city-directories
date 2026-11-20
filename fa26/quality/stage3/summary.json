@@ -1,0 +1,30 @@
+{
+  "format": "bpl-cross-page-review-v1",
+  "manifest_id": "fb7f669e132db65533a95ab87a80cd8d3c8933e83ebfd62cd7b519b78554e331",
+  "review_date": "2026-11-19",
+  "sampling": "Purposive diagnostic sample fixed before this pilot; not a probability sample or ground-truth accuracy evaluation.",
+  "pages": 16,
+  "detected_lines": 3681,
+  "recognized_words": 24285,
+  "source_retrieval_methods": {
+    "iiif_native_or_verified_cache": 14,
+    "bookreader_native_alias": 2
+  },
+  "diagnostic_code_sha256": "cabc4be76b9c9b72c0e620575418d9e686992bdf87bbbd0533cd1c769d09fbd9",
+  "diagnostic_policy": {
+    "low_word_confidence_threshold": 50,
+    "vertical_shape": "width <= max(45, 0.035*page_width), height >= max(65, 2.5*median_text_height), height > 2.5*width",
+    "tall_line_height_ratio": 1.65,
+    "order_backtrack_height_ratio": 0.75,
+    "automatic_text_edits": false
+  },
+  "verified_integrity_pages": 16,
+  "engine_seconds": 179.795,
+  "flag_counts": {
+    "header_candidate": 24,
+    "vertical_symbol_candidate": 83,
+    "tall_line_candidate": 176,
+    "order_backtrack_candidate": 40
+  },
+  "meaning": "Automated diagnostic candidates, not verified error counts, accuracy, resident counts or exhaustive line coverage. Manual findings are recorded separately."
+}

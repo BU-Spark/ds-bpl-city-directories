@@ -56,7 +56,7 @@ def write_csv(path, rows, fields):
     atomic_bytes(path, handle.getvalue().encode("utf-8-sig"))
 
 
-def download(url, destination, *, expected_sha256=None, expected_md5=None, max_bytes=30_000_000):
+def download(url, destination, *, expected_sha256=None, expected_md5=None, max_bytes=30_000_000, timeout=60):
     """Download to a temporary file; publish only a complete, checked response."""
     destination = Path(destination)
     destination.parent.mkdir(parents=True, exist_ok=True)
@@ -66,7 +66,8 @@ def download(url, destination, *, expected_sha256=None, expected_md5=None, max_b
     size = 0
     try:
         request = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
-        with os.fdopen(descriptor, "wb") as handle, urllib.request.urlopen(request, timeout=60) as response:
+        with os.fdopen(descriptor, "wb") as handle, urllib.request.urlopen(request, timeout=timeout) as response:
+            final_url = response.geturl()
             declared = response.headers.get("Content-Length")
             if declared and int(declared) > max_bytes:
                 raise ValueError("Download exceeds the documented size limit: " + url)
@@ -86,7 +87,7 @@ def download(url, destination, *, expected_sha256=None, expected_md5=None, max_b
         if expected_md5 and md5.hexdigest() != expected_md5:
             raise ValueError("IA file MD5 mismatch: " + url)
         os.replace(temporary, destination)
-        return {"sha256": digest.hexdigest(), "bytes": size}
+        return {"sha256": digest.hexdigest(), "bytes": size, "request_url": url, "final_url": final_url}
     finally:
         Path(temporary).unlink(missing_ok=True)
 

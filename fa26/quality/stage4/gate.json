@@ -1,0 +1,16 @@
+{
+  "format": "bpl-stage4-gate-v1",
+  "status": "complete_with_conditions",
+  "checks": {
+    "60_planned_native_captures_completed_and_accounted_for": true,
+    "all_source_output_export_coordinate_checks": true,
+    "uniform_capture_settings_and_recognition_code": true,
+    "systematic_cross_column_page_518_quarantined": true,
+    "all_native_rows_carried_into_flags_without_duplicates": true,
+    "resources_present_and_no_tree_enumeration_failures": true,
+    "live_interrupt_child_cleanup_and_retained_completed_ids": true,
+    "repeat_command_added_no_attempts_or_runs": true,
+    "offline_diagnostics_separated_from_immutable_capture": true
+  },
+  "next_scope": "Stage 5 raw capture with quarantine only after separate authorization and a durable team data plan. Leaf 518 layout repair, entry reconstruction and separate ground-truth evaluation remain later work."
+}

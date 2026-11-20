@@ -1,0 +1,3341 @@
+[
+  {
+    "region_id": "leaf0162-L-top",
+    "leaf_num": 162,
+    "printed_page": "160",
+    "bbox": [
+      124,
+      1185,
+      869,
+      1295
+    ],
+    "gutter_x": 869,
+    "image_sha256": "953848c4cc28b612840109cfeab67d0de08b86cbc290c5dc42e5c92fed0386bd",
+    "line_ids": [
+      "boston-1916-vol1-ao-leaf0162:9e6356fe2329:b0005-p0001-l0001",
+      "boston-1916-vol1-ao-leaf0162:9e6356fe2329:b0005-p0001-l0002",
+      "boston-1916-vol1-ao-leaf0162:9e6356fe2329:b0005-p0001-l0003"
+    ],
+    "reading_orders": [
+      5,
+      6,
+      7
+    ],
+    "ocr_lines": [
+      "Algonquin Mineral Spring Co 180 State",
+      "Anderson Sidney O steno Jamaica Plain Trust Co",
+      "678 Centre J P bds 79 VanWinkle Dor"
+    ]
+  },
+  {
+    "region_id": "leaf0162-R-top",
+    "leaf_num": 162,
+    "printed_page": "160",
+    "bbox": [
+      869,
+      1185,
+      1560,
+      1295
+    ],
+    "gutter_x": 869,
+    "image_sha256": "953848c4cc28b612840109cfeab67d0de08b86cbc290c5dc42e5c92fed0386bd",
+    "line_ids": [
+      "boston-1916-vol1-ao-leaf0162:9e6356fe2329:b0006-p0001-l0001",
+      "boston-1916-vol1-ao-leaf0162:9e6356fe2329:b0006-p0001-l0002",
+      "boston-1916-vol1-ao-leaf0162:9e6356fe2329:b0006-p0002-l0001"
+    ],
+    "reading_orders": [
+      35,
+      36,
+      37
+    ],
+    "ocr_lines": [
+      "Duffy Michael supt heat control 1007 City Hall",
+      "annex bds 8 Bowdoin",
+      "EAGLE OIL & SUPPLY CO C N Goward pres"
+    ]
+  },
+  {
+    "region_id": "leaf0162-L-middle",
+    "leaf_num": 162,
+    "printed_page": "160",
+    "bbox": [
+      124,
+      1655,
+      869,
+      1765
+    ],
+    "gutter_x": 869,
+    "image_sha256": "953848c4cc28b612840109cfeab67d0de08b86cbc290c5dc42e5c92fed0386bd",
+    "line_ids": [
+      "boston-1916-vol1-ao-leaf0162:9e6356fe2329:b0005-p0005-l0002",
+      "boston-1916-vol1-ao-leaf0162:9e6356fe2329:b0005-p0006-l0001",
+      "boston-1916-vol1-ao-leaf0162:9e6356fe2329:b0005-p0007-l0001",
+      "boston-1916-vol1-ao-leaf0162:9e6356fe2329:b0005-p0007-l0002"
+    ],
+    "reading_orders": [
+      19,
+      20,
+      21,
+      22
+    ],
+    "ocr_lines": [
+      "from 18 Tremont rm 1126",
+      "Civian David (Boston Stocking Co) 77 Bedford",
+      "CLARK CHARLES 8S district sales mgr Pennsyl-",
+      "vania Steel Co 70 Kilby rm 12 h at E Dux-"
+    ]
+  },
+  {
+    "region_id": "leaf0162-R-middle",
+    "leaf_num": 162,
+    "printed_page": "160",
+    "bbox": [
+      869,
+      1655,
+      1560,
+      1765
+    ],
+    "gutter_x": 869,
+    "image_sha256": "953848c4cc28b612840109cfeab67d0de08b86cbc290c5dc42e5c92fed0386bd",
+    "line_ids": [
+      "boston-1916-vol1-ao-leaf0162:9e6356fe2329:b0006-p0010-l0001",
+      "boston-1916-vol1-ao-leaf0162:9e6356fe2329:b0006-p0011-l0001",
+      "boston-1916-vol1-ao-leaf0162:9e6356fe2329:b0006-p0012-l0001",
+      "boston-1916-vol1-ao-leaf0162:9e6356fe2329:b0006-p0013-l0001"
+    ],
+    "reading_orders": [
+      49,
+      50,
+      51,
+      52
+    ],
+    "ocr_lines": [
+      "International Instrument Co 353 Western av Br",
+      "Inter-Trust Security Co 15 Exchange",
+      "Jamerson Charles R pres 453 Wash h at B'line",
+      "Jamerson Clothes Shops Inc 453 Wash"
+    ]
+  },
+  {
+    "region_id": "leaf0162-L-bottom",
+    "leaf_num": 162,
+    "printed_page": "160",
+    "bbox": [
+      124,
+      2130,
+      869,
+      2240
+    ],
+    "gutter_x": 869,
+    "image_sha256": "953848c4cc28b612840109cfeab67d0de08b86cbc290c5dc42e5c92fed0386bd",
+    "line_ids": [
+      "boston-1916-vol1-ao-leaf0162:9e6356fe2329:b0005-p0012-l0002"
+    ],
+    "reading_orders": [
+      34
+    ],
+    "ocr_lines": [
+      "Plan Co 40 Court 2d floor h at Waltham"
+    ]
+  },
+  {
+    "region_id": "leaf0162-R-bottom",
+    "leaf_num": 162,
+    "printed_page": "160",
+    "bbox": [
+      869,
+      2130,
+      1560,
+      2240
+    ],
+    "gutter_x": 869,
+    "image_sha256": "953848c4cc28b612840109cfeab67d0de08b86cbc290c5dc42e5c92fed0386bd",
+    "line_ids": [
+      "boston-1916-vol1-ao-leaf0162:9e6356fe2329:b0008-p0003-l0002"
+    ],
+    "reading_orders": [
+      64
+    ],
+    "ocr_lines": [
+      "mfrs agents 40 Central rm 400"
+    ]
+  },
+  {
+    "region_id": "leaf0163-L-top",
+    "leaf_num": 163,
+    "printed_page": "161",
+    "bbox": [
+      30,
+      1650,
+      767,
+      1760
+    ],
+    "gutter_x": 767,
+    "image_sha256": "a5949b1fb596c5acf388234964917e096908584e8ade49a75341d6a835c86f3d",
+    "line_ids": [
+      "boston-1916-vol1-ao-leaf0163:9e6356fe2329:b0014-p0001-l0001",
+      "boston-1916-vol1-ao-leaf0163:9e6356fe2329:b0014-p0001-l0002",
+      "boston-1916-vol1-ao-leaf0163:9e6356fe2329:b0014-p0001-l0003",
+      "boston-1916-vol1-ao-leaf0163:9e6356fe2329:b0014-p0001-l0004",
+      "boston-1916-vol1-ao-leaf0163:9e6356fe2329:b0014-p0001-l0005"
+    ],
+    "reading_orders": [
+      163,
+      164,
+      165,
+      166,
+      167
+    ],
+    "ocr_lines": [
+      "AA Wire Co insulated wire and cables 93 Fed-",
+      "era.",
+      "A B Mfg Co (Abe Borans, H F Brennan) chil-",
+      "dren's dresses 27 Kingston",
+      "A B SEE ELECTRIC ELEVATOR CO J R"
+    ]
+  },
+  {
+    "region_id": "leaf0163-R-top",
+    "leaf_num": 163,
+    "printed_page": "161",
+    "bbox": [
+      767,
+      1650,
+      1452,
+      1760
+    ],
+    "gutter_x": 767,
+    "image_sha256": "a5949b1fb596c5acf388234964917e096908584e8ade49a75341d6a835c86f3d",
+    "line_ids": [
+      "boston-1916-vol1-ao-leaf0163:9e6356fe2329:b0016-p0001-l0001",
+      "boston-1916-vol1-ao-leaf0163:9e6356fe2329:b0017-p0001-l0001",
+      "boston-1916-vol1-ao-leaf0163:9e6356fe2329:b0017-p0001-l0002",
+      "boston-1916-vol1-ao-leaf0163:9e6356fe2329:b0017-p0001-l0003",
+      "boston-1916-vol1-ao-leaf0163:9e6356fe2329:b0017-p0001-l0004"
+    ],
+    "reading_orders": [
+      207,
+      208,
+      209,
+      210,
+      211
+    ],
+    "ocr_lines": [
+      "Aaronson Abraham M laborer bds 177 Magnolia",
+      "or",
+      "« Barnard died Aug 31 1915",
+      "« David A clerk bds 177 Magnolia Dor",
+      "« Harry A clerk 368 Wash bds 37 North Russell"
+    ]
+  },
+  {
+    "region_id": "leaf0163-L-middle",
+    "leaf_num": 163,
+    "printed_page": "161",
+    "bbox": [
+      30,
+      2106,
+      767,
+      2216
+    ],
+    "gutter_x": 767,
+    "image_sha256": "a5949b1fb596c5acf388234964917e096908584e8ade49a75341d6a835c86f3d",
+    "line_ids": [
+      "boston-1916-vol1-ao-leaf0163:9e6356fe2329:b0014-p0001-l0020",
+      "boston-1916-vol1-ao-leaf0163:9e6356fe2329:b0014-p0001-l0021",
+      "boston-1916-vol1-ao-leaf0163:9e6356fe2329:b0014-p0001-l0022",
+      "boston-1916-vol1-ao-leaf0163:9e6356fe2329:b0014-p0001-l0023",
+      "boston-1916-vol1-ao-leaf0163:9e6356fe2329:b0014-p0001-l0024",
+      "boston-1916-vol1-ao-leaf0163:9e6356fe2329:b0014-p0001-l0025"
+    ],
+    "reading_orders": [
+      182,
+      183,
+      184,
+      185,
+      186,
+      187
+    ],
+    "ocr_lines": [
+      "« Fred cigars h 77 Empire Alls",
+      "« Harry F salesman 40 Central rm 305 bds 737",
+      "E Broadway [Broadway do",
+      "« Herman mgr 628 E Fourth S bds 737 E",
+      "« Jacob driver h 147 Chelsea E B",
+      "« Jacob L law student 40 Court rm 1002 bds"
+    ]
+  },
+  {
+    "region_id": "leaf0163-R-middle",
+    "leaf_num": 163,
+    "printed_page": "161",
+    "bbox": [
+      767,
+      2106,
+      1452,
+      2216
+    ],
+    "gutter_x": 767,
+    "image_sha256": "a5949b1fb596c5acf388234964917e096908584e8ade49a75341d6a835c86f3d",
+    "line_ids": [
+      "boston-1916-vol1-ao-leaf0163:9e6356fe2329:b0017-p0001-l0019",
+      "boston-1916-vol1-ao-leaf0163:9e6356fe2329:b0017-p0001-l0020",
+      "boston-1916-vol1-ao-leaf0163:9e6356fe2329:b0017-p0001-l0021",
+      "boston-1916-vol1-ao-leaf0163:9e6356fe2329:b0017-p0001-l0022",
+      "boston-1916-vol1-ao-leaf0163:9e6356fe2329:b0017-p0001-l0023",
+      "boston-1916-vol1-ao-leaf0163:9e6356fe2329:b0017-p0001-l0024",
+      "boston-1916-vol1-ao-leaf0163:9e6356fe2329:b0019-p0001-l0001"
+    ],
+    "reading_orders": [
+      226,
+      227,
+      228,
+      229,
+      230,
+      231,
+      251
+    ],
+    "ocr_lines": [
+      "Filippo laborer h 37 Sheafe",
+      "Francesco candymaker h 99 Prince",
+      "Francesco hostler h 43 Tileston",
+      "i barber 125A North bds 31 N Bennet",
+      "John blacksmith h 185 Bennington E B",
+      "Luigi laborer bds 11 Sheafe",
+      "SS ~~"
+    ]
+  },
+  {
+    "region_id": "leaf0163-L-bottom",
+    "leaf_num": 163,
+    "printed_page": "161",
+    "bbox": [
+      30,
+      2568,
+      767,
+      2678
+    ],
+    "gutter_x": 767,
+    "image_sha256": "a5949b1fb596c5acf388234964917e096908584e8ade49a75341d6a835c86f3d",
+    "line_ids": [
+      "boston-1916-vol1-ao-leaf0163:9e6356fe2329:b0015-p0001-l0011",
+      "boston-1916-vol1-ao-leaf0163:9e6356fe2329:b0015-p0001-l0012",
+      "boston-1916-vol1-ao-leaf0163:9e6356fe2329:b0015-p0001-l0013",
+      "boston-1916-vol1-ao-leaf0163:9e6356fe2329:b0015-p0001-l0014",
+      "boston-1916-vol1-ao-leaf0163:9e6356fe2329:b0015-p0001-l0015"
+    ],
+    "reading_orders": [
+      202,
+      203,
+      204,
+      205,
+      206
+    ],
+    "ocr_lines": [
+      "« William (Aarons & Finn) 671 Wash h 120",
+      "Warren Br [671 Wash",
+      "« & Finn (William Aarons, Harry Finn) jewelry",
+      "« & Golosov (M H Aarons, Leon Golosov)",
+      "clothing 162 Hanover"
+    ]
+  },
+  {
+    "region_id": "leaf0163-R-bottom",
+    "leaf_num": 163,
+    "printed_page": "161",
+    "bbox": [
+      767,
+      2568,
+      1452,
+      2678
+    ],
+    "gutter_x": 767,
+    "image_sha256": "a5949b1fb596c5acf388234964917e096908584e8ade49a75341d6a835c86f3d",
+    "line_ids": [
+      "boston-1916-vol1-ao-leaf0163:9e6356fe2329:b0018-p0001-l0008",
+      "boston-1916-vol1-ao-leaf0163:9e6356fe2329:b0018-p0001-l0009",
+      "boston-1916-vol1-ao-leaf0163:9e6356fe2329:b0018-p0001-l0010",
+      "boston-1916-vol1-ao-leaf0163:9e6356fe2329:b0018-p0001-l0011",
+      "boston-1916-vol1-ao-leaf0163:9e6356fe2329:b0018-p0001-l0012"
+    ],
+    "reading_orders": [
+      246,
+      247,
+      248,
+      249,
+      250
+    ],
+    "ocr_lines": [
+      "Atlantic",
+      "Abber Annie Mrs rem to Malden",
+      "Abberton James F mason h 1972 Centre W R",
+      "« Patrick driver h 1980 Centre W R",
+      "« T Frank 14 Fulton h 10 Cedar Ros"
+    ]
+  },
+  {
+    "region_id": "leaf0164-L-top",
+    "leaf_num": 164,
+    "printed_page": "162",
+    "bbox": [
+      218,
+      105,
+      945,
+      215
+    ],
+    "gutter_x": 945,
+    "image_sha256": "a1cb4acfcf4e1ed4772101e39ec96f987788f37a2774b5926d18c4b5309e6f6f",
+    "line_ids": [
+      "boston-1916-vol1-ao-leaf0164:9e6356fe2329:b0004-p0001-l0001",
+      "boston-1916-vol1-ao-leaf0164:9e6356fe2329:b0005-p0001-l0001",
+      "boston-1916-vol1-ao-leaf0164:9e6356fe2329:b0006-p0001-l0001",
+      "boston-1916-vol1-ao-leaf0164:9e6356fe2329:b0007-p0001-l0001",
+      "boston-1916-vol1-ao-leaf0164:9e6356fe2329:b0009-p0001-l0001",
+      "boston-1916-vol1-ao-leaf0164:9e6356fe2329:b0009-p0001-l0002"
+    ],
+    "reading_orders": [
+      4,
+      5,
+      6,
+      7,
+      11,
+      12
+    ],
+    "ocr_lines": [
+      "Abbetessa Tony shoemaker 2253 Dorchester av",
+      "Dor h at Camb [field",
+      "Abbey Charles C pres 238 StBotolph h at Spring-",
+      "“",
+      "Frank H mgr Gifford, Wood Co 51 N Market",
+      "h at Arlington"
+    ]
+  },
+  {
+    "region_id": "leaf0164-R-top",
+    "leaf_num": 164,
+    "printed_page": "162",
+    "bbox": [
+      945,
+      105,
+      1618,
+      215
+    ],
+    "gutter_x": 945,
+    "image_sha256": "a1cb4acfcf4e1ed4772101e39ec96f987788f37a2774b5926d18c4b5309e6f6f",
+    "line_ids": [
+      "boston-1916-vol1-ao-leaf0164:9e6356fe2329:b0030-p0001-l0001",
+      "boston-1916-vol1-ao-leaf0164:9e6356fe2329:b0031-p0001-l0001",
+      "boston-1916-vol1-ao-leaf0164:9e6356fe2329:b0031-p0001-l0002",
+      "boston-1916-vol1-ao-leaf0164:9e6356fe2329:b0042-p0001-l0001",
+      "boston-1916-vol1-ao-leaf0164:9e6356fe2329:b0042-p0002-l0001",
+      "boston-1916-vol1-ao-leaf0164:9e6356fe2329:b0042-p0002-l0002",
+      "boston-1916-vol1-ao-leaf0164:9e6356fe2329:b0042-p0003-l0001",
+      "boston-1916-vol1-ao-leaf0164:9e6356fe2329:b0042-p0004-l0001",
+      "boston-1916-vol1-ao-leaf0164:9e6356fe2329:b0044-p0001-l0001"
+    ],
+    "reading_orders": [
+      136,
+      137,
+      138,
+      150,
+      151,
+      152,
+      153,
+      154,
+      181
+    ],
+    "ocr_lines": [
+      "Ab",
+      "-",
+      "-",
+      "bott",
+      "Forrest H clerk 35 Congress rm 1005 h 15",
+      "Chelmsford Dor",
+      "Frances h 4 Walnut",
+      "Frances A widow William T h 4 Li",
+      "ard Dor"
+    ]
+  },
+  {
+    "region_id": "leaf0164-L-middle",
+    "leaf_num": 164,
+    "printed_page": "162",
+    "bbox": [
+      218,
+      1329,
+      945,
+      1439
+    ],
+    "gutter_x": 945,
+    "image_sha256": "a1cb4acfcf4e1ed4772101e39ec96f987788f37a2774b5926d18c4b5309e6f6f",
+    "line_ids": [
+      "boston-1916-vol1-ao-leaf0164:9e6356fe2329:b0021-p0010-l0001",
+      "boston-1916-vol1-ao-leaf0164:9e6356fe2329:b0021-p0010-l0002",
+      "boston-1916-vol1-ao-leaf0164:9e6356fe2329:b0021-p0011-l0001",
+      "boston-1916-vol1-ao-leaf0164:9e6356fe2329:b0021-p0011-l0002",
+      "boston-1916-vol1-ao-leaf0164:9e6356fe2329:b0021-p0012-l0001",
+      "boston-1916-vol1-ao-leaf0164:9e6356fe2329:b0021-p0013-l0001"
+    ],
+    "reading_orders": [
+      72,
+      73,
+      74,
+      75,
+      76,
+      77
+    ],
+    "ocr_lines": [
+      "‘Ambrose H court officer municipal criminal",
+      "court 101 Court House h 24 Pratt",
+      "Arthur E bookkeeper 76 Devonshire h at Wol-",
+      "laston . [Reading",
+      "Arthur M salesman 645 Atlantic av _h at",
+      "‘A H salesman G E Co 84 State h at Winchester"
+    ]
+  },
+  {
+    "region_id": "leaf0164-R-middle",
+    "leaf_num": 164,
+    "printed_page": "162",
+    "bbox": [
+      945,
+      1329,
+      1618,
+      1439
+    ],
+    "gutter_x": 945,
+    "image_sha256": "a1cb4acfcf4e1ed4772101e39ec96f987788f37a2774b5926d18c4b5309e6f6f",
+    "line_ids": [
+      "boston-1916-vol1-ao-leaf0164:9e6356fe2329:b0045-p0015-l0001",
+      "boston-1916-vol1-ao-leaf0164:9e6356fe2329:b0045-p0016-l0001",
+      "boston-1916-vol1-ao-leaf0164:9e6356fe2329:b0045-p0017-l0001",
+      "boston-1916-vol1-ao-leaf0164:9e6356fe2329:b0045-p0018-l0001",
+      "boston-1916-vol1-ao-leaf0164:9e6356fe2329:b0045-p0019-l0001",
+      "boston-1916-vol1-ao-leaf0164:9e6356fe2329:b0045-p0020-l0001"
+    ],
+    "reading_orders": [
+      202,
+      203,
+      204,
+      205,
+      206,
+      207
+    ],
+    "ocr_lines": [
+      "Harry L clerk bds 459 E Eighth S B",
+      "Helen A teacher bds 24 Pratt Alls",
+      "Helen M teacher bds 94 G, S B",
+      "Henry L collector 24 West h at Woburn",
+      "Henry L printer 244 Wash h at Revere Beach",
+      "Henry L student bds 67 Perrin Rox Hills"
+    ]
+  },
+  {
+    "region_id": "leaf0164-L-bottom",
+    "leaf_num": 164,
+    "printed_page": "162",
+    "bbox": [
+      218,
+      2558,
+      945,
+      2668
+    ],
+    "gutter_x": 945,
+    "image_sha256": "a1cb4acfcf4e1ed4772101e39ec96f987788f37a2774b5926d18c4b5309e6f6f",
+    "line_ids": [
+      "boston-1916-vol1-ao-leaf0164:9e6356fe2329:b0029-p0001-l0039",
+      "boston-1916-vol1-ao-leaf0164:9e6356fe2329:b0029-p0001-l0040",
+      "boston-1916-vol1-ao-leaf0164:9e6356fe2329:b0029-p0001-l0041",
+      "boston-1916-vol1-ao-leaf0164:9e6356fe2329:b0029-p0001-l0042",
+      "boston-1916-vol1-ao-leaf0164:9e6356fe2329:b0029-p0001-l0043"
+    ],
+    "reading_orders": [
+      131,
+      132,
+      133,
+      134,
+      135
+    ],
+    "ocr_lines": [
+      "Ernest W civil engineer 294 Wash rm 1001",
+      "Eva nurse bds 39 Mountfort",
+      "Everett E chocolatemaker h 3 Fuller Dor",
+      "E A builder 185 Devonshire rm 906",
+      "E D Company printers 181 Mass av"
+    ]
+  },
+  {
+    "region_id": "leaf0164-R-bottom",
+    "leaf_num": 164,
+    "printed_page": "162",
+    "bbox": [
+      945,
+      2558,
+      1618,
+      2668
+    ],
+    "gutter_x": 945,
+    "image_sha256": "a1cb4acfcf4e1ed4772101e39ec96f987788f37a2774b5926d18c4b5309e6f6f",
+    "line_ids": [
+      "boston-1916-vol1-ao-leaf0164:9e6356fe2329:b0045-p0062-l0001",
+      "boston-1916-vol1-ao-leaf0164:9e6356fe2329:b0045-p0063-l0001",
+      "boston-1916-vol1-ao-leaf0164:9e6356fe2329:b0045-p0064-l0001",
+      "boston-1916-vol1-ao-leaf0164:9e6356fe2329:b0045-p0065-l0001"
+    ],
+    "reading_orders": [
+      256,
+      257,
+      258,
+      259
+    ],
+    "ocr_lines": [
+      "Louis F h 67 Perrin Rox",
+      "Louis P ex-chief B F D h 11 Garden W R",
+      "Lyman pres 7 F H mkt h at B'line",
+      "L F Qo The provisions 47 F H mkt"
+    ]
+  },
+  {
+    "region_id": "leaf0302-L-top",
+    "leaf_num": 302,
+    "printed_page": "300",
+    "bbox": [
+      182,
+      105,
+      933,
+      215
+    ],
+    "gutter_x": 933,
+    "image_sha256": "01b1a6db6231191acb0705a50cd425e6f06e0de5a4f73be177cd3700240d7dde",
+    "line_ids": [
+      "boston-1916-vol1-ao-leaf0302:9e6356fe2329:b0001-p0001-l0001",
+      "boston-1916-vol1-ao-leaf0302:9e6356fe2329:b0002-p0001-l0001",
+      "boston-1916-vol1-ao-leaf0302:9e6356fe2329:b0002-p0001-l0002",
+      "boston-1916-vol1-ao-leaf0302:9e6356fe2329:b0002-p0001-l0003"
+    ],
+    "reading_orders": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "ocr_lines": [
+      "300 BOSTON [1916] DIRECTORY -",
+      "Bohm .",
+      "« Soren C rem to Milton",
+      "- « William fireman h 48 Chelsea Chsn"
+    ]
+  },
+  {
+    "region_id": "leaf0302-R-top",
+    "leaf_num": 302,
+    "printed_page": "300",
+    "bbox": [
+      933,
+      105,
+      1621,
+      215
+    ],
+    "gutter_x": 933,
+    "image_sha256": "01b1a6db6231191acb0705a50cd425e6f06e0de5a4f73be177cd3700240d7dde",
+    "line_ids": [
+      "boston-1916-vol1-ao-leaf0302:9e6356fe2329:b0006-p0001-l0001",
+      "boston-1916-vol1-ao-leaf0302:9e6356fe2329:b0007-p0001-l0001",
+      "boston-1916-vol1-ao-leaf0302:9e6356fe2329:b0007-p0002-l0001",
+      "boston-1916-vol1-ao-leaf0302:9e6356fe2329:b0007-p0003-l0001"
+    ],
+    "reading_orders": [
+      114,
+      115,
+      116,
+      117
+    ],
+    "ocr_lines": [
+      "Bolan",
+      "« Harry W clerk bds 19 Stonehurst Dor",
+      "« Henry A drawtender h 19 Stonehurst Dor.",
+      "« James artist h 29 Southern av Dor"
+    ]
+  },
+  {
+    "region_id": "leaf0302-L-middle",
+    "leaf_num": 302,
+    "printed_page": "300",
+    "bbox": [
+      182,
+      1355,
+      933,
+      1465
+    ],
+    "gutter_x": 933,
+    "image_sha256": "01b1a6db6231191acb0705a50cd425e6f06e0de5a4f73be177cd3700240d7dde",
+    "line_ids": [
+      "boston-1916-vol1-ao-leaf0302:9e6356fe2329:b0002-p0001-l0053",
+      "boston-1916-vol1-ao-leaf0302:9e6356fe2329:b0005-p0001-l0001",
+      "boston-1916-vol1-ao-leaf0302:9e6356fe2329:b0005-p0001-l0002",
+      "boston-1916-vol1-ao-leaf0302:9e6356fe2329:b0005-p0001-l0003",
+      "boston-1916-vol1-ao-leaf0302:9e6356fe2329:b0005-p0001-l0004",
+      "boston-1916-vol1-ao-leaf0302:9e6356fe2329:b0005-p0001-l0005"
+    ],
+    "reading_orders": [
+      54,
+      57,
+      58,
+      59,
+      60,
+      61
+    ],
+    "ocr_lines": [
+      "ment Co 76 Brookline av h at Newtonville",
+      "« see Boies Bois Boise and BOYCE",
+      "Boies A Sherman salesman 36 Boston Fish pier",
+      "h at Malden [Everett",
+      "Boileau Edward J clerk 325 Medford Chsn bds at",
+      "Boimila John sugarworker h 352 Athens S B"
+    ]
+  },
+  {
+    "region_id": "leaf0302-R-middle",
+    "leaf_num": 302,
+    "printed_page": "300",
+    "bbox": [
+      933,
+      1355,
+      1621,
+      1465
+    ],
+    "gutter_x": 933,
+    "image_sha256": "01b1a6db6231191acb0705a50cd425e6f06e0de5a4f73be177cd3700240d7dde",
+    "line_ids": [
+      "boston-1916-vol1-ao-leaf0302:9e6356fe2329:b0007-p0031-l0001",
+      "boston-1916-vol1-ao-leaf0302:9e6356fe2329:b0007-p0031-l0002",
+      "boston-1916-vol1-ao-leaf0302:9e6356fe2329:b0007-p0031-l0003",
+      "boston-1916-vol1-ao-leaf0302:9e6356fe2329:b0007-p0031-l0004",
+      "boston-1916-vol1-ao-leaf0302:9e6356fe2329:b0007-p0032-l0001",
+      "boston-1916-vol1-ao-leaf0302:9e6356fe2329:b0007-p0032-l0002",
+      "boston-1916-vol1-ao-leaf0302:9e6356fe2329:b0014-p0001-l0001",
+      "boston-1916-vol1-ao-leaf0302:9e6356fe2329:b0014-p0001-l0002"
+    ],
+    "reading_orders": [
+      166,
+      167,
+      168,
+      169,
+      170,
+      171,
+      229,
+      230
+    ],
+    "ocr_lines": [
+      "h at Dedham [Lenox ct Rox",
+      "Thomas L driver Am Ex North sta bds 3",
+      "« Thomas I. student bds 21 Cheney Rox",
+      "Walter LL A elevatorman 141 Milk rms 79 E",
+      "Canton",
+      "« William T salesman h 383 Ashmont Dor",
+      "-",
+      "-"
+    ]
+  },
+  {
+    "region_id": "leaf0302-L-bottom",
+    "leaf_num": 302,
+    "printed_page": "300",
+    "bbox": [
+      182,
+      2610,
+      933,
+      2720
+    ],
+    "gutter_x": 933,
+    "image_sha256": "01b1a6db6231191acb0705a50cd425e6f06e0de5a4f73be177cd3700240d7dde",
+    "line_ids": [
+      "boston-1916-vol1-ao-leaf0302:9e6356fe2329:b0005-p0001-l0054",
+      "boston-1916-vol1-ao-leaf0302:9e6356fe2329:b0005-p0001-l0055",
+      "boston-1916-vol1-ao-leaf0302:9e6356fe2329:b0005-p0001-l0056",
+      "boston-1916-vol1-ao-leaf0302:9e6356fe2329:b0005-p0001-l0057"
+    ],
+    "reading_orders": [
+      110,
+      111,
+      112,
+      113
+    ],
+    "ocr_lines": [
+      "Bolan Charles M patternmaker h 5 Templeton",
+      "way Dor [Dor",
+      "« Edwin A clerk 426 Wash bds 19 Stonehurst",
+      "« Harry R osteopath 36 Princeton E B h do"
+    ]
+  },
+  {
+    "region_id": "leaf0302-R-bottom",
+    "leaf_num": 302,
+    "printed_page": "300",
+    "bbox": [
+      933,
+      2610,
+      1621,
+      2720
+    ],
+    "gutter_x": 933,
+    "image_sha256": "01b1a6db6231191acb0705a50cd425e6f06e0de5a4f73be177cd3700240d7dde",
+    "line_ids": [
+      "boston-1916-vol1-ao-leaf0302:9e6356fe2329:b0009-p0001-l0027",
+      "boston-1916-vol1-ao-leaf0302:9e6356fe2329:b0009-p0001-l0028",
+      "boston-1916-vol1-ao-leaf0302:9e6356fe2329:b0009-p0001-l0029",
+      "boston-1916-vol1-ao-leaf0302:9e6356fe2329:b0009-p0001-l0030"
+    ],
+    "reading_orders": [
+      219,
+      220,
+      221,
+      222
+    ],
+    "ocr_lines": [
+      "« John F lawyer 60 State rm 809 h 30 Westville",
+      "« John H foreman h 34 Medford Chsn",
+      "« Leila E teacher Sarah J Baker school Rox",
+      "bds 62 Sydney Dor"
+    ]
+  },
+  {
+    "region_id": "leaf0514-L-top",
+    "leaf_num": 514,
+    "printed_page": "512",
+    "bbox": [
+      82,
+      105,
+      828,
+      215
+    ],
+    "gutter_x": 828,
+    "image_sha256": "c3c7e48c98390cd0300cd2e3e6458f21e4b565567cf259d1a545cd3fdc27bd14",
+    "line_ids": [
+      "boston-1916-vol1-ao-leaf0514:9e6356fe2329:b0002-p0001-l0001",
+      "boston-1916-vol1-ao-leaf0514:9e6356fe2329:b0002-p0001-l0002",
+      "boston-1916-vol1-ao-leaf0514:9e6356fe2329:b0002-p0001-l0003",
+      "boston-1916-vol1-ao-leaf0514:9e6356fe2329:b0002-p0001-l0004"
+    ],
+    "reading_orders": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "ocr_lines": [
+      "Cooke",
+      "« LeBaron P writer rms 40 W Newton",
+      "« Lena E cigars 104 Eliot h 18 Abbot Dor",
+      "« Lena M steno 40 Central rm 400 bds at Millis"
+    ]
+  },
+  {
+    "region_id": "leaf0514-R-top",
+    "leaf_num": 514,
+    "printed_page": "512",
+    "bbox": [
+      828,
+      105,
+      1539,
+      215
+    ],
+    "gutter_x": 828,
+    "image_sha256": "c3c7e48c98390cd0300cd2e3e6458f21e4b565567cf259d1a545cd3fdc27bd14",
+    "line_ids": [
+      "boston-1916-vol1-ao-leaf0514:9e6356fe2329:b0007-p0001-l0001",
+      "boston-1916-vol1-ao-leaf0514:9e6356fe2329:b0007-p0001-l0002",
+      "boston-1916-vol1-ao-leaf0514:9e6356fe2329:b0007-p0001-l0003",
+      "boston-1916-vol1-ao-leaf0514:9e6356fe2329:b0008-p0001-l0001"
+    ],
+    "reading_orders": [
+      115,
+      116,
+      117,
+      118
+    ],
+    "ocr_lines": [
+      "Coolidge",
+      "Arthur W (French & Coolidge) lawyer 89",
+      "State rm 48 h at Reading wood",
+      "« Arthur W creditman 28 Summer h at Nor-"
+    ]
+  },
+  {
+    "region_id": "leaf0514-L-middle",
+    "leaf_num": 514,
+    "printed_page": "512",
+    "bbox": [
+      82,
+      1352,
+      828,
+      1462
+    ],
+    "gutter_x": 828,
+    "image_sha256": "c3c7e48c98390cd0300cd2e3e6458f21e4b565567cf259d1a545cd3fdc27bd14",
+    "line_ids": [
+      "boston-1916-vol1-ao-leaf0514:9e6356fe2329:b0002-p0001-l0053",
+      "boston-1916-vol1-ao-leaf0514:9e6356fe2329:b0002-p0001-l0054",
+      "boston-1916-vol1-ao-leaf0514:9e6356fe2329:b0002-p0001-l0055",
+      "boston-1916-vol1-ao-leaf0514:9e6356fe2329:b0002-p0001-l0056",
+      "boston-1916-vol1-ao-leaf0514:9e6356fe2329:b0002-p0001-l0057",
+      "boston-1916-vol1-ao-leaf0514:9e6356fe2329:b0002-p0001-l0058"
+    ],
+    "reading_orders": [
+      54,
+      55,
+      56,
+      57,
+      58,
+      59
+    ],
+    "ocr_lines": [
+      "« Winfield P driver h 9 Brook av Rox",
+      "Cooley Alvah B clerk 307 North sta b at W Somy",
+      "Annie A Mrs h 162 W Brookline",
+      "u Catherine F widow Edward bds 15 Hamilton",
+      "eadv",
+      "« Charles A jeweler 373 Wash rm 77 h at B'line"
+    ]
+  },
+  {
+    "region_id": "leaf0514-R-middle",
+    "leaf_num": 514,
+    "printed_page": "512",
+    "bbox": [
+      828,
+      1352,
+      1539,
+      1462
+    ],
+    "gutter_x": 828,
+    "image_sha256": "c3c7e48c98390cd0300cd2e3e6458f21e4b565567cf259d1a545cd3fdc27bd14",
+    "line_ids": [
+      "boston-1916-vol1-ao-leaf0514:9e6356fe2329:b0012-p0001-l0011",
+      "boston-1916-vol1-ao-leaf0514:9e6356fe2329:b0012-p0001-l0012",
+      "boston-1916-vol1-ao-leaf0514:9e6356fe2329:b0012-p0001-l0013",
+      "boston-1916-vol1-ao-leaf0514:9e6356fe2329:b0012-p0001-l0014",
+      "boston-1916-vol1-ao-leaf0514:9e6356fe2329:b0012-p0001-l0015",
+      "boston-1916-vol1-ao-leaf0514:9e6356fe2329:b0012-p0001-l0016",
+      "boston-1916-vol1-ao-leaf0514:9e6356fe2329:b0013-p0001-l0001",
+      "boston-1916-vol1-ao-leaf0514:9e6356fe2329:b0014-p0001-l0001"
+    ],
+    "reading_orders": [
+      169,
+      170,
+      171,
+      172,
+      173,
+      174,
+      175,
+      176
+    ],
+    "ocr_lines": [
+      "Matilda G bds 89 StJames",
+      "Nelly E teacher bds 12 Glenville av Alls",
+      "N Eveline teacher Roxbury High school bds",
+      "at Framingham",
+      "Ralph bds 5 Regent ct Rox",
+      "Richard B (French & Curtiss) lawyer. 89",
+      "RERURIFRERNRERLRNEA",
+      "-"
+    ]
+  },
+  {
+    "region_id": "leaf0514-L-bottom",
+    "leaf_num": 514,
+    "printed_page": "512",
+    "bbox": [
+      82,
+      2605,
+      828,
+      2715
+    ],
+    "gutter_x": 828,
+    "image_sha256": "c3c7e48c98390cd0300cd2e3e6458f21e4b565567cf259d1a545cd3fdc27bd14",
+    "line_ids": [
+      "boston-1916-vol1-ao-leaf0514:9e6356fe2329:b0006-p0001-l0040",
+      "boston-1916-vol1-ao-leaf0514:9e6356fe2329:b0006-p0001-l0041",
+      "boston-1916-vol1-ao-leaf0514:9e6356fe2329:b0006-p0001-l0042"
+    ],
+    "reading_orders": [
+      112,
+      113,
+      114
+    ],
+    "ocr_lines": [
+      "« Anna B h 465 Audubon rd",
+      "« Annie H h 12 Farrington av Alls",
+      "« Archibald Cary prof bds 130 Beacon"
+    ]
+  },
+  {
+    "region_id": "leaf0514-R-bottom",
+    "leaf_num": 514,
+    "printed_page": "512",
+    "bbox": [
+      828,
+      2605,
+      1539,
+      2715
+    ],
+    "gutter_x": 828,
+    "image_sha256": "c3c7e48c98390cd0300cd2e3e6458f21e4b565567cf259d1a545cd3fdc27bd14",
+    "line_ids": [
+      "boston-1916-vol1-ao-leaf0514:9e6356fe2329:b0016-p0001-l0015",
+      "boston-1916-vol1-ao-leaf0514:9e6356fe2329:b0016-p0001-l0016",
+      "boston-1916-vol1-ao-leaf0514:9e6356fe2329:b0016-p0001-l0017"
+    ],
+    "reading_orders": [
+      226,
+      227,
+      228
+    ],
+    "ocr_lines": [
+      "« Flora H Mrs h 262 Mass av",
+      "« Frank choreman rms 232 Harrison av [Rox",
+      "« Frank A, Commonwealth pier 5 h 112 Schoo;"
+    ]
+  },
+  {
+    "region_id": "leaf0515-L-top",
+    "leaf_num": 515,
+    "printed_page": "513",
+    "bbox": [
+      97,
+      105,
+      809,
+      215
+    ],
+    "gutter_x": 809,
+    "image_sha256": "afd69fddfe3f08c2d178e7ccbd552eb2160841bd4cd7ebcae9b50e36dc8719e7",
+    "line_ids": [
+      "boston-1916-vol1-ao-leaf0515:9e6356fe2329:b0002-p0001-l0001",
+      "boston-1916-vol1-ao-leaf0515:9e6356fe2329:b0003-p0001-l0001"
+    ],
+    "reading_orders": [
+      2,
+      3
+    ],
+    "ocr_lines": [
+      "Coombs",
+      "Frank W director 450 Wash h at Norwood"
+    ]
+  },
+  {
+    "region_id": "leaf0515-R-top",
+    "leaf_num": 515,
+    "printed_page": "513",
+    "bbox": [
+      809,
+      105,
+      1494,
+      215
+    ],
+    "gutter_x": 809,
+    "image_sha256": "afd69fddfe3f08c2d178e7ccbd552eb2160841bd4cd7ebcae9b50e36dc8719e7",
+    "line_ids": [
+      "boston-1916-vol1-ao-leaf0515:9e6356fe2329:b0001-p0001-l0001",
+      "boston-1916-vol1-ao-leaf0515:9e6356fe2329:b0017-p0001-l0001",
+      "boston-1916-vol1-ao-leaf0515:9e6356fe2329:b0017-p0001-l0002"
+    ],
+    "reading_orders": [
+      1,
+      112,
+      113
+    ],
+    "ocr_lines": [
+      "BOSTON [1916] DIRECTORY 513",
+      "Cooney",
+      "« Thomas chauffeur h 7 Gainsborough"
+    ]
+  },
+  {
+    "region_id": "leaf0515-L-middle",
+    "leaf_num": 515,
+    "printed_page": "513",
+    "bbox": [
+      97,
+      1342,
+      809,
+      1452
+    ],
+    "gutter_x": 809,
+    "image_sha256": "afd69fddfe3f08c2d178e7ccbd552eb2160841bd4cd7ebcae9b50e36dc8719e7",
+    "line_ids": [
+      "boston-1916-vol1-ao-leaf0515:9e6356fe2329:b0009-p0005-l0001",
+      "boston-1916-vol1-ao-leaf0515:9e6356fe2329:b0009-p0006-l0001",
+      "boston-1916-vol1-ao-leaf0515:9e6356fe2329:b0009-p0007-l0001",
+      "boston-1916-vol1-ao-leaf0515:9e6356fe2329:b0009-p0007-l0002",
+      "boston-1916-vol1-ao-leaf0515:9e6356fe2329:b0009-p0008-l0001",
+      "boston-1916-vol1-ao-leaf0515:9e6356fe2329:b0009-p0009-l0001"
+    ],
+    "reading_orders": [
+      52,
+      53,
+      54,
+      55,
+      56,
+      57
+    ],
+    "ocr_lines": [
+      "Harry h 124 Brook av Dor",
+      "James H weigher 113 Clinton h at Watertown",
+      "J Lewis (Atkinson Haserick & Co) importers",
+      "152 Congress h at Wakefield",
+      "Marion B physician 453 Beacon h do",
+      "Nellie widow George F h 861 Saratoga E B"
+    ]
+  },
+  {
+    "region_id": "leaf0515-R-middle",
+    "leaf_num": 515,
+    "printed_page": "513",
+    "bbox": [
+      809,
+      1342,
+      1494,
+      1452
+    ],
+    "gutter_x": 809,
+    "image_sha256": "afd69fddfe3f08c2d178e7ccbd552eb2160841bd4cd7ebcae9b50e36dc8719e7",
+    "line_ids": [
+      "boston-1916-vol1-ao-leaf0515:9e6356fe2329:b0018-p0011-l0001",
+      "boston-1916-vol1-ao-leaf0515:9e6356fe2329:b0018-p0012-l0001",
+      "boston-1916-vol1-ao-leaf0515:9e6356fe2329:b0018-p0013-l0001",
+      "boston-1916-vol1-ao-leaf0515:9e6356fe2329:b0018-p0014-l0001",
+      "boston-1916-vol1-ao-leaf0515:9e6356fe2329:b0018-p0015-l0001",
+      "boston-1916-vol1-ao-leaf0515:9e6356fe2329:b0018-p0016-l0001",
+      "boston-1916-vol1-ao-leaf0515:9e6356fe2329:b0024-p0001-l0001",
+      "boston-1916-vol1-ao-leaf0515:9e6356fe2329:b0025-p0001-l0001",
+      "boston-1916-vol1-ao-leaf0515:9e6356fe2329:b0025-p0001-l0002"
+    ],
+    "reading_orders": [
+      162,
+      163,
+      164,
+      165,
+      166,
+      167,
+      179,
+      180,
+      181
+    ],
+    "ocr_lines": [
+      "Charles salesman h 93 Warren suite 3 Rox",
+      "Charles A ironworker rms 15 Richardson Br",
+      "Charles E clerk 320 North sta h at Gloucester",
+      "Charles KE police h 36 Neptune rd E B",
+      "Charles F painter died June 12 1915",
+      "«. Charles F phonograph repairer bds 593 Met-",
+      "Rep: RN",
+      "-",
+      "s"
+    ]
+  },
+  {
+    "region_id": "leaf0515-L-bottom",
+    "leaf_num": 515,
+    "printed_page": "513",
+    "bbox": [
+      97,
+      2584,
+      809,
+      2694
+    ],
+    "gutter_x": 809,
+    "image_sha256": "afd69fddfe3f08c2d178e7ccbd552eb2160841bd4cd7ebcae9b50e36dc8719e7",
+    "line_ids": [
+      "boston-1916-vol1-ao-leaf0515:9e6356fe2329:b0013-p0040-l0001",
+      "boston-1916-vol1-ao-leaf0515:9e6356fe2329:b0013-p0041-l0001",
+      "boston-1916-vol1-ao-leaf0515:9e6356fe2329:b0014-p0001-l0001",
+      "boston-1916-vol1-ao-leaf0515:9e6356fe2329:b0015-p0001-l0001",
+      "boston-1916-vol1-ao-leaf0515:9e6356fe2329:b0015-p0001-l0002"
+    ],
+    "reading_orders": [
+      106,
+      107,
+      108,
+      109,
+      110
+    ],
+    "ocr_lines": [
+      "Patrick fireman died Jan 2 1916",
+      "Patrick laborer h 86 W Sixth S B",
+      "- Patrick laborer h r 23 Dacia Dor",
+      "Patrick H died Dec 15 1915",
+      "Peter H foreman h 109 Hancock Dor"
+    ]
+  },
+  {
+    "region_id": "leaf0515-R-bottom",
+    "leaf_num": 515,
+    "printed_page": "513",
+    "bbox": [
+      809,
+      2584,
+      1494,
+      2694
+    ],
+    "gutter_x": 809,
+    "image_sha256": "afd69fddfe3f08c2d178e7ccbd552eb2160841bd4cd7ebcae9b50e36dc8719e7",
+    "line_ids": [
+      "boston-1916-vol1-ao-leaf0515:9e6356fe2329:b0026-p0036-l0001",
+      "boston-1916-vol1-ao-leaf0515:9e6356fe2329:b0026-p0037-l0001",
+      "boston-1916-vol1-ao-leaf0515:9e6356fe2329:b0026-p0038-l0001",
+      "boston-1916-vol1-ao-leaf0515:9e6356fe2329:b0027-p0001-l0001",
+      "boston-1916-vol1-ao-leaf0515:9e6356fe2329:b0027-p0001-l0002"
+    ],
+    "reading_orders": [
+      225,
+      226,
+      227,
+      228,
+      229
+    ],
+    "ocr_lines": [
+      "« Frank Irving Corp architects 33 Cornhill",
+      "« Frank J salesman 137 Wash h at Everett",
+      "« Frank T clerk P O tuberoom South sta h at W",
+      "Somv [fort Dor",
+      "Franklin E asst supt 214 South sta h 42 Bel_"
+    ]
+  },
+  {
+    "region_id": "leaf0776-L-top",
+    "leaf_num": 776,
+    "printed_page": "774",
+    "bbox": [
+      88,
+      105,
+      827,
+      215
+    ],
+    "gutter_x": 827,
+    "image_sha256": "12633f6ba01245c6ce8ddef1287b238028538574236e8b96533cfbbf20236513",
+    "line_ids": [
+      "boston-1916-vol1-ao-leaf0776:9e6356fe2329:b0001-p0001-l0001",
+      "boston-1916-vol1-ao-leaf0776:9e6356fe2329:b0002-p0001-l0001",
+      "boston-1916-vol1-ao-leaf0776:9e6356fe2329:b0003-p0001-l0001",
+      "boston-1916-vol1-ao-leaf0776:9e6356fe2329:b0003-p0001-l0002",
+      "boston-1916-vol1-ao-leaf0776:9e6356fe2329:b0012-p0001-l0001"
+    ],
+    "reading_orders": [
+      1,
+      2,
+      3,
+      4,
+      117
+    ],
+    "ocr_lines": [
+      "774",
+      "Follett",
+      "« Etta F widow Louis h 77 Wenham J P",
+      "« Frank B asst mgr Boston Tavern h 35 Monte-",
+      "BOSTON [1916] DIRECTORY"
+    ]
+  },
+  {
+    "region_id": "leaf0776-R-top",
+    "leaf_num": 776,
+    "printed_page": "774",
+    "bbox": [
+      827,
+      105,
+      1520,
+      215
+    ],
+    "gutter_x": 827,
+    "image_sha256": "12633f6ba01245c6ce8ddef1287b238028538574236e8b96533cfbbf20236513",
+    "line_ids": [
+      "boston-1916-vol1-ao-leaf0776:9e6356fe2329:b0013-p0001-l0001",
+      "boston-1916-vol1-ao-leaf0776:9e6356fe2329:b0013-p0001-l0002",
+      "boston-1916-vol1-ao-leaf0776:9e6356fe2329:b0014-p0001-l0001"
+    ],
+    "reading_orders": [
+      118,
+      119,
+      120
+    ],
+    "ocr_lines": [
+      "Fonare Nicola laborer h 4 Flagg :",
+      "Fonda Arthur W clerk 453 Wash rm 1003 h at",
+      "Melrose : [h at Worcester"
+    ]
+  },
+  {
+    "region_id": "leaf0776-L-middle",
+    "leaf_num": 776,
+    "printed_page": "774",
+    "bbox": [
+      88,
+      1349,
+      827,
+      1459
+    ],
+    "gutter_x": 827,
+    "image_sha256": "12633f6ba01245c6ce8ddef1287b238028538574236e8b96533cfbbf20236513",
+    "line_ids": [
+      "boston-1916-vol1-ao-leaf0776:9e6356fe2329:b0006-p0001-l0013",
+      "boston-1916-vol1-ao-leaf0776:9e6356fe2329:b0006-p0001-l0014",
+      "boston-1916-vol1-ao-leaf0776:9e6356fe2329:b0006-p0001-l0015",
+      "boston-1916-vol1-ao-leaf0776:9e6356fe2329:b0006-p0001-l0016",
+      "boston-1916-vol1-ao-leaf0776:9e6356fe2329:b0006-p0001-l0017",
+      "boston-1916-vol1-ao-leaf0776:9e6356fe2329:b0006-p0001-l0018",
+      "boston-1916-vol1-ao-leaf0776:9e6356fe2329:b0007-p0001-l0001"
+    ],
+    "reading_orders": [
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      76
+    ],
+    "ocr_lines": [
+      "“ Elizabeth D widow Leland W h 1 Everett av",
+      "or -",
+      "Ellen M bds 114 Marlboro",
+      "Engraving Co 88Pearl [B’line",
+      "Francis B W salesman 6 Congress sq h at",
+      "Frank waiter h 20 Sawyer",
+      "Reb RARUR RS"
+    ]
+  },
+  {
+    "region_id": "leaf0776-R-middle",
+    "leaf_num": 776,
+    "printed_page": "774",
+    "bbox": [
+      827,
+      1349,
+      1520,
+      1459
+    ],
+    "gutter_x": 827,
+    "image_sha256": "12633f6ba01245c6ce8ddef1287b238028538574236e8b96533cfbbf20236513",
+    "line_ids": [
+      "boston-1916-vol1-ao-leaf0776:9e6356fe2329:b0015-p0001-l0047",
+      "boston-1916-vol1-ao-leaf0776:9e6356fe2329:b0015-p0001-l0048",
+      "boston-1916-vol1-ao-leaf0776:9e6356fe2329:b0015-p0001-l0049",
+      "boston-1916-vol1-ao-leaf0776:9e6356fe2329:b0015-p0001-l0050",
+      "boston-1916-vol1-ao-leaf0776:9e6356fe2329:b0015-p0001-l0051",
+      "boston-1916-vol1-ao-leaf0776:9e6356fe2329:b0015-p0001-l0052"
+    ],
+    "reading_orders": [
+      169,
+      170,
+      171,
+      172,
+      173,
+      174
+    ],
+    "ocr_lines": [
+      "Fontes Alfred S barber 178 Wash h 207 London",
+      "« James S candymaker bds 207 London E B",
+      "« Manuel S salesman 518 Wash rms at W Somv",
+      "« Mary widow Joseph h 207 London E B :",
+      "Foo & Wing Herb Co (T Foo Yuen, Tom Wing)",
+      "medicines 564 Mass av [41 Bowdoin"
+    ]
+  },
+  {
+    "region_id": "leaf0776-L-bottom",
+    "leaf_num": 776,
+    "printed_page": "774",
+    "bbox": [
+      88,
+      2599,
+      827,
+      2709
+    ],
+    "gutter_x": 827,
+    "image_sha256": "12633f6ba01245c6ce8ddef1287b238028538574236e8b96533cfbbf20236513",
+    "line_ids": [
+      "boston-1916-vol1-ao-leaf0776:9e6356fe2329:b0010-p0001-l0013",
+      "boston-1916-vol1-ao-leaf0776:9e6356fe2329:b0010-p0001-l0014",
+      "boston-1916-vol1-ao-leaf0776:9e6356fe2329:b0010-p0001-l0015",
+      "boston-1916-vol1-ao-leaf0776:9e6356fe2329:b0010-p0001-l0016",
+      "boston-1916-vol1-ao-leaf0776:9e6356fe2329:b0010-p0001-l0017",
+      "boston-1916-vol1-ao-leaf0776:9e6356fe2329:b0011-p0001-l0001"
+    ],
+    "reading_orders": [
+      111,
+      112,
+      113,
+      114,
+      115,
+      116
+    ],
+    "ocr_lines": [
+      "William J Mrs h 102 West H P [rm 509",
+      "Willianna music teacher 12 Huntington av",
+      "W H clerk 14 Beacon hds at Wayland",
+      "I7olti Antonio laborer h 25 Cedar Mat",
+      "llata Vincengo cabinetmaker h 153 Leverety",
+      "RTA"
+    ]
+  },
+  {
+    "region_id": "leaf0776-R-bottom",
+    "leaf_num": 776,
+    "printed_page": "774",
+    "bbox": [
+      827,
+      2599,
+      1520,
+      2709
+    ],
+    "gutter_x": 827,
+    "image_sha256": "12633f6ba01245c6ce8ddef1287b238028538574236e8b96533cfbbf20236513",
+    "line_ids": [
+      "boston-1916-vol1-ao-leaf0776:9e6356fe2329:b0015-p0001-l0101",
+      "boston-1916-vol1-ao-leaf0776:9e6356fe2329:b0015-p0001-l0102",
+      "boston-1916-vol1-ao-leaf0776:9e6356fe2329:b0015-p0001-l0103",
+      "boston-1916-vol1-ao-leaf0776:9e6356fe2329:b0015-p0001-l0104",
+      "boston-1916-vol1-ao-leaf0776:9e6356fe2329:b0015-p0001-l0105"
+    ],
+    "reading_orders": [
+      223,
+      224,
+      225,
+      226,
+      227
+    ],
+    "ocr_lines": [
+      "« Richard W, O C Trust Co 17 Court bhds at",
+      "Camb [Winthrop",
+      "« Spaulding A messenger 131 State rm 900 h at",
+      "« Walter H bookkeeper rms 9 Vancouver Fen",
+      "« Ward clerk 60 State rm 115 bds at Reading"
+    ]
+  },
+  {
+    "region_id": "leaf0777-L-top",
+    "leaf_num": 777,
+    "printed_page": "779",
+    "bbox": [
+      78,
+      105,
+      817,
+      215
+    ],
+    "gutter_x": 817,
+    "image_sha256": "483053ba0ba7c7fe789846b053957ad7543cee45eed903ee6e2ed232f79abbb1",
+    "line_ids": [
+      "boston-1916-vol1-ao-leaf0777:9e6356fe2329:b0001-p0001-l0001",
+      "boston-1916-vol1-ao-leaf0777:9e6356fe2329:b0002-p0001-l0001",
+      "boston-1916-vol1-ao-leaf0777:9e6356fe2329:b0002-p0001-l0002",
+      "boston-1916-vol1-ao-leaf0777:9e6356fe2329:b0002-p0001-l0003",
+      "boston-1916-vol1-ao-leaf0777:9e6356fe2329:b0002-p0001-l0004"
+    ],
+    "reading_orders": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "ocr_lines": [
+      "BOSTON [1916] DIRECTORY",
+      "Forrest",
+      "« Pili for foreman 473 Dorchester av S B h a",
+      "Lo",
+      "Ralph oa clerk 1014 Blackstone bds at Stone-"
+    ]
+  },
+  {
+    "region_id": "leaf0777-R-top",
+    "leaf_num": 777,
+    "printed_page": "779",
+    "bbox": [
+      817,
+      105,
+      1504,
+      215
+    ],
+    "gutter_x": 817,
+    "image_sha256": "483053ba0ba7c7fe789846b053957ad7543cee45eed903ee6e2ed232f79abbb1",
+    "line_ids": [
+      "boston-1916-vol1-ao-leaf0777:9e6356fe2329:b0010-p0001-l0001",
+      "boston-1916-vol1-ao-leaf0777:9e6356fe2329:b0011-p0001-l0001",
+      "boston-1916-vol1-ao-leaf0777:9e6356fe2329:b0011-p0001-l0002",
+      "boston-1916-vol1-ao-leaf0777:9e6356fe2329:b0011-p0001-l0003"
+    ],
+    "reading_orders": [
+      117,
+      118,
+      119,
+      120
+    ],
+    "ocr_lines": [
+      "779",
+      "Forster",
+      "« Charles W salesman h 108 Hammond Rox",
+      "« Edgar P salesman 50 Congress rm 727 h at"
+    ]
+  },
+  {
+    "region_id": "leaf0777-L-middle",
+    "leaf_num": 777,
+    "printed_page": "779",
+    "bbox": [
+      78,
+      1342,
+      817,
+      1452
+    ],
+    "gutter_x": 817,
+    "image_sha256": "483053ba0ba7c7fe789846b053957ad7543cee45eed903ee6e2ed232f79abbb1",
+    "line_ids": [
+      "boston-1916-vol1-ao-leaf0777:9e6356fe2329:b0004-p0001-l0031",
+      "boston-1916-vol1-ao-leaf0777:9e6356fe2329:b0004-p0001-l0032",
+      "boston-1916-vol1-ao-leaf0777:9e6356fe2329:b0004-p0001-l0033",
+      "boston-1916-vol1-ao-leaf0777:9e6356fe2329:b0004-p0001-l0034",
+      "boston-1916-vol1-ao-leaf0777:9e6356fe2329:b0004-p0001-l0035",
+      "boston-1916-vol1-ao-leaf0777:9e6356fe2329:b0004-p0001-l0036"
+    ],
+    "reading_orders": [
+      53,
+      54,
+      55,
+      56,
+      57,
+      58
+    ],
+    "ocr_lines": [
+      "« Patrick J yard master 696 E First S B h 520",
+      "E Fifth do",
+      "Fors Carl clerk h 45 Fulda Rox",
+      "« John H patternmaker bds 33 Riverdale Alls",
+      "« Mary J widow Henry h 33 Riverdale Alls",
+      "Forsaith Annie S h 372 Longwood av Fen"
+    ]
+  },
+  {
+    "region_id": "leaf0777-R-middle",
+    "leaf_num": 777,
+    "printed_page": "779",
+    "bbox": [
+      817,
+      1342,
+      1504,
+      1452
+    ],
+    "gutter_x": 817,
+    "image_sha256": "483053ba0ba7c7fe789846b053957ad7543cee45eed903ee6e2ed232f79abbb1",
+    "line_ids": [
+      "boston-1916-vol1-ao-leaf0777:9e6356fe2329:b0011-p0001-l0052",
+      "boston-1916-vol1-ao-leaf0777:9e6356fe2329:b0011-p0001-l0053",
+      "boston-1916-vol1-ao-leaf0777:9e6356fe2329:b0011-p0001-l0054",
+      "boston-1916-vol1-ao-leaf0777:9e6356fe2329:b0011-p0001-l0055",
+      "boston-1916-vol1-ao-leaf0777:9e6356fe2329:b0011-p0001-l0056",
+      "boston-1916-vol1-ao-leaf0777:9e6356fe2329:b0011-p0001-l0057",
+      "boston-1916-vol1-ao-leaf0777:9e6356fe2329:b0017-p0001-l0001"
+    ],
+    "reading_orders": [
+      169,
+      170,
+      171,
+      172,
+      173,
+      174,
+      234
+    ],
+    "ocr_lines": [
+      "Co 84 Linden Park st Rox mills 80 Elmwood",
+      "do bds Hotel Touraine [av Ros",
+      "« Thomas B auditor 259 Wash h 47 Bradfield",
+      "« Thomas IE painter h 22 Barry Dor",
+      "T O dentist 140 Fenway",
+      "Wallace R Dalnter h 1368 Blue Hill av Mat",
+      "ES"
+    ]
+  },
+  {
+    "region_id": "leaf0777-L-bottom",
+    "leaf_num": 777,
+    "printed_page": "779",
+    "bbox": [
+      78,
+      2584,
+      817,
+      2694
+    ],
+    "gutter_x": 817,
+    "image_sha256": "483053ba0ba7c7fe789846b053957ad7543cee45eed903ee6e2ed232f79abbb1",
+    "line_ids": [
+      "boston-1916-vol1-ao-leaf0777:9e6356fe2329:b0004-p0001-l0084",
+      "boston-1916-vol1-ao-leaf0777:9e6356fe2329:b0004-p0001-l0085",
+      "boston-1916-vol1-ao-leaf0777:9e6356fe2329:b0004-p0001-l0086",
+      "boston-1916-vol1-ao-leaf0777:9e6356fe2329:b0004-p0001-l0087",
+      "boston-1916-vol1-ao-leaf0777:9e6356fe2329:b0004-p0001-l0088"
+    ],
+    "reading_orders": [
+      106,
+      107,
+      108,
+      109,
+      110
+    ],
+    "ocr_lines": [
+      "« John jr h 10 High View av W R",
+      "« Julius F foreman h 4421 Wash Ros",
+      "Forster Charles D gateman Ferry Service bds 19",
+      "Marion E B",
+      "« Charles J h 19 Marion E B"
+    ]
+  },
+  {
+    "region_id": "leaf0777-R-bottom",
+    "leaf_num": 777,
+    "printed_page": "779",
+    "bbox": [
+      817,
+      2584,
+      1504,
+      2694
+    ],
+    "gutter_x": 817,
+    "image_sha256": "483053ba0ba7c7fe789846b053957ad7543cee45eed903ee6e2ed232f79abbb1",
+    "line_ids": [
+      "boston-1916-vol1-ao-leaf0777:9e6356fe2329:b0011-p0001-l0107",
+      "boston-1916-vol1-ao-leaf0777:9e6356fe2329:b0011-p0001-l0108",
+      "boston-1916-vol1-ao-leaf0777:9e6356fe2329:b0011-p0001-l0109",
+      "boston-1916-vol1-ao-leaf0777:9e6356fe2329:b0011-p0001-l0110"
+    ],
+    "reading_orders": [
+      224,
+      225,
+      226,
+      227
+    ],
+    "ocr_lines": [
+      "« Francesco pedler h 9 Stillman",
+      "« (yiovanni tailor h 16 Hull",
+      "« Giiuseppe shoemaker h 24 Hale",
+      "« John laborer h 82 E Lenox"
+    ]
+  },
+  {
+    "region_id": "leaf0780-L-top",
+    "leaf_num": 780,
+    "printed_page": "782",
+    "bbox": [
+      114,
+      105,
+      843,
+      215
+    ],
+    "gutter_x": 843,
+    "image_sha256": "1290431a68ea9bd88aad33c729b912e08e109ab211d408816f651d09bb0c1d8d",
+    "line_ids": [
+      "boston-1916-vol1-ao-leaf0780:9e6356fe2329:b0001-p0001-l0001",
+      "boston-1916-vol1-ao-leaf0780:9e6356fe2329:b0002-p0001-l0001",
+      "boston-1916-vol1-ao-leaf0780:9e6356fe2329:b0003-p0001-l0001",
+      "boston-1916-vol1-ao-leaf0780:9e6356fe2329:b0003-p0002-l0001",
+      "boston-1916-vol1-ao-leaf0780:9e6356fe2329:b0012-p0001-l0001"
+    ],
+    "reading_orders": [
+      1,
+      2,
+      3,
+      4,
+      116
+    ],
+    "ocr_lines": [
+      "782",
+      "Foster",
+      "Krank elevatorman 387 Wash rms 24 W Ded-",
+      "am",
+      "BOSTON [1916] DIRECTORY"
+    ]
+  },
+  {
+    "region_id": "leaf0780-R-top",
+    "leaf_num": 780,
+    "printed_page": "782",
+    "bbox": [
+      843,
+      105,
+      1520,
+      215
+    ],
+    "gutter_x": 843,
+    "image_sha256": "1290431a68ea9bd88aad33c729b912e08e109ab211d408816f651d09bb0c1d8d",
+    "line_ids": [
+      "boston-1916-vol1-ao-leaf0780:9e6356fe2329:b0013-p0001-l0001",
+      "boston-1916-vol1-ao-leaf0780:9e6356fe2329:b0014-p0001-l0001",
+      "boston-1916-vol1-ao-leaf0780:9e6356fe2329:b0024-p0001-l0001",
+      "boston-1916-vol1-ao-leaf0780:9e6356fe2329:b0024-p0002-l0001"
+    ],
+    "reading_orders": [
+      117,
+      118,
+      130,
+      131
+    ],
+    "ocr_lines": [
+      "Foster",
+      "RERER Sg RRR R= R",
+      "Howard F foreman h 41 Sheffield rd Ros",
+      "Howard G auto repairer b 88 Qakav Der [WR"
+    ]
+  },
+  {
+    "region_id": "leaf0780-L-middle",
+    "leaf_num": 780,
+    "printed_page": "782",
+    "bbox": [
+      114,
+      1349,
+      843,
+      1459
+    ],
+    "gutter_x": 843,
+    "image_sha256": "1290431a68ea9bd88aad33c729b912e08e109ab211d408816f651d09bb0c1d8d",
+    "line_ids": [
+      "boston-1916-vol1-ao-leaf0780:9e6356fe2329:b0006-p0001-l0001",
+      "boston-1916-vol1-ao-leaf0780:9e6356fe2329:b0010-p0001-l0002",
+      "boston-1916-vol1-ao-leaf0780:9e6356fe2329:b0011-p0001-l0001",
+      "boston-1916-vol1-ao-leaf0780:9e6356fe2329:b0011-p0001-l0002",
+      "boston-1916-vol1-ao-leaf0780:9e6356fe2329:b0011-p0002-l0001",
+      "boston-1916-vol1-ao-leaf0780:9e6356fe2329:b0011-p0003-l0001",
+      "boston-1916-vol1-ao-leaf0780:9e6356fe2329:b0011-p0004-l0001"
+    ],
+    "reading_orders": [
+      30,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62
+    ],
+    "ocr_lines": [
+      "-",
+      "K,SB",
+      "George S salesman 280 Summer h at Ells-",
+      "worth Me [Swampscott",
+      "George W real estate 30 State rm 505 h at",
+      "George W shipper 2267 Wash Rox h 2548 do",
+      "Goodwin LeB teaching fellow Harvard Medi-"
+    ]
+  },
+  {
+    "region_id": "leaf0780-R-middle",
+    "leaf_num": 780,
+    "printed_page": "782",
+    "bbox": [
+      843,
+      1349,
+      1520,
+      1459
+    ],
+    "gutter_x": 843,
+    "image_sha256": "1290431a68ea9bd88aad33c729b912e08e109ab211d408816f651d09bb0c1d8d",
+    "line_ids": [
+      "boston-1916-vol1-ao-leaf0780:9e6356fe2329:b0017-p0001-l0001",
+      "boston-1916-vol1-ao-leaf0780:9e6356fe2329:b0025-p0006-l0001",
+      "boston-1916-vol1-ao-leaf0780:9e6356fe2329:b0025-p0006-l0002",
+      "boston-1916-vol1-ao-leaf0780:9e6356fe2329:b0025-p0007-l0001",
+      "boston-1916-vol1-ao-leaf0780:9e6356fe2329:b0025-p0008-l0001",
+      "boston-1916-vol1-ao-leaf0780:9e6356fe2329:b0025-p0009-l0001",
+      "boston-1916-vol1-ao-leaf0780:9e6356fe2329:b0025-p0010-l0001"
+    ],
+    "reading_orders": [
+      121,
+      180,
+      181,
+      182,
+      183,
+      184,
+      185
+    ],
+    "ocr_lines": [
+      "= ERE RRR ER = ES",
+      "John Winthrop (J W Foster & Co) wool 246",
+      "Summer h at B'line",
+      "John W chauffeur h 252 Webster E B",
+      "Joseph watchman h 791 Saratoga E B",
+      "Joseph bds 53§Ruggles Rox",
+      "Joseph A h 8 Silloway Dor"
+    ]
+  },
+  {
+    "region_id": "leaf0780-L-bottom",
+    "leaf_num": 780,
+    "printed_page": "782",
+    "bbox": [
+      114,
+      2599,
+      843,
+      2709
+    ],
+    "gutter_x": 843,
+    "image_sha256": "1290431a68ea9bd88aad33c729b912e08e109ab211d408816f651d09bb0c1d8d",
+    "line_ids": [
+      "boston-1916-vol1-ao-leaf0780:9e6356fe2329:b0008-p0001-l0001",
+      "boston-1916-vol1-ao-leaf0780:9e6356fe2329:b0011-p0040-l0001",
+      "boston-1916-vol1-ao-leaf0780:9e6356fe2329:b0011-p0041-l0001",
+      "boston-1916-vol1-ao-leaf0780:9e6356fe2329:b0011-p0041-l0002",
+      "boston-1916-vol1-ao-leaf0780:9e6356fe2329:b0011-p0042-l0001",
+      "boston-1916-vol1-ao-leaf0780:9e6356fe2329:b0011-p0043-l0001"
+    ],
+    "reading_orders": [
+      32,
+      111,
+      112,
+      113,
+      114,
+      115
+    ],
+    "ocr_lines": [
+      "I",
+      "Hilda¥h-64 Myrtle",
+      "Hiram1!A clerkjl2 City sq Chsn h 15 Harvard",
+      "do [at Abington",
+      "Horace H foreman freighthouse 3, ft Sleeper h",
+      "Horace H h 588 River Mat"
+    ]
+  },
+  {
+    "region_id": "leaf0780-R-bottom",
+    "leaf_num": 780,
+    "printed_page": "782",
+    "bbox": [
+      843,
+      2599,
+      1520,
+      2709
+    ],
+    "gutter_x": 843,
+    "image_sha256": "1290431a68ea9bd88aad33c729b912e08e109ab211d408816f651d09bb0c1d8d",
+    "line_ids": [
+      "boston-1916-vol1-ao-leaf0780:9e6356fe2329:b0022-p0001-l0001",
+      "boston-1916-vol1-ao-leaf0780:9e6356fe2329:b0023-p0001-l0001",
+      "boston-1916-vol1-ao-leaf0780:9e6356fe2329:b0023-p0001-l0002",
+      "boston-1916-vol1-ao-leaf0780:9e6356fe2329:b0025-p0051-l0001",
+      "boston-1916-vol1-ao-leaf0780:9e6356fe2329:b0025-p0052-l0001",
+      "boston-1916-vol1-ao-leaf0780:9e6356fe2329:b0025-p0052-l0002",
+      "boston-1916-vol1-ao-leaf0780:9e6356fe2329:b0025-p0053-l0001"
+    ],
+    "reading_orders": [
+      127,
+      128,
+      129,
+      235,
+      236,
+      237,
+      238
+    ],
+    "ocr_lines": [
+      "= B",
+      "-",
+      ">",
+      "Margaret J Mrs h 100 Chestnut",
+      "Marion B teacher Mozart school Ros b 94",
+      "Rockview J P",
+      "Marion L clerk h 396 Northampton"
+    ]
+  },
+  {
+    "region_id": "leaf0783-L-top",
+    "leaf_num": 783,
+    "printed_page": "783",
+    "bbox": [
+      131,
+      105,
+      851,
+      215
+    ],
+    "gutter_x": 851,
+    "image_sha256": "762e7705e7b1c35e23730ab07b161e1853b299c560ecfd328abfd3ea85c9c95f",
+    "line_ids": [
+      "boston-1916-vol1-ao-leaf0783:9e6356fe2329:b0001-p0001-l0001",
+      "boston-1916-vol1-ao-leaf0783:9e6356fe2329:b0001-p0001-l0002",
+      "boston-1916-vol1-ao-leaf0783:9e6356fe2329:b0001-p0001-l0003",
+      "boston-1916-vol1-ao-leaf0783:9e6356fe2329:b0002-p0001-l0001",
+      "boston-1916-vol1-ao-leaf0783:9e6356fe2329:b0012-p0001-l0001",
+      "boston-1916-vol1-ao-leaf0783:9e6356fe2329:b0013-p0001-l0001",
+      "boston-1916-vol1-ao-leaf0783:9e6356fe2329:b0014-p0001-l0001",
+      "boston-1916-vol1-ao-leaf0783:9e6356fe2329:b0014-p0001-l0002"
+    ],
+    "reading_orders": [
+      1,
+      2,
+      3,
+      4,
+      14,
+      15,
+      16,
+      17
+    ],
+    "ocr_lines": [
+      "Foster - |",
+      "Marland A printer 426 Wash h at W Lynn",
+      "M Mrs h 71 Benni EB",
+      "st 2 eer FE",
+      "\\",
+      "ary",
+      "ennington",
+      "Mary A widow Nathaniel H h 740 Adams Dor"
+    ]
+  },
+  {
+    "region_id": "leaf0783-R-top",
+    "leaf_num": 783,
+    "printed_page": "783",
+    "bbox": [
+      851,
+      105,
+      1526,
+      215
+    ],
+    "gutter_x": 851,
+    "image_sha256": "762e7705e7b1c35e23730ab07b161e1853b299c560ecfd328abfd3ea85c9c95f",
+    "line_ids": [
+      "boston-1916-vol1-ao-leaf0783:9e6356fe2329:b0020-p0002-l0001",
+      "boston-1916-vol1-ao-leaf0783:9e6356fe2329:b0020-p0002-l0002",
+      "boston-1916-vol1-ao-leaf0783:9e6356fe2329:b0020-p0002-l0003",
+      "boston-1916-vol1-ao-leaf0783:9e6356fe2329:b0021-p0001-l0001"
+    ],
+    "reading_orders": [
+      125,
+      126,
+      127,
+      128
+    ],
+    "ocr_lines": [
+      "Foster",
+      "« William E solicitor Met Trust Co h at Win-",
+      "‘throp [Camb",
+      "« William E vice pres 1 Beacon rm 921 h at"
+    ]
+  },
+  {
+    "region_id": "leaf0783-L-middle",
+    "leaf_num": 783,
+    "printed_page": "783",
+    "bbox": [
+      131,
+      1342,
+      851,
+      1452
+    ],
+    "gutter_x": 851,
+    "image_sha256": "762e7705e7b1c35e23730ab07b161e1853b299c560ecfd328abfd3ea85c9c95f",
+    "line_ids": [
+      "boston-1916-vol1-ao-leaf0783:9e6356fe2329:b0008-p0001-l0001",
+      "boston-1916-vol1-ao-leaf0783:9e6356fe2329:b0015-p0039-l0002",
+      "boston-1916-vol1-ao-leaf0783:9e6356fe2329:b0015-p0039-l0003",
+      "boston-1916-vol1-ao-leaf0783:9e6356fe2329:b0015-p0040-l0001",
+      "boston-1916-vol1-ao-leaf0783:9e6356fe2329:b0015-p0040-l0002",
+      "boston-1916-vol1-ao-leaf0783:9e6356fe2329:b0015-p0041-l0001"
+    ],
+    "reading_orders": [
+      10,
+      66,
+      67,
+      68,
+      69,
+      70
+    ],
+    "ocr_lines": [
+      "RR BR ER 2",
+      "and cane tips arch supports and heel cush-",
+      "ions 105 Federal-—See inserted leaf opp",
+      "Rufus W foreman 683 Atlantic av rm 77 h at",
+      "Everett",
+      "Rupert D foreman h 50 Alpha rd Dor"
+    ]
+  },
+  {
+    "region_id": "leaf0783-R-middle",
+    "leaf_num": 783,
+    "printed_page": "783",
+    "bbox": [
+      851,
+      1342,
+      1526,
+      1452
+    ],
+    "gutter_x": 851,
+    "image_sha256": "762e7705e7b1c35e23730ab07b161e1853b299c560ecfd328abfd3ea85c9c95f",
+    "line_ids": [
+      "boston-1916-vol1-ao-leaf0783:9e6356fe2329:b0030-p0002-l0001",
+      "boston-1916-vol1-ao-leaf0783:9e6356fe2329:b0030-p0002-l0002",
+      "boston-1916-vol1-ao-leaf0783:9e6356fe2329:b0030-p0003-l0001",
+      "boston-1916-vol1-ao-leaf0783:9e6356fe2329:b0030-p0004-l0001",
+      "boston-1916-vol1-ao-leaf0783:9e6356fe2329:b0030-p0004-l0002",
+      "boston-1916-vol1-ao-leaf0783:9e6356fe2329:b0030-p0005-l0001",
+      "boston-1916-vol1-ao-leaf0783:9e6356fe2329:b0031-p0001-l0001",
+      "boston-1916-vol1-ao-leaf0783:9e6356fe2329:b0032-p0001-l0001"
+    ],
+    "reading_orders": [
+      188,
+      189,
+      190,
+      191,
+      192,
+      193,
+      238,
+      239
+    ],
+    "ocr_lines": [
+      "Norway [Canterbury Dor",
+      "Charles steamfitter 103 Haverhill h rear 68",
+      "Donald C student bds r 68 Canterbury Dor",
+      "Edward W, Ladder 23, Grove Hall Dor h 977",
+      "Blue Hill av do",
+      "Fiske, Rawson Co seed store 12 and 13 F H sq",
+      "BR =",
+      "I 5"
+    ]
+  },
+  {
+    "region_id": "leaf0783-L-bottom",
+    "leaf_num": 783,
+    "printed_page": "783",
+    "bbox": [
+      131,
+      2584,
+      851,
+      2694
+    ],
+    "gutter_x": 851,
+    "image_sha256": "762e7705e7b1c35e23730ab07b161e1853b299c560ecfd328abfd3ea85c9c95f",
+    "line_ids": [
+      "boston-1916-vol1-ao-leaf0783:9e6356fe2329:b0019-p0023-l0002",
+      "boston-1916-vol1-ao-leaf0783:9e6356fe2329:b0019-p0024-l0001",
+      "boston-1916-vol1-ao-leaf0783:9e6356fe2329:b0019-p0025-l0001",
+      "boston-1916-vol1-ao-leaf0783:9e6356fe2329:b0019-p0026-l0001"
+    ],
+    "reading_orders": [
+      120,
+      121,
+      122,
+      123
+    ],
+    "ocr_lines": [
+      "Gloucester",
+      "William B waiter B A A h 12 Holiday Dor",
+      "William C machinist h 79 E Canton",
+      "William3D signwriter rms 212 W Newton"
+    ]
+  },
+  {
+    "region_id": "leaf0783-R-bottom",
+    "leaf_num": 783,
+    "printed_page": "783",
+    "bbox": [
+      851,
+      2584,
+      1526,
+      2694
+    ],
+    "gutter_x": 851,
+    "image_sha256": "762e7705e7b1c35e23730ab07b161e1853b299c560ecfd328abfd3ea85c9c95f",
+    "line_ids": [
+      "boston-1916-vol1-ao-leaf0783:9e6356fe2329:b0037-p0003-l0001",
+      "boston-1916-vol1-ao-leaf0783:9e6356fe2329:b0037-p0003-l0002",
+      "boston-1916-vol1-ao-leaf0783:9e6356fe2329:b0037-p0003-l0003",
+      "boston-1916-vol1-ao-leaf0783:9e6356fe2329:b0037-p0003-l0004"
+    ],
+    "reading_orders": [
+      250,
+      251,
+      252,
+      253
+    ],
+    "ocr_lines": [
+      "Is rms 40 Ashford do [Mat",
+      "Foulsham Mae E bookkeeper bds 708 Walk Hill",
+      "« Robert engineer h 708 Walk Hill Mat",
+      "« Robert W clerk h 30 Rawson Dor"
+    ]
+  },
+  {
+    "region_id": "leaf1000-L-top",
+    "leaf_num": 1000,
+    "printed_page": "1000",
+    "bbox": [
+      145,
+      105,
+      886,
+      215
+    ],
+    "gutter_x": 886,
+    "image_sha256": "1d48b9c59b46abea4c1367053c748ba2c8ebc843d48cc6410af44900353ec916",
+    "line_ids": [
+      "boston-1916-vol1-ao-leaf1000:9e6356fe2329:b0001-p0001-l0002",
+      "boston-1916-vol1-ao-leaf1000:9e6356fe2329:b0002-p0001-l0001",
+      "boston-1916-vol1-ao-leaf1000:9e6356fe2329:b0002-p0001-l0002",
+      "boston-1916-vol1-ao-leaf1000:9e6356fe2329:b0002-p0001-l0003",
+      "boston-1916-vol1-ao-leaf1000:9e6356fe2329:b0003-p0001-l0001"
+    ],
+    "reading_orders": [
+      2,
+      3,
+      4,
+      5,
+      68
+    ],
+    "ocr_lines": [
+      "Hoit",
+      "Eleanor teacher bds 28 Bellevue Dor",
+      "Eleanor K widow Albert H h 28 Bellevue Dor",
+      "Mary teacher bds 28 Bellevue Dor",
+      "RROCRILROCRIRYR"
+    ]
+  },
+  {
+    "region_id": "leaf1000-R-top",
+    "leaf_num": 1000,
+    "printed_page": "1000",
+    "bbox": [
+      886,
+      105,
+      1581,
+      215
+    ],
+    "gutter_x": 886,
+    "image_sha256": "1d48b9c59b46abea4c1367053c748ba2c8ebc843d48cc6410af44900353ec916",
+    "line_ids": [
+      "boston-1916-vol1-ao-leaf1000:9e6356fe2329:b0008-p0001-l0002",
+      "boston-1916-vol1-ao-leaf1000:9e6356fe2329:b0009-p0001-l0001",
+      "boston-1916-vol1-ao-leaf1000:9e6356fe2329:b0009-p0001-l0002",
+      "boston-1916-vol1-ao-leaf1000:9e6356fe2329:b0009-p0001-l0003",
+      "boston-1916-vol1-ao-leaf1000:9e6356fe2329:b0009-p0001-l0004"
+    ],
+    "reading_orders": [
+      117,
+      118,
+      119,
+      120,
+      121
+    ],
+    "ocr_lines": [
+      "Holbrook",
+      "« J Byorest clerk 50 Congress rm 1 h at Newton",
+      "en",
+      "« Kenneth H sec 207 South h at Newton",
+      "« Leonard R storekeeper h 37 Poplar Ros '"
+    ]
+  },
+  {
+    "region_id": "leaf1000-L-middle",
+    "leaf_num": 1000,
+    "printed_page": "1000",
+    "bbox": [
+      145,
+      1347,
+      886,
+      1457
+    ],
+    "gutter_x": 886,
+    "image_sha256": "1d48b9c59b46abea4c1367053c748ba2c8ebc843d48cc6410af44900353ec916",
+    "line_ids": [
+      "boston-1916-vol1-ao-leaf1000:9e6356fe2329:b0002-p0001-l0052",
+      "boston-1916-vol1-ao-leaf1000:9e6356fe2329:b0002-p0001-l0053",
+      "boston-1916-vol1-ao-leaf1000:9e6356fe2329:b0002-p0001-l0054",
+      "boston-1916-vol1-ao-leaf1000:9e6356fe2329:b0002-p0001-l0055",
+      "boston-1916-vol1-ao-leaf1000:9e6356fe2329:b0002-p0001-l0056",
+      "boston-1916-vol1-ao-leaf1000:9e6356fe2329:b0002-p0001-l0057"
+    ],
+    "reading_orders": [
+      54,
+      55,
+      56,
+      57,
+      58,
+      59
+    ],
+    "ocr_lines": [
+      "Charles L carrier Br, P O h 18 Bigelow Br",
+      "Charles S nurse rms 433 Shawmut av",
+      "Clara widow Charles E h 17 Saunders Alls",
+      "Clinton E printer 324 Wash h 6 Humphreys pl",
+      "Dor [rm 621",
+      "« Corey & Co of N Y note brokers 50 Oo res"
+    ]
+  },
+  {
+    "region_id": "leaf1000-R-middle",
+    "leaf_num": 1000,
+    "printed_page": "1000",
+    "bbox": [
+      886,
+      1347,
+      1581,
+      1457
+    ],
+    "gutter_x": 886,
+    "image_sha256": "1d48b9c59b46abea4c1367053c748ba2c8ebc843d48cc6410af44900353ec916",
+    "line_ids": [
+      "boston-1916-vol1-ao-leaf1000:9e6356fe2329:b0010-p0001-l0010",
+      "boston-1916-vol1-ao-leaf1000:9e6356fe2329:b0010-p0001-l0011",
+      "boston-1916-vol1-ao-leaf1000:9e6356fe2329:b0010-p0001-l0012",
+      "boston-1916-vol1-ao-leaf1000:9e6356fe2329:b0010-p0001-l0013",
+      "boston-1916-vol1-ao-leaf1000:9e6356fe2329:b0010-p0001-l0014",
+      "boston-1916-vol1-ao-leaf1000:9e6356fe2329:b0010-p0001-l0015"
+    ],
+    "reading_orders": [
+      169,
+      170,
+      171,
+      172,
+      173,
+      174
+    ],
+    "ocr_lines": [
+      "« Cornelius B engineer h 71 Falcon E B",
+      "« Frederick G clerk 131 State rm 900 h 183",
+      "Strathmore rd Br",
+      "« Henry M 39 Boylston h at Hopkinton",
+      "« Lyle R 87 Milk rm 14 h at Somv",
+      "Holcombe Arthur N, Mass Minimum Wage Com"
+    ]
+  },
+  {
+    "region_id": "leaf1000-L-bottom",
+    "leaf_num": 1000,
+    "printed_page": "1000",
+    "bbox": [
+      145,
+      2594,
+      886,
+      2704
+    ],
+    "gutter_x": 886,
+    "image_sha256": "1d48b9c59b46abea4c1367053c748ba2c8ebc843d48cc6410af44900353ec916",
+    "line_ids": [
+      "boston-1916-vol1-ao-leaf1000:9e6356fe2329:b0005-p0001-l0042",
+      "boston-1916-vol1-ao-leaf1000:9e6356fe2329:b0005-p0001-l0043",
+      "boston-1916-vol1-ao-leaf1000:9e6356fe2329:b0005-p0001-l0044",
+      "boston-1916-vol1-ao-leaf1000:9e6356fe2329:b0007-p0001-l0001"
+    ],
+    "reading_orders": [
+      111,
+      112,
+      113,
+      115
+    ],
+    "ocr_lines": [
+      "John C died Nov 8 1915",
+      "Joseph B clerk 575 Atlantic av b at Somy",
+      "Josiah W T steamfltter h 40 Walnut Dor",
+      "EJ"
+    ]
+  },
+  {
+    "region_id": "leaf1000-R-bottom",
+    "leaf_num": 1000,
+    "printed_page": "1000",
+    "bbox": [
+      886,
+      2594,
+      1581,
+      2704
+    ],
+    "gutter_x": 886,
+    "image_sha256": "1d48b9c59b46abea4c1367053c748ba2c8ebc843d48cc6410af44900353ec916",
+    "line_ids": [
+      "boston-1916-vol1-ao-leaf1000:9e6356fe2329:b0011-p0029-l0001",
+      "boston-1916-vol1-ao-leaf1000:9e6356fe2329:b0011-p0030-l0001",
+      "boston-1916-vol1-ao-leaf1000:9e6356fe2329:b0011-p0031-l0001",
+      "boston-1916-vol1-ao-leaf1000:9e6356fe2329:b0020-p0001-l0001",
+      "boston-1916-vol1-ao-leaf1000:9e6356fe2329:b0020-p0001-l0002"
+    ],
+    "reading_orders": [
+      224,
+      225,
+      226,
+      237,
+      238
+    ],
+    "ocr_lines": [
+      "« George W mgr 238 State h at Quincy",
+      "George W h 11 Auburn Rox",
+      "« -Graves Co shirtjwaist suits 116 Bedford",
+      "-",
+      "="
+    ]
+  },
+  {
+    "region_id": "leaf1001-L-top",
+    "leaf_num": 1001,
+    "printed_page": "1001",
+    "bbox": [
+      80,
+      105,
+      798,
+      215
+    ],
+    "gutter_x": 798,
+    "image_sha256": "25fdc4117d908772d0952b7b40e6b950722900347ecf532cce06efd5df3708fc",
+    "line_ids": [
+      "boston-1916-vol1-ao-leaf1001:9e6356fe2329:b0001-p0001-l0001",
+      "boston-1916-vol1-ao-leaf1001:9e6356fe2329:b0002-p0001-l0001",
+      "boston-1916-vol1-ao-leaf1001:9e6356fe2329:b0004-p0001-l0001",
+      "boston-1916-vol1-ao-leaf1001:9e6356fe2329:b0011-p0001-l0001"
+    ],
+    "reading_orders": [
+      1,
+      2,
+      63,
+      115
+    ],
+    "ocr_lines": [
+      "Holden",
+      "Hannah widow Patrick J h 19 Washburn Dor",
+      "EER zB",
+      "BOSTON, [1916] DIRECTORY"
+    ]
+  },
+  {
+    "region_id": "leaf1001-R-top",
+    "leaf_num": 1001,
+    "printed_page": "1001",
+    "bbox": [
+      798,
+      105,
+      1485,
+      215
+    ],
+    "gutter_x": 798,
+    "image_sha256": "25fdc4117d908772d0952b7b40e6b950722900347ecf532cce06efd5df3708fc",
+    "line_ids": [
+      "boston-1916-vol1-ao-leaf1001:9e6356fe2329:b0013-p0001-l0001",
+      "boston-1916-vol1-ao-leaf1001:9e6356fe2329:b0014-p0001-l0001",
+      "boston-1916-vol1-ao-leaf1001:9e6356fe2329:b0014-p0001-l0002"
+    ],
+    "reading_orders": [
+      117,
+      118,
+      119
+    ],
+    "ocr_lines": [
+      "1001",
+      "Holdsworth",
+      "« John R clerk S80 Border E B bds 96 Selwyn"
+    ]
+  },
+  {
+    "region_id": "leaf1001-L-middle",
+    "leaf_num": 1001,
+    "printed_page": "1001",
+    "bbox": [
+      80,
+      1342,
+      798,
+      1452
+    ],
+    "gutter_x": 798,
+    "image_sha256": "25fdc4117d908772d0952b7b40e6b950722900347ecf532cce06efd5df3708fc",
+    "line_ids": [
+      "boston-1916-vol1-ao-leaf1001:9e6356fe2329:b0003-p0039-l0002",
+      "boston-1916-vol1-ao-leaf1001:9e6356fe2329:b0003-p0040-l0001",
+      "boston-1916-vol1-ao-leaf1001:9e6356fe2329:b0003-p0040-l0002",
+      "boston-1916-vol1-ao-leaf1001:9e6356fe2329:b0003-p0041-l0001",
+      "boston-1916-vol1-ao-leaf1001:9e6356fe2329:b0003-p0042-l0001",
+      "boston-1916-vol1-ao-leaf1001:9e6356fe2329:b0003-p0043-l0001"
+    ],
+    "reading_orders": [
+      51,
+      52,
+      53,
+      54,
+      55,
+      56
+    ],
+    "ocr_lines": [
+      "Rockwell Dor -",
+      "Thomas M (Hopkinson & Holden) wooden=-",
+      "ware 15 F H sq h at Newton Cen",
+      "Valentine J clerk bhds 36 P. S B",
+      "Walter F driver h 17 Hillsboro Dor",
+      "Walter J ins h 56 Charlesgate east"
+    ]
+  },
+  {
+    "region_id": "leaf1001-R-middle",
+    "leaf_num": 1001,
+    "printed_page": "1001",
+    "bbox": [
+      798,
+      1342,
+      1485,
+      1452
+    ],
+    "gutter_x": 798,
+    "image_sha256": "25fdc4117d908772d0952b7b40e6b950722900347ecf532cce06efd5df3708fc",
+    "line_ids": [
+      "boston-1916-vol1-ao-leaf1001:9e6356fe2329:b0015-p0001-l0050",
+      "boston-1916-vol1-ao-leaf1001:9e6356fe2329:b0015-p0001-l0051",
+      "boston-1916-vol1-ao-leaf1001:9e6356fe2329:b0015-p0001-l0052",
+      "boston-1916-vol1-ao-leaf1001:9e6356fe2329:b0015-p0001-l0053",
+      "boston-1916-vol1-ao-leaf1001:9e6356fe2329:b0015-p0001-l0054"
+    ],
+    "reading_orders": [
+      169,
+      170,
+      171,
+      172,
+      173
+    ],
+    "ocr_lines": [
+      "« Arthur grocer 101 Elm Chsn",
+      "« Arthur E clerk 6 S Market h at Wollaston",
+      "« Arthur E clerk bds 36 Holbrook J P",
+      "« sArthur J clerk bds 126 Minden Rox",
+      "« Arthur M teamster bds 106 Elm Chsn"
+    ]
+  },
+  {
+    "region_id": "leaf1001-L-bottom",
+    "leaf_num": 1001,
+    "printed_page": "1001",
+    "bbox": [
+      80,
+      2584,
+      798,
+      2694
+    ],
+    "gutter_x": 798,
+    "image_sha256": "25fdc4117d908772d0952b7b40e6b950722900347ecf532cce06efd5df3708fc",
+    "line_ids": [
+      "boston-1916-vol1-ao-leaf1001:9e6356fe2329:b0009-p0001-l0033",
+      "boston-1916-vol1-ao-leaf1001:9e6356fe2329:b0009-p0001-l0034",
+      "boston-1916-vol1-ao-leaf1001:9e6356fe2329:b0009-p0001-l0035",
+      "boston-1916-vol1-ao-leaf1001:9e6356fe2329:b0009-p0001-l0036",
+      "boston-1916-vol1-ao-leaf1001:9e6356fe2329:b0009-p0001-l0037",
+      "boston-1916-vol1-ao-leaf1001:9e6356fe2329:b0009-p0001-l0038"
+    ],
+    "reading_orders": [
+      108,
+      109,
+      110,
+      111,
+      112,
+      113
+    ],
+    "ocr_lines": [
+      "« Henry C upholsterer h 7 Downer av Dor",
+      "« Henrv .J upholsterer r 59 Sanford Mat h at",
+      "Milton 8 [bury Rox",
+      "Holdsworth Ferdinand machinist rms 47 Rox-",
+      "« Fred real estate 30 State rm 414 h at Arlington",
+      "« George packer 518 Wash h 46 Jeffries E B"
+    ]
+  },
+  {
+    "region_id": "leaf1001-R-bottom",
+    "leaf_num": 1001,
+    "printed_page": "1001",
+    "bbox": [
+      798,
+      2584,
+      1485,
+      2694
+    ],
+    "gutter_x": 798,
+    "image_sha256": "25fdc4117d908772d0952b7b40e6b950722900347ecf532cce06efd5df3708fc",
+    "line_ids": [
+      "boston-1916-vol1-ao-leaf1001:9e6356fe2329:b0015-p0001-l0104",
+      "boston-1916-vol1-ao-leaf1001:9e6356fe2329:b0015-p0001-l0105",
+      "boston-1916-vol1-ao-leaf1001:9e6356fe2329:b0016-p0001-l0001",
+      "boston-1916-vol1-ao-leaf1001:9e6356fe2329:b0016-p0001-l0002",
+      "boston-1916-vol1-ao-leaf1001:9e6356fe2329:b0018-p0001-l0001",
+      "boston-1916-vol1-ao-leaf1001:9e6356fe2329:b0018-p0001-l0002"
+    ],
+    "reading_orders": [
+      223,
+      224,
+      225,
+      226,
+      228,
+      229
+    ],
+    "ocr_lines": [
+      "« Edward S architect 78 Devonshire h at Sharon",
+      "« Eleanor F clerk 309 Court House h at Water-",
+      "town",
+      "[rd SB",
+      "« Eliza widow h 22 Madison Rox!",
+      "« Elizabeth H widow Patrick bds 77 Farragut"
+    ]
+  },
+  {
+    "region_id": "leaf1200-L-top",
+    "leaf_num": 1200,
+    "printed_page": "1200",
+    "bbox": [
+      54,
+      105,
+      812,
+      215
+    ],
+    "gutter_x": 812,
+    "image_sha256": "e6856ff9b5b08c38ef5f53e66d6f37f8a6d964df70901a9d69fea6536d5e6db4",
+    "line_ids": [
+      "boston-1916-vol1-ao-leaf1200:9e6356fe2329:b0002-p0001-l0001",
+      "boston-1916-vol1-ao-leaf1200:9e6356fe2329:b0002-p0001-l0002",
+      "boston-1916-vol1-ao-leaf1200:9e6356fe2329:b0002-p0001-l0003",
+      "boston-1916-vol1-ao-leaf1200:9e6356fe2329:b0002-p0001-l0004",
+      "boston-1916-vol1-ao-leaf1200:9e6356fe2329:b0003-p0001-l0001"
+    ],
+    "reading_orders": [
+      2,
+      3,
+      4,
+      5,
+      29
+    ],
+    "ocr_lines": [
+      "Levinson",
+      "« Joseph h 50 Allen",
+      "Julius S mgr 453 Columbus av b 19 Wash Dor",
+      "Max tailor31424 Wash J Ph 46 Hollander Rox",
+      "=r er Ne"
+    ]
+  },
+  {
+    "region_id": "leaf1200-R-top",
+    "leaf_num": 1200,
+    "printed_page": "1200",
+    "bbox": [
+      812,
+      105,
+      1489,
+      215
+    ],
+    "gutter_x": 812,
+    "image_sha256": "e6856ff9b5b08c38ef5f53e66d6f37f8a6d964df70901a9d69fea6536d5e6db4",
+    "line_ids": [
+      "boston-1916-vol1-ao-leaf1200:9e6356fe2329:b0015-p0001-l0001",
+      "boston-1916-vol1-ao-leaf1200:9e6356fe2329:b0025-p0001-l0001",
+      "boston-1916-vol1-ao-leaf1200:9e6356fe2329:b0025-p0002-l0001",
+      "boston-1916-vol1-ao-leaf1200:9e6356fe2329:b0025-p0002-l0002",
+      "boston-1916-vol1-ao-leaf1200:9e6356fe2329:b0025-p0003-l0001"
+    ],
+    "reading_orders": [
+      120,
+      134,
+      135,
+      136,
+      137
+    ],
+    "ocr_lines": [
+      "Levy Aaron baker h 145 Chambers",
+      "aron com trav h 45 Maple av#Br",
+      "Abraham (A Levy & Co) 19 Eliot h 37 Co",
+      "land Rox [Rox",
+      "Abraham ek 985 Boylston bds 70 Foss"
+    ]
+  },
+  {
+    "region_id": "leaf1200-L-middle",
+    "leaf_num": 1200,
+    "printed_page": "1200",
+    "bbox": [
+      54,
+      1344,
+      812,
+      1454
+    ],
+    "gutter_x": 812,
+    "image_sha256": "e6856ff9b5b08c38ef5f53e66d6f37f8a6d964df70901a9d69fea6536d5e6db4",
+    "line_ids": [
+      "boston-1916-vol1-ao-leaf1200:9e6356fe2329:b0006-p0001-l0025",
+      "boston-1916-vol1-ao-leaf1200:9e6356fe2329:b0006-p0001-l0026",
+      "boston-1916-vol1-ao-leaf1200:9e6356fe2329:b0006-p0001-l0027",
+      "boston-1916-vol1-ao-leaf1200:9e6356fe2329:b0006-p0001-l0028",
+      "boston-1916-vol1-ao-leaf1200:9e6356fe2329:b0006-p0001-l0029"
+    ],
+    "reading_orders": [
+      56,
+      57,
+      58,
+      59,
+      60
+    ],
+    "ocr_lines": [
+      "« Morris provisions 70 Poplar h 11 Kennard av",
+      "« Sophie h 5 Grove [h at Camb",
+      "Levit Louis dressmakers’ supplies 29 Temple pl",
+      "Levitan Benjamin laborer bds 22 N Russell",
+      "« Eugene pres 2 Claxton Dor h 43 Fabyan do"
+    ]
+  },
+  {
+    "region_id": "leaf1200-R-middle",
+    "leaf_num": 1200,
+    "printed_page": "1200",
+    "bbox": [
+      812,
+      1344,
+      1489,
+      1454
+    ],
+    "gutter_x": 812,
+    "image_sha256": "e6856ff9b5b08c38ef5f53e66d6f37f8a6d964df70901a9d69fea6536d5e6db4",
+    "line_ids": [
+      "boston-1916-vol1-ao-leaf1200:9e6356fe2329:b0019-p0001-l0001",
+      "boston-1916-vol1-ao-leaf1200:9e6356fe2329:b0020-p0001-l0001",
+      "boston-1916-vol1-ao-leaf1200:9e6356fe2329:b0020-p0001-l0002",
+      "boston-1916-vol1-ao-leaf1200:9e6356fe2329:b0021-p0001-l0001",
+      "boston-1916-vol1-ao-leaf1200:9e6356fe2329:b0021-p0001-l0002",
+      "boston-1916-vol1-ao-leaf1200:9e6356fe2329:b0025-p0044-l0001",
+      "boston-1916-vol1-ao-leaf1200:9e6356fe2329:b0025-p0044-l0002",
+      "boston-1916-vol1-ao-leaf1200:9e6356fe2329:b0025-p0045-l0001",
+      "boston-1916-vol1-ao-leaf1200:9e6356fe2329:b0025-p0046-l0001",
+      "boston-1916-vol1-ao-leaf1200:9e6356fe2329:b0025-p0047-l0001",
+      "boston-1916-vol1-ao-leaf1200:9e6356fe2329:b0025-p0048-l0001"
+    ],
+    "reading_orders": [
+      125,
+      126,
+      127,
+      128,
+      129,
+      185,
+      186,
+      187,
+      188,
+      189,
+      190
+    ],
+    "ocr_lines": [
+      "RNR RARLR KR S",
+      "-",
+      "=",
+      "-",
+      "=",
+      "David (Universal Raincoat Co) 64 Beach h 76",
+      "Vernon Rox",
+      "David helper bds 44 Lynde [lock do",
+      "David tailor 1072 Blue “Hill av Dor h 29 Have-",
+      "David tailor h 1 Oswego",
+      "David h 98 E Brookline"
+    ]
+  },
+  {
+    "region_id": "leaf1200-L-bottom",
+    "leaf_num": 1200,
+    "printed_page": "1200",
+    "bbox": [
+      54,
+      2589,
+      812,
+      2699
+    ],
+    "gutter_x": 812,
+    "image_sha256": "e6856ff9b5b08c38ef5f53e66d6f37f8a6d964df70901a9d69fea6536d5e6db4",
+    "line_ids": [
+      "boston-1916-vol1-ao-leaf1200:9e6356fe2329:b0010-p0001-l0024",
+      "boston-1916-vol1-ao-leaf1200:9e6356fe2329:b0010-p0001-l0025",
+      "boston-1916-vol1-ao-leaf1200:9e6356fe2329:b0010-p0001-l0026",
+      "boston-1916-vol1-ao-leaf1200:9e6356fe2329:b0010-p0001-l0027"
+    ],
+    "reading_orders": [
+      112,
+      113,
+      114,
+      115
+    ],
+    "ocr_lines": [
+      "Levovsky Myer presser h 15 Lyman [Quincy",
+      "Levowi~h Harry P lawyer 294 Wash rm 301 h at",
+      "« Hyman N Hanover Jewelry Co) 104 Han-",
+      "over rm 407 h 41 Glenway Dor"
+    ]
+  },
+  {
+    "region_id": "leaf1200-R-bottom",
+    "leaf_num": 1200,
+    "printed_page": "1200",
+    "bbox": [
+      812,
+      2589,
+      1489,
+      2699
+    ],
+    "gutter_x": 812,
+    "image_sha256": "e6856ff9b5b08c38ef5f53e66d6f37f8a6d964df70901a9d69fea6536d5e6db4",
+    "line_ids": [
+      "boston-1916-vol1-ao-leaf1200:9e6356fe2329:b0024-p0001-l0001",
+      "boston-1916-vol1-ao-leaf1200:9e6356fe2329:b0025-p0091-l0001",
+      "boston-1916-vol1-ao-leaf1200:9e6356fe2329:b0025-p0092-l0001",
+      "boston-1916-vol1-ao-leaf1200:9e6356fe2329:b0025-p0093-l0001",
+      "boston-1916-vol1-ao-leaf1200:9e6356fe2329:b0025-p0093-l0002",
+      "boston-1916-vol1-ao-leaf1200:9e6356fe2329:b0026-p0001-l0001"
+    ],
+    "reading_orders": [
+      133,
+      238,
+      239,
+      240,
+      241,
+      242
+    ],
+    "ocr_lines": [
+      "RR 2 2 RR =",
+      "Hyman dry goods hn 98 E Brookline",
+      "Hyman tailor h 33 Seneca",
+      "Hyman J (Levy Hardware Co) 53 Eliot and",
+      "1411 Wash h 21 Alpha rd Dor",
+      "Ida Mrs dressmaker 396 Seaver Dor rms do"
+    ]
+  },
+  {
+    "region_id": "leaf1201-L-top",
+    "leaf_num": 1201,
+    "printed_page": "1201",
+    "bbox": [
+      98,
+      105,
+      815,
+      215
+    ],
+    "gutter_x": 815,
+    "image_sha256": "c2219339cc50f5db8ca0d53b16198b79b2297c95ba1430f4869c6b4517f55dc0",
+    "line_ids": [
+      "boston-1916-vol1-ao-leaf1201:9e6356fe2329:b0001-p0001-l0001",
+      "boston-1916-vol1-ao-leaf1201:9e6356fe2329:b0004-p0001-l0001",
+      "boston-1916-vol1-ao-leaf1201:9e6356fe2329:b0005-p0001-l0001",
+      "boston-1916-vol1-ao-leaf1201:9e6356fe2329:b0005-p0002-l0001",
+      "boston-1916-vol1-ao-leaf1201:9e6356fe2329:b0005-p0003-l0001",
+      "boston-1916-vol1-ao-leaf1201:9e6356fe2329:b0005-p0004-l0001"
+    ],
+    "reading_orders": [
+      1,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "ocr_lines": [
+      "Le",
+      "BOSTON [1916] DIRECTORY",
+      "vy",
+      "Irving L salesman h 11 Mountfort",
+      "Isaac cigarmaker h 17 Williams pk Dor [av",
+      "Isaac dept store 1419 Wash bds 476 Shawmut"
+    ]
+  },
+  {
+    "region_id": "leaf1201-R-top",
+    "leaf_num": 1201,
+    "printed_page": "1201",
+    "bbox": [
+      815,
+      105,
+      1506,
+      215
+    ],
+    "gutter_x": 815,
+    "image_sha256": "c2219339cc50f5db8ca0d53b16198b79b2297c95ba1430f4869c6b4517f55dc0",
+    "line_ids": [
+      "boston-1916-vol1-ao-leaf1201:9e6356fe2329:b0022-p0001-l0001",
+      "boston-1916-vol1-ao-leaf1201:9e6356fe2329:b0022-p0001-l0002",
+      "boston-1916-vol1-ao-leaf1201:9e6356fe2329:b0023-p0001-l0001",
+      "boston-1916-vol1-ao-leaf1201:9e6356fe2329:b0023-p0001-l0002",
+      "boston-1916-vol1-ao-leaf1201:9e6356fe2329:b0023-p0001-l0003"
+    ],
+    "reading_orders": [
+      124,
+      125,
+      126,
+      127,
+      128
+    ],
+    "ocr_lines": [
+      "1201",
+      "Levy",
+      "« Sigmund died Jan 18 1916",
+      "« Solomon candymaker h 13 Swallow S B",
+      "« Solomon H cizarmaker h 106 Humboldt av"
+    ]
+  },
+  {
+    "region_id": "leaf1201-L-middle",
+    "leaf_num": 1201,
+    "printed_page": "1201",
+    "bbox": [
+      98,
+      1342,
+      815,
+      1452
+    ],
+    "gutter_x": 815,
+    "image_sha256": "c2219339cc50f5db8ca0d53b16198b79b2297c95ba1430f4869c6b4517f55dc0",
+    "line_ids": [
+      "boston-1916-vol1-ao-leaf1201:9e6356fe2329:b0008-p0001-l0001",
+      "boston-1916-vol1-ao-leaf1201:9e6356fe2329:b0017-p0002-l0001",
+      "boston-1916-vol1-ao-leaf1201:9e6356fe2329:b0017-p0003-l0001",
+      "boston-1916-vol1-ao-leaf1201:9e6356fe2329:b0017-p0004-l0001",
+      "boston-1916-vol1-ao-leaf1201:9e6356fe2329:b0017-p0005-l0001",
+      "boston-1916-vol1-ao-leaf1201:9e6356fe2329:b0017-p0006-l0001",
+      "boston-1916-vol1-ao-leaf1201:9e6356fe2329:b0017-p0007-l0001"
+    ],
+    "reading_orders": [
+      32,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68
+    ],
+    "ocr_lines": [
+      "Err RRR RRR: 2R BRR: RR: ERB",
+      "Mark bds 74 Corona Dor .",
+      "Mark H cutter bds 137 Hutchings Rox",
+      "Mark H (28 E Springfleld) died Oct 15 1915",
+      "M widow Simon h 68 Clifford Rox",
+      "Matilda Mrs h 780 Beacon",
+      "Maurice cigarmaker h 98 Nightingale Dor"
+    ]
+  },
+  {
+    "region_id": "leaf1201-R-middle",
+    "leaf_num": 1201,
+    "printed_page": "1201",
+    "bbox": [
+      815,
+      1342,
+      1506,
+      1452
+    ],
+    "gutter_x": 815,
+    "image_sha256": "c2219339cc50f5db8ca0d53b16198b79b2297c95ba1430f4869c6b4517f55dc0",
+    "line_ids": [
+      "boston-1916-vol1-ao-leaf1201:9e6356fe2329:b0024-p0001-l0011",
+      "boston-1916-vol1-ao-leaf1201:9e6356fe2329:b0024-p0001-l0012",
+      "boston-1916-vol1-ao-leaf1201:9e6356fe2329:b0024-p0001-l0013",
+      "boston-1916-vol1-ao-leaf1201:9e6356fe2329:b0024-p0001-l0014",
+      "boston-1916-vol1-ao-leaf1201:9e6356fe2329:b0024-p0001-l0015",
+      "boston-1916-vol1-ao-leaf1201:9e6356fe2329:b0024-p0001-l0016"
+    ],
+    "reading_orders": [
+      176,
+      177,
+      178,
+      179,
+      180,
+      181
+    ],
+    "ocr_lines": [
+      "« Moses (Albany Shoe Repairing Co) 157 Kings-",
+      "_ ton h at Malden",
+      "Lewinsky Maxwell clerk bds 22 Evelyn Mat",
+      "« Samuel tailor 36 Bromfield rm 305 h 22 Ev-",
+      "elyn Mat",
+      "Lewis Aaron tailor h 24 Browning av Dor [Rox"
+    ]
+  },
+  {
+    "region_id": "leaf1201-L-bottom",
+    "leaf_num": 1201,
+    "printed_page": "1201",
+    "bbox": [
+      98,
+      2584,
+      815,
+      2694
+    ],
+    "gutter_x": 815,
+    "image_sha256": "c2219339cc50f5db8ca0d53b16198b79b2297c95ba1430f4869c6b4517f55dc0",
+    "line_ids": [
+      "boston-1916-vol1-ao-leaf1201:9e6356fe2329:b0014-p0001-l0001",
+      "boston-1916-vol1-ao-leaf1201:9e6356fe2329:b0020-p0029-l0001",
+      "boston-1916-vol1-ao-leaf1201:9e6356fe2329:b0020-p0030-l0001",
+      "boston-1916-vol1-ao-leaf1201:9e6356fe2329:b0021-p0001-l0001",
+      "boston-1916-vol1-ao-leaf1201:9e6356fe2329:b0021-p0001-l0002"
+    ],
+    "reading_orders": [
+      38,
+      120,
+      121,
+      122,
+      123
+    ],
+    "ocr_lines": [
+      "ERB",
+      "Sarah widow Meyer h 21 Alpha rd Dor",
+      "Sidney salesman 660 Beacon bds 263 Talbot",
+      "av Dor 5",
+      "Sidney P cutter h 137 Hutchings Rox"
+    ]
+  },
+  {
+    "region_id": "leaf1201-R-bottom",
+    "leaf_num": 1201,
+    "printed_page": "1201",
+    "bbox": [
+      815,
+      2584,
+      1506,
+      2694
+    ],
+    "gutter_x": 815,
+    "image_sha256": "c2219339cc50f5db8ca0d53b16198b79b2297c95ba1430f4869c6b4517f55dc0",
+    "line_ids": [
+      "boston-1916-vol1-ao-leaf1201:9e6356fe2329:b0025-p0001-l0017",
+      "boston-1916-vol1-ao-leaf1201:9e6356fe2329:b0025-p0001-l0018",
+      "boston-1916-vol1-ao-leaf1201:9e6356fe2329:b0025-p0001-l0019",
+      "boston-1916-vol1-ao-leaf1201:9e6356fe2329:b0025-p0001-l0020",
+      "boston-1916-vol1-ao-leaf1201:9e6356fe2329:b0033-p0001-l0001"
+    ],
+    "reading_orders": [
+      231,
+      232,
+      233,
+      234,
+      243
+    ],
+    "ocr_lines": [
+      "Benjamin dentist 229 Berkeley h at Win-",
+      "chester",
+      "Benjamin meatcutter h 113 Devon Rox",
+      "Benjamin I student rms 535 Newbury",
+      "1S"
+    ]
+  },
+  {
+    "region_id": "leaf1533-L-top",
+    "leaf_num": 1533,
+    "printed_page": "1533",
+    "bbox": [
+      52,
+      105,
+      800,
+      215
+    ],
+    "gutter_x": 800,
+    "image_sha256": "2a63f7aa9acdd97f7a1e1a6b2e4d2cd3a66f13aa62008e94f15511390eb5e00a",
+    "line_ids": [
+      "boston-1916-vol1-ao-leaf1533:9e6356fe2329:b0002-p0001-l0001",
+      "boston-1916-vol1-ao-leaf1533:9e6356fe2329:b0002-p0002-l0001",
+      "boston-1916-vol1-ao-leaf1533:9e6356fe2329:b0002-p0003-l0001",
+      "boston-1916-vol1-ao-leaf1533:9e6356fe2329:b0002-p0004-l0001",
+      "boston-1916-vol1-ao-leaf1533:9e6356fe2329:b0002-p0004-l0002"
+    ],
+    "reading_orders": [
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "ocr_lines": [
+      "Oliver",
+      "« Stephen shipper bds 3 Page's ct",
+      "« Susan L bds 27 Brimmer",
+      "« Susan L widow Fitch E h 27 Brimmer",
+      "OLIVER TYPEWRITER CO The Fred E"
+    ]
+  },
+  {
+    "region_id": "leaf1533-R-top",
+    "leaf_num": 1533,
+    "printed_page": "1533",
+    "bbox": [
+      800,
+      105,
+      1488,
+      215
+    ],
+    "gutter_x": 800,
+    "image_sha256": "2a63f7aa9acdd97f7a1e1a6b2e4d2cd3a66f13aa62008e94f15511390eb5e00a",
+    "line_ids": [
+      "boston-1916-vol1-ao-leaf1533:9e6356fe2329:b0013-p0001-l0001",
+      "boston-1916-vol1-ao-leaf1533:9e6356fe2329:b0013-p0001-l0002",
+      "boston-1916-vol1-ao-leaf1533:9e6356fe2329:b0013-p0001-l0003",
+      "boston-1916-vol1-ao-leaf1533:9e6356fe2329:b0013-p0001-l0004",
+      "boston-1916-vol1-ao-leaf1533:9e6356fe2329:b0013-p0001-l0005"
+    ],
+    "reading_orders": [
+      122,
+      123,
+      124,
+      125,
+      126
+    ],
+    "ocr_lines": [
+      "O’Loughlin",
+      "« Stephen laborer h 137 W Second 8S B",
+      "« Sylvester W plumber bds 2776 Wash Rox",
+      "« Thomas clerk bds 2776 Wash Rox",
+      "« William A mech dentist 120 Boylston rm 402"
+    ]
+  },
+  {
+    "region_id": "leaf1533-L-middle",
+    "leaf_num": 1533,
+    "printed_page": "1533",
+    "bbox": [
+      52,
+      1352,
+      800,
+      1462
+    ],
+    "gutter_x": 800,
+    "image_sha256": "2a63f7aa9acdd97f7a1e1a6b2e4d2cd3a66f13aa62008e94f15511390eb5e00a",
+    "line_ids": [
+      "boston-1916-vol1-ao-leaf1533:9e6356fe2329:b0004-p0001-l0007",
+      "boston-1916-vol1-ao-leaf1533:9e6356fe2329:b0004-p0001-l0008",
+      "boston-1916-vol1-ao-leaf1533:9e6356fe2329:b0004-p0001-l0009",
+      "boston-1916-vol1-ao-leaf1533:9e6356fe2329:b0004-p0001-l0010",
+      "boston-1916-vol1-ao-leaf1533:9e6356fe2329:b0004-p0001-l0011",
+      "boston-1916-vol1-ao-leaf1533:9e6356fe2329:b0004-p0001-l0012"
+    ],
+    "reading_orders": [
+      55,
+      56,
+      57,
+      58,
+      59,
+      60
+    ],
+    "ocr_lines": [
+      "« Frank T col clerk Union Nat Bank bds at Win-",
+      "« Ida widow rms 64 E Newton",
+      "« James Monroe, U S referee in bankruptcy 123",
+      "P O bldg h 29 Commonwealth av [Dor",
+      "« John W salesman 70 Kilby rm 21 h 10 Mellen",
+      "« Lucy R widow Montgomery h 10 Mellen Dor"
+    ]
+  },
+  {
+    "region_id": "leaf1533-R-middle",
+    "leaf_num": 1533,
+    "printed_page": "1533",
+    "bbox": [
+      800,
+      1352,
+      1488,
+      1462
+    ],
+    "gutter_x": 800,
+    "image_sha256": "2a63f7aa9acdd97f7a1e1a6b2e4d2cd3a66f13aa62008e94f15511390eb5e00a",
+    "line_ids": [
+      "boston-1916-vol1-ao-leaf1533:9e6356fe2329:b0014-p0042-l0001",
+      "boston-1916-vol1-ao-leaf1533:9e6356fe2329:b0014-p0043-l0001",
+      "boston-1916-vol1-ao-leaf1533:9e6356fe2329:b0014-p0044-l0001",
+      "boston-1916-vol1-ao-leaf1533:9e6356fe2329:b0014-p0045-l0001",
+      "boston-1916-vol1-ao-leaf1533:9e6356fe2329:b0014-p0046-l0001",
+      "boston-1916-vol1-ao-leaf1533:9e6356fe2329:b0017-p0001-l0001",
+      "boston-1916-vol1-ao-leaf1533:9e6356fe2329:b0018-p0001-l0001"
+    ],
+    "reading_orders": [
+      175,
+      176,
+      177,
+      178,
+      179,
+      210,
+      211
+    ],
+    "ocr_lines": [
+      "Frank salesman 28 Blackstone h at Medford",
+      "Fred pianoworker bds 19 Dover",
+      "George clerk bds 38 Conant Rox [Edson Dor",
+      "George O foreman 202 Southampton Rox h 35",
+      "George O mer 3 Long whf h 729 Morton Mat",
+      "RURSBRURMWR IRB",
+      "RURIR UR CRURIRIPUARSR OR GR"
+    ]
+  },
+  {
+    "region_id": "leaf1533-L-bottom",
+    "leaf_num": 1533,
+    "printed_page": "1533",
+    "bbox": [
+      52,
+      2604,
+      800,
+      2714
+    ],
+    "gutter_x": 800,
+    "image_sha256": "2a63f7aa9acdd97f7a1e1a6b2e4d2cd3a66f13aa62008e94f15511390eb5e00a",
+    "line_ids": [
+      "boston-1916-vol1-ao-leaf1533:9e6356fe2329:b0004-p0001-l0062",
+      "boston-1916-vol1-ao-leaf1533:9e6356fe2329:b0004-p0001-l0063",
+      "boston-1916-vol1-ao-leaf1533:9e6356fe2329:b0011-p0001-l0001"
+    ],
+    "reading_orders": [
+      110,
+      111,
+      120
+    ],
+    "ocr_lines": [
+      "Patrick J laborer bds 31 Woodward S B",
+      "Peter J woodworker bds 12 Monument Chsn",
+      "RUN"
+    ]
+  },
+  {
+    "region_id": "leaf1533-R-bottom",
+    "leaf_num": 1533,
+    "printed_page": "1533",
+    "bbox": [
+      800,
+      2604,
+      1488,
+      2714
+    ],
+    "gutter_x": 800,
+    "image_sha256": "2a63f7aa9acdd97f7a1e1a6b2e4d2cd3a66f13aa62008e94f15511390eb5e00a",
+    "line_ids": [
+      "boston-1916-vol1-ao-leaf1533:9e6356fe2329:b0022-p0001-l0004",
+      "boston-1916-vol1-ao-leaf1533:9e6356fe2329:b0022-p0001-l0005",
+      "boston-1916-vol1-ao-leaf1533:9e6356fe2329:b0024-p0001-l0001",
+      "boston-1916-vol1-ao-leaf1533:9e6356fe2329:b0024-p0001-l0002"
+    ],
+    "reading_orders": [
+      233,
+      234,
+      236,
+      237
+    ],
+    "ocr_lines": [
+      "« Ole chauffeur h 116 Wellington Hill Mat",
+      "Ole mariner h 54 Putnam E B",
+      "=",
+      "="
+    ]
+  },
+  {
+    "region_id": "leaf1534-L-top",
+    "leaf_num": 1534,
+    "printed_page": "1534",
+    "bbox": [
+      149,
+      105,
+      881,
+      215
+    ],
+    "gutter_x": 881,
+    "image_sha256": "a634e23a3aefead8b38812a8995b3e75bfeb93de4fd5fe3d277bb0536d78372d",
+    "line_ids": [
+      "boston-1916-vol1-ao-leaf1534:9e6356fe2329:b0001-p0001-l0001",
+      "boston-1916-vol1-ao-leaf1534:9e6356fe2329:b0002-p0001-l0001",
+      "boston-1916-vol1-ao-leaf1534:9e6356fe2329:b0004-p0001-l0001",
+      "boston-1916-vol1-ao-leaf1534:9e6356fe2329:b0004-p0002-l0001",
+      "boston-1916-vol1-ao-leaf1534:9e6356fe2329:b0004-p0003-l0001",
+      "boston-1916-vol1-ao-leaf1534:9e6356fe2329:b0024-p0001-l0001"
+    ],
+    "reading_orders": [
+      1,
+      2,
+      8,
+      9,
+      10,
+      133
+    ],
+    "ocr_lines": [
+      "1534",
+      "(0)",
+      "sen",
+      "Ole salesman 33 Franklin h at Somy",
+      "Ole B janitor h 121 Brookline av",
+      "BOSTON [1916] DIRECTORY"
+    ]
+  },
+  {
+    "region_id": "leaf1534-R-top",
+    "leaf_num": 1534,
+    "printed_page": "1534",
+    "bbox": [
+      881,
+      105,
+      1565,
+      215
+    ],
+    "gutter_x": 881,
+    "image_sha256": "a634e23a3aefead8b38812a8995b3e75bfeb93de4fd5fe3d277bb0536d78372d",
+    "line_ids": [
+      "boston-1916-vol1-ao-leaf1534:9e6356fe2329:b0025-p0001-l0001",
+      "boston-1916-vol1-ao-leaf1534:9e6356fe2329:b0026-p0001-l0001",
+      "boston-1916-vol1-ao-leaf1534:9e6356fe2329:b0027-p0001-l0001"
+    ],
+    "reading_orders": [
+      134,
+      135,
+      136
+    ],
+    "ocr_lines": [
+      "Olson",
+      "Gustav F tinsmith h 146 M, S B",
+      "« Harry W salesman 43 High h at Everett"
+    ]
+  },
+  {
+    "region_id": "leaf1534-L-middle",
+    "leaf_num": 1534,
+    "printed_page": "1534",
+    "bbox": [
+      149,
+      1355,
+      881,
+      1465
+    ],
+    "gutter_x": 881,
+    "image_sha256": "a634e23a3aefead8b38812a8995b3e75bfeb93de4fd5fe3d277bb0536d78372d",
+    "line_ids": [
+      "boston-1916-vol1-ao-leaf1534:9e6356fe2329:b0013-p0001-l0001",
+      "boston-1916-vol1-ao-leaf1534:9e6356fe2329:b0021-p0027-l0001",
+      "boston-1916-vol1-ao-leaf1534:9e6356fe2329:b0021-p0028-l0001",
+      "boston-1916-vol1-ao-leaf1534:9e6356fe2329:b0021-p0029-l0001",
+      "boston-1916-vol1-ao-leaf1534:9e6356fe2329:b0021-p0030-l0001",
+      "boston-1916-vol1-ao-leaf1534:9e6356fe2329:b0021-p0031-l0001",
+      "boston-1916-vol1-ao-leaf1534:9e6356fe2329:b0021-p0032-l0001"
+    ],
+    "reading_orders": [
+      38,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78
+    ],
+    "ocr_lines": [
+      "ReBIRRER RARIR RIR RB",
+      "Carl H chauffeurl39 Boylston h 141 Pleasant",
+      "Carl H bds 74 Williams Rox .",
+      "Carl J mgr 358 Atlantic av h 105 Sydney Dor",
+      "Carl M florist 451 Wash Dor bds 14 Raven do",
+      "Qarl O porter h 51 Templeton Dor",
+      "Carl W clerk bds 1003 Tremont Rox"
+    ]
+  },
+  {
+    "region_id": "leaf1534-R-middle",
+    "leaf_num": 1534,
+    "printed_page": "1534",
+    "bbox": [
+      881,
+      1355,
+      1565,
+      1465
+    ],
+    "gutter_x": 881,
+    "image_sha256": "a634e23a3aefead8b38812a8995b3e75bfeb93de4fd5fe3d277bb0536d78372d",
+    "line_ids": [
+      "boston-1916-vol1-ao-leaf1534:9e6356fe2329:b0038-p0001-l0001",
+      "boston-1916-vol1-ao-leaf1534:9e6356fe2329:b0051-p0002-l0002",
+      "boston-1916-vol1-ao-leaf1534:9e6356fe2329:b0051-p0002-l0003",
+      "boston-1916-vol1-ao-leaf1534:9e6356fe2329:b0051-p0002-l0004",
+      "boston-1916-vol1-ao-leaf1534:9e6356fe2329:b0051-p0003-l0001",
+      "boston-1916-vol1-ao-leaf1534:9e6356fe2329:b0051-p0003-l0002",
+      "boston-1916-vol1-ao-leaf1534:9e6356fe2329:b0051-p0003-l0003"
+    ],
+    "reading_orders": [
+      159,
+      203,
+      204,
+      205,
+      206,
+      207,
+      208
+    ],
+    "ocr_lines": [
+      "RO aR",
+      "Martin laborer h 53 Ottawa Rox",
+      "Martin mariner bds 322 Hanover",
+      "Martin L instructor Hyde Park High school",
+      "H Ph 113 Florence Ros )",
+      "Matilda nurse h 18 Hartland Dor",
+      "Matilda Mrs nurse h 45 Spencer Dor"
+    ]
+  },
+  {
+    "region_id": "leaf1534-L-bottom",
+    "leaf_num": 1534,
+    "printed_page": "1534",
+    "bbox": [
+      149,
+      2610,
+      881,
+      2720
+    ],
+    "gutter_x": 881,
+    "image_sha256": "a634e23a3aefead8b38812a8995b3e75bfeb93de4fd5fe3d277bb0536d78372d",
+    "line_ids": [
+      "boston-1916-vol1-ao-leaf1534:9e6356fe2329:b0020-p0001-l0001",
+      "boston-1916-vol1-ao-leaf1534:9e6356fe2329:b0022-p0001-l0021",
+      "boston-1916-vol1-ao-leaf1534:9e6356fe2329:b0022-p0001-l0022",
+      "boston-1916-vol1-ao-leaf1534:9e6356fe2329:b0022-p0001-l0023",
+      "boston-1916-vol1-ao-leaf1534:9e6356fe2329:b0022-p0001-l0024",
+      "boston-1916-vol1-ao-leaf1534:9e6356fe2329:b0023-p0001-l0001",
+      "boston-1916-vol1-ao-leaf1534:9e6356fe2329:b0023-p0001-l0002"
+    ],
+    "reading_orders": [
+      45,
+      127,
+      128,
+      129,
+      130,
+      131,
+      132
+    ],
+    "ocr_lines": [
+      "££ = RR =",
+      "Godfrey machinist h 185 Magnolia Dor",
+      "Gustaf A foreman h 99 Woodrow av Dor",
+      "Gustaf M ppholsicrer 109 Brighton av Alls",
+      "e",
+      "rms 39 W n :",
+      "Gustav mason bds 64 Brookside av J P"
+    ]
+  },
+  {
+    "region_id": "leaf1534-R-bottom",
+    "leaf_num": 1534,
+    "printed_page": "1534",
+    "bbox": [
+      881,
+      2610,
+      1565,
+      2720
+    ],
+    "gutter_x": 881,
+    "image_sha256": "a634e23a3aefead8b38812a8995b3e75bfeb93de4fd5fe3d277bb0536d78372d",
+    "line_ids": [
+      "boston-1916-vol1-ao-leaf1534:9e6356fe2329:b0062-p0001-l0001",
+      "boston-1916-vol1-ao-leaf1534:9e6356fe2329:b0062-p0001-l0002",
+      "boston-1916-vol1-ao-leaf1534:9e6356fe2329:b0063-p0001-l0001",
+      "boston-1916-vol1-ao-leaf1534:9e6356fe2329:b0063-p0001-l0002",
+      "boston-1916-vol1-ao-leaf1534:9e6356fe2329:b0064-p0001-l0005",
+      "boston-1916-vol1-ao-leaf1534:9e6356fe2329:b0065-p0001-l0001",
+      "boston-1916-vol1-ao-leaf1534:9e6356fe2329:b0066-p0001-l0001",
+      "boston-1916-vol1-ao-leaf1534:9e6356fe2329:b0066-p0001-l0002"
+    ],
+    "reading_orders": [
+      258,
+      259,
+      260,
+      261,
+      266,
+      267,
+      268,
+      269
+    ],
+    "ocr_lines": [
+      "“",
+      "Ols",
+      "u",
+      "[2]",
+      "John A supt 100 Magazine Rox h at Atlantic",
+      "tein dward clerk 59 Wash h 110 Porter E 13.",
+      "Samuel tailor h 51 Grove",
+      "Julius printer h 110 Porter E B Lu"
+    ]
+  }
+]

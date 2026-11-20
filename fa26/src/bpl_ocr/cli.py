@@ -1,4 +1,4 @@
-"""Portable command-line entry point; every recognition request is one leaf."""
+"""Traceable page capture, bounded batching and offline quality review."""
 
 import argparse
 import json
@@ -30,9 +30,57 @@ def main(argv=None):
     page.add_argument("--work-dir", type=Path, required=True)
     page.add_argument("--tesseract")
     page.add_argument("--timeout", type=float, default=300, help="Engine timeout in seconds")
+    review = commands.add_parser("review", help="Verify saved pilot runs and export offline quality flags; no OCR or text edits")
+    review.add_argument("--runs", type=Path, required=True, help="Pilot run index accounting for the fixed selection")
+    review.add_argument("--manifest", type=Path, required=True)
+    review.add_argument("--output", type=Path, required=True)
+    review.add_argument("--images", action="store_true", help="Also render source review bands and full-page box overviews")
+    batch = commands.add_parser("batch", help="Run or resume a fixed 1–100-page plan with verified checkpoints")
+    batch.add_argument("--manifest", type=Path, required=True)
+    batch.add_argument("--plan", type=Path, required=True)
+    batch.add_argument("--work-dir", type=Path, required=True, help="Source/model/native-run storage; keep outside Git")
+    batch.add_argument("--batch-dir", type=Path, required=True, help="Checkpoint and derived batch exports; reuse to resume")
+    batch.add_argument("--tesseract")
+    batch.add_argument("--max-pages", type=int, help="Pause after scheduling this many additional leaves")
+    batch_review = commands.add_parser("batch-review", help="Apply current QA to saved batch captures without OCR or checkpoint changes")
+    batch_review.add_argument("--manifest", type=Path, required=True)
+    batch_review.add_argument("--work-dir", type=Path, required=True)
+    batch_review.add_argument("--batch-dir", type=Path, required=True)
+    batch_review.add_argument("--output", type=Path, required=True)
+    partition = commands.add_parser("partition", help="Build disjoint volume assignments and 1–100-page plans")
+    partition.add_argument("--assign", action="append", required=True, help="OWNER=repo-relative/manifest.json; repeat per volume")
+    partition.add_argument("--output", type=Path, required=True)
+    partition.add_argument("--batch-size", type=int, default=100)
+    assignment = commands.add_parser("run-assignment", help="Run/resume one owner's independent sequential batch queue")
+    assignment.add_argument("--project", type=Path, required=True)
+    assignment.add_argument("--assignment", required=True)
+    assignment.add_argument("--data-dir", type=Path, required=True, help="Machine-local or mounted data root; never commit to Git")
+    assignment.add_argument("--max-batches", type=int, help="Stop after this many additional unfinished batches")
+    assignment.add_argument("--tesseract")
+    status = commands.add_parser("assignment-status", help="Read one owner's local coverage without OCR")
+    status.add_argument("--project", type=Path, required=True)
+    status.add_argument("--assignment", required=True)
+    status.add_argument("--data-dir", type=Path, required=True)
     args = parser.parse_args(argv)
     try:
-        if args.command == "manifest":
+        if args.command == "partition":
+            from .project import partition
+            if any("=" not in value for value in args.assign):
+                raise ValueError("Each --assign must be OWNER=manifest.json")
+            result = partition([value.split("=", 1) for value in args.assign], args.output, batch_size=args.batch_size)
+            result = {"project_id": result["project_id"], "total_pages": result["total_pages"],
+                      "assignments": [{k: a[k] for k in ("assignment_id", "owner", "pages")} for a in result["assignments"]]}
+        elif args.command == "run-assignment":
+            from .project import run_assignment
+            result = run_assignment(args.project, args.assignment, args.data_dir,
+                                    executable=args.tesseract, max_batches=args.max_batches)
+            print(json.dumps(result, indent=2, ensure_ascii=False))
+            return 2 if result["status"] == "needs_attention" else 0
+        elif args.command == "assignment-status":
+            from .project import assignment_status
+            result = assignment_status(args.project, args.assignment, args.data_dir)
+            result.pop("coverage")
+        elif args.command == "manifest":
             report = prepare_manifest(args.config, args.output, refresh=args.refresh, offline=args.offline)
             result = {k: report[k] for k in ("manifest_id", "scanned_leaves", "access_pages", "ocr_roles", "absent_primary_printed_labels")}
         elif args.command == "doctor":
@@ -42,6 +90,23 @@ def main(argv=None):
             result = {"status": "ready", "tesseract_version": info["version"],
                       "pillow_version": info["pillow_version"], "model_directory": str(model),
                       "english_sha256": config["ocr"]["english_sha256"]}
+        elif args.command == "review":
+            from .quality import build_review
+            result = build_review(args.runs, args.manifest, args.output)
+            if args.images:
+                from .quality_images import render_review_images
+                result["figures"] = render_review_images(args.runs, args.manifest, args.output)
+        elif args.command == "batch":
+            from .batch import run_batch
+            result = run_batch(args.manifest, args.plan, args.work_dir, args.batch_dir,
+                               executable=args.tesseract, max_pages=args.max_pages)
+            print(json.dumps(result, indent=2, ensure_ascii=False))
+            return 0 if result["status"] in ("completed", "paused") else 2
+        elif args.command == "batch-review":
+            from .batch import review_batch
+            result = review_batch(args.manifest, args.work_dir, args.batch_dir, args.output)
+            print(json.dumps(result, indent=2, ensure_ascii=False))
+            return 0 if result["status"] == "completed" else 2
         else:
             folder, record = recognize_page(args.manifest, args.leaf, args.work_dir,
                                             executable=args.tesseract, timeout=args.timeout)

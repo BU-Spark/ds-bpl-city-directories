@@ -1,0 +1,26 @@
+{
+  "format": "bpl-live-interruption-proof-v1",
+  "signal": "SIGINT to batch Python worker during active Tesseract capture",
+  "exit_code": 130,
+  "before_completed_run_ids": [
+    "20261119T203524-leaf0162-6bd47904"
+  ],
+  "after_completed_run_ids": [
+    "20261119T203524-leaf0162-6bd47904",
+    "20261119T203603-leaf0163-f9c9ced6"
+  ],
+  "after_page_statuses": {
+    "completed": 2,
+    "interrupted": 1,
+    "pending": 57
+  },
+  "interrupted_attempt": {
+    "leaf_num": 164,
+    "native_process": {
+      "pid": 87421,
+      "create_time": 1795120573.852312
+    },
+    "run_directory": "runs/boston-1916-vol1-ao/20261119T203613-leaf0164-71f681b3"
+  },
+  "native_child_stopped": true
+}

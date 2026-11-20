@@ -1,0 +1,57 @@
+{
+  "format": "bpl-offline-batch-review-v1",
+  "reviewed_at_utc": "2026-11-19T21:01:44.388894+00:00",
+  "input_checkpoint_sha256": "133d1a7e75b4a1de49ef29547eb564c4b69a52f4ea7138b0425c9ea7ea08f301",
+  "capture_status": "completed",
+  "capture_execution": {
+    "code_sha256": {
+      "__init__.py": "394127cc7bf324a68e763e93571cf962e61cf1a7ed6ba666eb4cd0f6634d536b",
+      "__main__.py": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d",
+      "batch.py": "d2471dc3e064d69c6f010c32294a9a15c71e2fa4b95293855336fdc1cd28772a",
+      "cli.py": "c885f6c9bcd1bf49ccb1472e7c92416a1737f8c630f004eec6c3aa5be7864b23",
+      "engine.py": "e8a60a90785f7c2d8f8515a15d5a4e1a251320faea948d74d36bf7d1f036258a",
+      "io.py": "7b93067f422d7b8c0f8cd9d40051f2fb29ba490954ac124294ab5025643cd60b",
+      "manifest.py": "e8d3877ba5f1b6c27dca49551ab380109679346f5ee3defcaa2746eee9bf6efd",
+      "pipeline.py": "0c759b7bbda601314bb8eb79f766e6e6dadd6108b86e291f1ec9a00893ae3319",
+      "quality.py": "8ef2c1cd445acb549253a86208b70da02aac098c065fb4df85c6ea28ee34c474",
+      "quality_images.py": "d518607d5b2ef35ff6c34be73779b3f61d2a8bcfabef99e02aed16b7f7382d38",
+      "resources.py": "54c3568c9f4b70381ba1eae8f76316278a959c9895993c00c6332515f634548c",
+      "source.py": "c772459f36cc23faa41327def4ae4bc119845469b822abb0bea6cfdcf5377e8c"
+    },
+    "engine_build": "tesseract 5.3.4\n leptonica-1.83.1\n  libgif 5.2.2 : libjpeg 8d (libjpeg-turbo 3.0.0) : libpng 1.6.59 : libtiff 4.7.2 : zlib 1.3.1 : libwebp 1.6.0 : libopenjp2 2.5.4\n Found NEON",
+    "machine": "arm64",
+    "python": "3.11.18",
+    "platform": "Darwin",
+    "psutil": "7.0.0",
+    "omp_thread_limit": "1"
+  },
+  "review_code": {
+    "package_version": "0.1.0",
+    "code_sha256": {
+      "__init__.py": "394127cc7bf324a68e763e93571cf962e61cf1a7ed6ba666eb4cd0f6634d536b",
+      "__main__.py": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d",
+      "batch.py": "326fa4f5f3f1debdc89c8055691e1dfcc478668c92ff4ee4ff5588b747291ced",
+      "cli.py": "c6fa24331c47ee518e6ef42446be99289dc92a2fcb788855b2fa4e6bc71436a6",
+      "engine.py": "e8a60a90785f7c2d8f8515a15d5a4e1a251320faea948d74d36bf7d1f036258a",
+      "io.py": "7b93067f422d7b8c0f8cd9d40051f2fb29ba490954ac124294ab5025643cd60b",
+      "manifest.py": "e8d3877ba5f1b6c27dca49551ab380109679346f5ee3defcaa2746eee9bf6efd",
+      "pipeline.py": "0c759b7bbda601314bb8eb79f766e6e6dadd6108b86e291f1ec9a00893ae3319",
+      "quality.py": "97fd8dfa7d57d9bd6b445e1d89f9aed25f0d77c0c24759444ea35062eac437d4",
+      "quality_images.py": "d518607d5b2ef35ff6c34be73779b3f61d2a8bcfabef99e02aed16b7f7382d38",
+      "resources.py": "54c3568c9f4b70381ba1eae8f76316278a959c9895993c00c6332515f634548c",
+      "source.py": "c772459f36cc23faa41327def4ae4bc119845469b822abb0bea6cfdcf5377e8c"
+    },
+    "git_commit": "b9ab926dc73276fc90ff0251fa2f0293aa5b2a3a",
+    "git_dirty": true
+  },
+  "quarantine_policy": "Unresolved columns, integrity failures, or >=3 cross-gutter candidates comprising >=10% of diagnostic body rows",
+  "native_outputs_modified": false,
+  "ocr_invocations": 0,
+  "page_statuses": {
+    "completed": 59,
+    "quarantined": 1
+  },
+  "captured_native_lines": 14329,
+  "accepted_lines": 14176,
+  "quarantined_lines": 153
+}

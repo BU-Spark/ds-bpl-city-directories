@@ -1,0 +1,89 @@
+{
+  "format": "bpl-cross-page-review-plan-v1",
+  "review_date": "2026-11-19",
+  "manifest_id": "fb7f669e132db65533a95ab87a80cd8d3c8933e83ebfd62cd7b519b78554e331",
+  "selection_method": "Purposive diagnostic sample fixed before this pilot; not a probability sample or ground-truth accuracy evaluation.",
+  "recognition_policy": "Use the existing pinned full-page baseline unchanged. Recognize only these explicit leaves. Preserve all native outputs.",
+  "pages": [
+    {
+      "leaf_num": 162,
+      "printed_page": "160",
+      "purpose": "Supplementary additions/removals; sparse and mixed person/firm layout"
+    },
+    {
+      "leaf_num": 163,
+      "printed_page": "161",
+      "purpose": "Abbreviation key above the start of the general directory"
+    },
+    {
+      "leaf_num": 164,
+      "printed_page": "162",
+      "purpose": "Stage-2 reference page; ordinary early directory layout"
+    },
+    {
+      "leaf_num": 302,
+      "printed_page": "300",
+      "purpose": "Early-volume coverage, distinct surname range"
+    },
+    {
+      "leaf_num": 514,
+      "printed_page": "512",
+      "purpose": "Interior page and first member of an adjacent-page pair"
+    },
+    {
+      "leaf_num": 515,
+      "printed_page": "513",
+      "purpose": "Adjacent page for continuation and repeated-surname checks"
+    },
+    {
+      "leaf_num": 776,
+      "printed_page": "774",
+      "purpose": "Printed p774, immediately before the pagination discontinuity"
+    },
+    {
+      "leaf_num": 777,
+      "printed_page": "779",
+      "purpose": "Printed p779, immediately after the pagination discontinuity"
+    },
+    {
+      "leaf_num": 780,
+      "printed_page": "782",
+      "purpose": "Printed p782, immediately before two advertisement scans"
+    },
+    {
+      "leaf_num": 783,
+      "printed_page": "783",
+      "purpose": "Printed p783, immediately after excluded advertisements"
+    },
+    {
+      "leaf_num": 1000,
+      "printed_page": "1000",
+      "purpose": "Later-volume coverage and adjacent-page pair"
+    },
+    {
+      "leaf_num": 1001,
+      "printed_page": "1001",
+      "purpose": "Adjacent later-volume page for order and continuation checks"
+    },
+    {
+      "leaf_num": 1200,
+      "printed_page": "1200",
+      "purpose": "Late-volume coverage and adjacent-page pair"
+    },
+    {
+      "leaf_num": 1201,
+      "printed_page": "1201",
+      "purpose": "Adjacent late-volume page for order and continuation checks"
+    },
+    {
+      "leaf_num": 1533,
+      "printed_page": "1533",
+      "purpose": "Penultimate directory page; late-volume scan condition"
+    },
+    {
+      "leaf_num": 1534,
+      "printed_page": "1534",
+      "purpose": "Final directory page; faint/degraded type and end boundary"
+    }
+  ]
+}

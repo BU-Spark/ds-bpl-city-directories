@@ -1,0 +1,158 @@
+{
+  "format": "bpl-stage4-validation-v1",
+  "batch_id": "2a203e76b08d4a0d9ab4d02012202bf1",
+  "manifest_id": "fb7f669e132db65533a95ab87a80cd8d3c8933e83ebfd62cd7b519b78554e331",
+  "plan_id": "1d461c391b15e7b8891a083b8bbde069b4ad698529d5880b74cafa0e97346318",
+  "settings_id": "e5147ec550e9dd06ec379046c468fb4f326633809f7197631281f634b0278b2f",
+  "execution": {
+    "code_sha256": {
+      "__init__.py": "394127cc7bf324a68e763e93571cf962e61cf1a7ed6ba666eb4cd0f6634d536b",
+      "__main__.py": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d",
+      "batch.py": "d2471dc3e064d69c6f010c32294a9a15c71e2fa4b95293855336fdc1cd28772a",
+      "cli.py": "c885f6c9bcd1bf49ccb1472e7c92416a1737f8c630f004eec6c3aa5be7864b23",
+      "engine.py": "e8a60a90785f7c2d8f8515a15d5a4e1a251320faea948d74d36bf7d1f036258a",
+      "io.py": "7b93067f422d7b8c0f8cd9d40051f2fb29ba490954ac124294ab5025643cd60b",
+      "manifest.py": "e8d3877ba5f1b6c27dca49551ab380109679346f5ee3defcaa2746eee9bf6efd",
+      "pipeline.py": "0c759b7bbda601314bb8eb79f766e6e6dadd6108b86e291f1ec9a00893ae3319",
+      "quality.py": "8ef2c1cd445acb549253a86208b70da02aac098c065fb4df85c6ea28ee34c474",
+      "quality_images.py": "d518607d5b2ef35ff6c34be73779b3f61d2a8bcfabef99e02aed16b7f7382d38",
+      "resources.py": "54c3568c9f4b70381ba1eae8f76316278a959c9895993c00c6332515f634548c",
+      "source.py": "c772459f36cc23faa41327def4ae4bc119845469b822abb0bea6cfdcf5377e8c"
+    },
+    "engine_build": "tesseract 5.3.4\n leptonica-1.83.1\n  libgif 5.2.2 : libjpeg 8d (libjpeg-turbo 3.0.0) : libpng 1.6.59 : libtiff 4.7.2 : zlib 1.3.1 : libwebp 1.6.0 : libopenjp2 2.5.4\n Found NEON",
+    "machine": "arm64",
+    "python": "3.11.18",
+    "platform": "Darwin",
+    "psutil": "7.0.0",
+    "omp_thread_limit": "1"
+  },
+  "hardware": {
+    "platform": "macOS-26.5.1-arm64-arm-64bit",
+    "machine": "arm64",
+    "cpu_count": 11,
+    "physical_memory_bytes": 19327352832
+  },
+  "successful_page_engine_s": {
+    "count": 60,
+    "min": 3.245010791346431,
+    "median": 12.551478083245456,
+    "mean": 12.268772334046663,
+    "p95_linear": 13.15618313550949,
+    "max": 13.33616691455245,
+    "sum": 736.1263400427997
+  },
+  "successful_page_wall_s": {
+    "count": 60,
+    "min": 3.8313733749091625,
+    "median": 14.778651292435825,
+    "mean": 18.795207920949906,
+    "p95_linear": 31.84414774198085,
+    "max": 32.47521712444723,
+    "sum": 1127.7124752569944
+  },
+  "successful_page_peak_rss_bytes": {
+    "count": 60,
+    "min": 310788096,
+    "median": 393150464.0,
+    "mean": 392699904,
+    "p95_linear": 422363136.0,
+    "max": 430178304
+  },
+  "successful_sampled_cpu_seconds_lower_bound": 826.3020825279997,
+  "all_attempt_resource_samples": 9848,
+  "all_attempt_unavailable_process_samples": 4,
+  "missing_attempt_resource_records": 0,
+  "final_batch_acquisition_requests": 58,
+  "final_batch_failed_acquisition_requests": 17,
+  "final_batch_downloaded_pages": 41,
+  "final_batch_source_prepare_s": 357.56750530190766,
+  "sessions": [
+    {
+      "session_id": "4deda445656942d9b8e7b7946faf99bc",
+      "started_at_utc": "2026-11-19T20:35:24.894724+00:00",
+      "status": "paused",
+      "initial_completed_pages": 0,
+      "new_page_attempts": 1,
+      "wall_s": 3.835992209613323,
+      "finished_at_utc": "2026-11-19T20:35:28.731447+00:00"
+    },
+    {
+      "session_id": "685b844dc899400fb449a1c5b69bb842",
+      "started_at_utc": "2026-11-19T20:36:03.941638+00:00",
+      "status": "interrupted",
+      "initial_completed_pages": 1,
+      "new_page_attempts": 2,
+      "wall_s": 10.557236293330789,
+      "finished_at_utc": "2026-11-19T20:36:14.500134+00:00"
+    },
+    {
+      "session_id": "6b9c127d2a0c4a9083c3771b5e43b5ef",
+      "started_at_utc": "2026-11-19T20:36:32.725302+00:00",
+      "status": "completed",
+      "initial_completed_pages": 2,
+      "new_page_attempts": 58,
+      "wall_s": 1115.2181328758597,
+      "finished_at_utc": "2026-11-19T20:55:07.952000+00:00"
+    },
+    {
+      "session_id": "e21dade0a1384afd803d69850f2d8044",
+      "started_at_utc": "2026-11-19T20:55:47.853409+00:00",
+      "status": "completed",
+      "initial_completed_pages": 60,
+      "new_page_attempts": 0,
+      "wall_s": 2.604164183139801e-05,
+      "finished_at_utc": "2026-11-19T20:55:47.854933+00:00"
+    }
+  ],
+  "recovery_events": [
+    {
+      "leaf_num": 164,
+      "event": "recovered_incomplete_attempt",
+      "at_utc": "2026-11-19T20:36:32.717378+00:00"
+    }
+  ],
+  "preliminary_runs_excluded": {
+    "batch_id": "01f4df581bdf4d99b588dc4f8c8bb0e0",
+    "page_statuses": {
+      "completed": 8,
+      "interrupted": 1,
+      "pending": 51
+    },
+    "attempt_statuses": {
+      "completed": 8,
+      "interrupted": 2
+    },
+    "measured_capture_loop_wall_s": 122.87393050082028,
+    "reason": "Recovery boundary fixed after preflight; fresh recognition used for every page in final fixed-code batch. Checked source caches can be reused."
+  },
+  "receipt_copy_note": "Runtime host names omitted from Git copies; original local run.json files and native outputs retained unchanged.",
+  "limitations": [
+    "Purposive sample, mixed warm/cold sources, one macOS arm64 host, one worker and OMP_THREAD_LIMIT=1. Not a cold-start or cross-platform benchmark.",
+    "Process RSS is a sampled sum with shared pages potentially counted repeatedly; CPU is a sampled lower bound.",
+    "Session wall measures the capture loop; excludes startup revalidation/model preflight, final merged exports and gaps between commands.",
+    "All captures remain quality_status=review_required. Heuristic columns/flags do not certify complete physical-line coverage or transcription accuracy."
+  ],
+  "diagnostic_revision": {
+    "changed_package_files_after_capture": [
+      "batch.py",
+      "cli.py",
+      "quality.py"
+    ],
+    "current_code_sha256": {
+      "__init__.py": "394127cc7bf324a68e763e93571cf962e61cf1a7ed6ba666eb4cd0f6634d536b",
+      "__main__.py": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d",
+      "batch.py": "326fa4f5f3f1debdc89c8055691e1dfcc478668c92ff4ee4ff5588b747291ced",
+      "cli.py": "c6fa24331c47ee518e6ef42446be99289dc92a2fcb788855b2fa4e6bc71436a6",
+      "engine.py": "e8a60a90785f7c2d8f8515a15d5a4e1a251320faea948d74d36bf7d1f036258a",
+      "io.py": "7b93067f422d7b8c0f8cd9d40051f2fb29ba490954ac124294ab5025643cd60b",
+      "manifest.py": "e8d3877ba5f1b6c27dca49551ab380109679346f5ee3defcaa2746eee9bf6efd",
+      "pipeline.py": "0c759b7bbda601314bb8eb79f766e6e6dadd6108b86e291f1ec9a00893ae3319",
+      "quality.py": "97fd8dfa7d57d9bd6b445e1d89f9aed25f0d77c0c24759444ea35062eac437d4",
+      "quality_images.py": "d518607d5b2ef35ff6c34be73779b3f61d2a8bcfabef99e02aed16b7f7382d38",
+      "resources.py": "54c3568c9f4b70381ba1eae8f76316278a959c9895993c00c6332515f634548c",
+      "source.py": "c772459f36cc23faa41327def4ae4bc119845469b822abb0bea6cfdcf5377e8c"
+    },
+    "ocr_repeated": false,
+    "reason": "Offline gutter/merge diagnostics and batch-review/export safety; recognition engine/pipeline/source/preprocessing files remain identical to capture."
+  }
+}

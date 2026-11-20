@@ -65,13 +65,25 @@ def preprocess(image_path, destination, settings):
         prepared.close()
 
 
-def run_tesseract(binary, model_dir, prepared_path, output_base, settings, timeout):
+def run_tesseract(binary, model_dir, prepared_path, output_base, settings, timeout, *, on_start=None):
     command = [str(binary), str(prepared_path), str(output_base), "--tessdata-dir", str(model_dir),
                "-l", settings["language"], "--oem", str(settings["oem"]), "--psm", str(settings["psm"]),
                "-c", "tessedit_create_txt=1", "-c", "tessedit_create_tsv=1", "-c", "tessedit_create_hocr=1"]
     # Output parameters avoid depending on distribution-specific configs/ files
     # inside the separately pinned English-weight directory.
-    return subprocess.run(command, capture_output=True, timeout=timeout), command
+    process = subprocess.Popen(command, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+    try:
+        if on_start:
+            on_start(process.pid)
+        stdout, stderr = process.communicate(timeout=timeout)
+    except BaseException as error:
+        if process.poll() is None:
+            process.kill()
+        stdout, stderr = process.communicate()
+        if isinstance(error, subprocess.TimeoutExpired):
+            error.output, error.stderr = stdout, stderr
+        raise
+    return subprocess.CompletedProcess(command, process.returncode, stdout, stderr), command
 
 
 def parse_tsv(tsv_path, page, *, image_sha256, settings_id, config):

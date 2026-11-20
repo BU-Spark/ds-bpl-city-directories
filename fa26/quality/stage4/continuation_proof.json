@@ -1,0 +1,13 @@
+{
+  "format": "bpl-live-continuation-proof-v1",
+  "exit_code": 0,
+  "command_wall_s": 1.2980290409177542,
+  "before_attempt_count": 61,
+  "after_attempt_count": 61,
+  "no_new_attempts": true,
+  "completed_ids_unchanged": true,
+  "new_native_run_directories": 0,
+  "new_session_page_attempts": 0,
+  "initial_completed_pages": 60,
+  "final_status": "completed"
+}

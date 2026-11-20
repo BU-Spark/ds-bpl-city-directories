@@ -1,13 +1,10 @@
-"""One real full-page run with immutable native outputs and explicit provenance.
-
-Batch scheduling and cross-page entry extraction are later stages. This entry
-point deliberately recognizes exactly one explicitly selected scanned leaf.
-"""
+"""One full-page attempt with immutable native outputs and explicit provenance."""
 
 from datetime import datetime, timezone
 import os
 from pathlib import Path
 import platform
+import socket
 import subprocess
 import sys
 import tempfile
@@ -16,33 +13,12 @@ import uuid
 
 from . import __version__
 from .engine import LINE_FIELDS, inspect_engine, parse_tsv, prepare_model, preprocess, run_tesseract
-from .io import download, identity, read_json, sha256_file, write_csv, write_json
+import psutil
+
+from .io import identity, sha256_file, write_csv, write_json
 from .manifest import load_manifest
-
-
-def fetch_page(page, work_dir):
-    """Cache a checked JPEG and its source receipt, independent of old experiments."""
-    from PIL import Image
-    folder = Path(work_dir) / "source" / page["volume_id"]
-    image = folder / f"leaf{page['leaf_num']:04d}.jpg"
-    receipt_path = image.with_suffix(".json")
-    cached = image.exists() and receipt_path.exists()
-    if cached:
-        receipt = read_json(receipt_path)
-        if receipt.get("source_image_url") != page["source_image_url"] or sha256_file(image) != receipt.get("sha256"):
-            raise ValueError("Cached source image failed provenance validation: " + str(image))
-    else:
-        receipt = download(page["source_image_url"], image)
-        receipt.update(source_image_url=page["source_image_url"], page_id=page["page_id"],
-                       downloaded_at_utc=datetime.now(timezone.utc).isoformat())
-    with Image.open(image) as source:
-        size = list(source.size)
-        source.verify()
-    if size != [page["expected_width"], page["expected_height"]]:
-        raise ValueError(f"Source dimensions differ from scandata: expected {page['expected_width']}×{page['expected_height']}, got {size}")
-    receipt.update(width=size[0], height=size[1])
-    write_json(receipt_path, receipt)
-    return image, receipt, cached
+from .resources import ProcessSampler
+from .source import fetch_page
 
 
 def code_provenance():
@@ -58,7 +34,8 @@ def code_provenance():
             "git_commit": head, "git_dirty": changed}
 
 
-def recognize_page(manifest_path, leaf, work_dir, *, executable=None, timeout=300):
+def recognize_page(manifest_path, leaf, work_dir, *, executable=None, timeout=300,
+                   source_policy=None, context=None, on_created=None, sample_interval=0.1):
     if type(leaf) is not int or leaf < 0 or timeout <= 0:
         raise ValueError("Use a nonnegative scanned leaf and a positive timeout")
     wall_start = time.perf_counter()
@@ -79,30 +56,55 @@ def recognize_page(manifest_path, leaf, work_dir, *, executable=None, timeout=30
               "started_at_utc": timestamp.isoformat(), "manifest_id": manifest["manifest_id"],
               "config_id": identity(config), "page": page, "code": code_provenance(),
               "runtime": {"python": sys.version, "platform": platform.platform(), "machine": platform.machine(),
-                          "cpu_count": os.cpu_count(), "omp_thread_limit": os.environ.get("OMP_THREAD_LIMIT"),
-                          "tesseract_version_text": info["version_text"]}, "durations_s": {}}
+                          "hostname": socket.gethostname(), "cpu_count": os.cpu_count(),
+                          "physical_memory_bytes": psutil.virtual_memory().total,
+                          "omp_thread_limit": os.environ.get("OMP_THREAD_LIMIT"),
+                          "tesseract_version_text": info["version_text"]}, "durations_s": {},
+              "context": context, "stage": "created"}
     write_json(run_dir / "run.json", record)
+    sampler = ProcessSampler(sample_interval)
+    sampler.__enter__()
+    stage_start = time.perf_counter()
+    def stage(name):
+        nonlocal stage_start
+        record["stage"] = name
+        stage_start = time.perf_counter()
+        write_json(run_dir / "run.json", record)
+
+    def engine_started(pid):
+        record["engine_process"] = {"pid": pid, "create_time": psutil.Process(pid).create_time()}
+        write_json(run_dir / "run.json", record)
+
     try:
+        if on_created:
+            on_created(run_dir, record)
+        stage("model_prepare")
         start = time.perf_counter()
         model_dir = prepare_model(config, work_dir)
         record["durations_s"]["model_prepare"] = time.perf_counter() - start
         record["settings"] = {**config["ocr"], "input": "full native-size processed-JP2 JPEG page",
                               "preprocessing": "grayscale, 2x Lanczos, 10 px white border; no extra thresholding or denoising",
-                              "engine_build": info["version_text"], "code_sha256": record["code"]["code_sha256"]}
+                              "engine_build": info["version_text"], "code_sha256": record["code"]["code_sha256"],
+                              "runtime_controls": {"omp_thread_limit": os.environ.get("OMP_THREAD_LIMIT")}}
         record["settings_id"] = identity(record["settings"])
+        stage("source_prepare")
         start = time.perf_counter()
-        image, receipt, cached = fetch_page(page, work_dir)
+        image, receipt, cached = (fetch_page(page, work_dir, policy=source_policy) if source_policy
+                                  else fetch_page(page, work_dir))
         record["durations_s"]["source_prepare"] = time.perf_counter() - start
         record["source"] = {**receipt, "cache_reused": cached,
                             "image_path_from_work_dir": image.relative_to(Path(work_dir)).as_posix()}
         with tempfile.TemporaryDirectory(prefix="bpl-page-") as temporary:
             prepared = Path(temporary) / "input.png"
+            stage("preprocessing")
             start = time.perf_counter()
             preprocess(image, prepared, config["ocr"])
             record["durations_s"]["preprocessing"] = time.perf_counter() - start
             record["prepared_image_sha256"] = sha256_file(prepared)
+            stage("engine")
             start = time.perf_counter()
-            response, command = run_tesseract(info["binary"], model_dir, prepared, raw / "page", config["ocr"], timeout)
+            response, command = run_tesseract(info["binary"], model_dir, prepared, raw / "page", config["ocr"], timeout,
+                                             on_start=engine_started)
             record["durations_s"]["engine"] = time.perf_counter() - start
             # Record arguments without user-specific absolute installation paths.
             record["command"] = ["tesseract", "<temporary/input.png>", "raw/page", "--tessdata-dir", "<pinned model directory>", *command[5:]]
@@ -111,6 +113,7 @@ def recognize_page(manifest_path, leaf, work_dir, *, executable=None, timeout=30
             record["engine_returncode"] = response.returncode
             if response.returncode:
                 raise RuntimeError("Tesseract failed: " + response.stderr.decode("utf-8", errors="replace")[-1500:])
+        stage("export")
         start = time.perf_counter()
         for suffix in ("txt", "tsv", "hocr"):
             if not (raw / f"page.{suffix}").exists():
@@ -129,9 +132,17 @@ def recognize_page(manifest_path, leaf, work_dir, *, executable=None, timeout=30
                              if p.is_file() and p.name != "run.json"}
     except BaseException as error:
         record.update(status="interrupted" if isinstance(error, KeyboardInterrupt) else "failed",
-                      error=type(error).__name__ + ": " + str(error))
+                      error=type(error).__name__ + ": " + str(error), error_type=type(error).__name__)
+        record["durations_s"].setdefault(record["stage"], time.perf_counter() - stage_start)
+        if hasattr(error, "attempts") or hasattr(error, "source_attempts"):
+            record["source_attempts"] = getattr(error, "attempts", getattr(error, "source_attempts", []))
+        if isinstance(error, subprocess.TimeoutExpired):
+            (raw / "stderr.txt").write_bytes(error.stderr or b"")
+            (raw / "stdout.txt").write_bytes(error.output or b"")
         raise
     finally:
+        sampler.__exit__()
+        record["resources"] = sampler.result()
         record["durations_s"]["wall"] = time.perf_counter() - wall_start
         record["finished_at_utc"] = datetime.now(timezone.utc).isoformat()
         write_json(run_dir / "run.json", record)

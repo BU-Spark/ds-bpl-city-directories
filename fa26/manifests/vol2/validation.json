@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "method": "Official BookReader leaf/index/dimension/exact-member cross-check; IIIF manifest request timed out and was not used",
+  "accessible_pages_verified": 1516,
+  "bookreader_snapshot_sha256": "5b9e58e57a8acc652be405936c9ed334c5db77015e11a48f0606b579f79805e4",
+  "general_directory_pages": 566,
+  "first_primary_leaf": 7,
+  "last_primary_leaf": 572,
+  "composite_leaf": 571,
+  "composite_label": "2099–2143",
+  "source_gap_interpretation": "A single visually checked composite-label physical page; not 44 missing scans."
+}

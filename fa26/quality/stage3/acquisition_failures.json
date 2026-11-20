@@ -1,0 +1,47 @@
+[
+  {
+    "run_id": "20261119T172711-leaf0162-e9980fb9",
+    "leaf_num": 162,
+    "stage": "source download",
+    "error": "TimeoutError: The read operation timed out",
+    "started_at_utc": "2026-11-19T17:27:11.816392+00:00",
+    "finished_at_utc": "2026-11-19T17:28:12.436088+00:00",
+    "source_image_url": "https://iiif.archive.org/image/iiif/3/bostonmassachuse1916112samp%2Fbostonmassachuse1916112samp_jp2.zip%2Fbostonmassachuse1916112samp_jp2%2Fbostonmassachuse1916112samp_0162.jp2/full/1699,/0/default.jpg"
+  },
+  {
+    "run_id": "20261119T173004-leaf0783-908e6200",
+    "leaf_num": 783,
+    "stage": "source download",
+    "error": "TimeoutError: The read operation timed out",
+    "started_at_utc": "2026-11-19T17:30:04.389312+00:00",
+    "finished_at_utc": "2026-11-19T17:31:04.680283+00:00",
+    "source_image_url": "https://iiif.archive.org/image/iiif/3/bostonmassachuse1916112samp%2Fbostonmassachuse1916112samp_jp2.zip%2Fbostonmassachuse1916112samp_jp2%2Fbostonmassachuse1916112samp_0783.jp2/full/1690,/0/default.jpg"
+  },
+  {
+    "run_id": "20261119T173136-leaf1200-5dd77f9d",
+    "leaf_num": 1200,
+    "stage": "source download",
+    "error": "TimeoutError: The read operation timed out",
+    "started_at_utc": "2026-11-19T17:31:36.071275+00:00",
+    "finished_at_utc": "2026-11-19T17:32:36.298087+00:00",
+    "source_image_url": "https://iiif.archive.org/image/iiif/3/bostonmassachuse1916112samp%2Fbostonmassachuse1916112samp_jp2.zip%2Fbostonmassachuse1916112samp_jp2%2Fbostonmassachuse1916112samp_1200.jp2/full/1637,/0/default.jpg"
+  },
+  {
+    "run_id": "20261119T173355-leaf0783-3ab145bb",
+    "leaf_num": 783,
+    "stage": "source download",
+    "error": "TimeoutError: The read operation timed out",
+    "started_at_utc": "2026-11-19T17:33:55.170787+00:00",
+    "finished_at_utc": "2026-11-19T17:34:55.537728+00:00",
+    "source_image_url": "https://iiif.archive.org/image/iiif/3/bostonmassachuse1916112samp%2Fbostonmassachuse1916112samp_jp2.zip%2Fbostonmassachuse1916112samp_jp2%2Fbostonmassachuse1916112samp_0783.jp2/full/1690,/0/default.jpg"
+  },
+  {
+    "run_id": "20261119T173455-leaf1200-67eee65b",
+    "leaf_num": 1200,
+    "stage": "source download",
+    "error": "TimeoutError: The read operation timed out",
+    "started_at_utc": "2026-11-19T17:34:55.608406+00:00",
+    "finished_at_utc": "2026-11-19T17:35:55.856155+00:00",
+    "source_image_url": "https://iiif.archive.org/image/iiif/3/bostonmassachuse1916112samp%2Fbostonmassachuse1916112samp_jp2.zip%2Fbostonmassachuse1916112samp_jp2%2Fbostonmassachuse1916112samp_1200.jp2/full/1637,/0/default.jpg"
+  }
+]

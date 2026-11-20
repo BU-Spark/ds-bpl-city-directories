@@ -1,0 +1,26 @@
+{
+  "format": "bpl-batch-plan-v1",
+  "manifest_id": "fb7f669e132db65533a95ab87a80cd8d3c8933e83ebfd62cd7b519b78554e331",
+  "selection_method": "Fixed purposive 60-page engineering sample: six contiguous ten-page blocks, skipping the two explicitly excluded ad scans. Fresh recognition for all selected pages; existing checked source JPEGs may be reused.",
+  "leaves": [162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 300, 301, 302, 303, 304, 305, 306, 307, 308, 309, 514, 515, 516, 517, 518, 519, 520, 521, 522, 523, 776, 777, 778, 779, 780, 783, 784, 785, 786, 787, 1195, 1196, 1197, 1198, 1199, 1200, 1201, 1202, 1203, 1204, 1525, 1526, 1527, 1528, 1529, 1530, 1531, 1532, 1533, 1534],
+  "scope_notes": [
+    "59 primary pages and one supplementary page (leaf 162 / printed 160). Leaf 163 is a mixed abbreviations/directory page.",
+    "Printed labels 775–778 are absent from source metadata. Leaf 776 is printed 774; leaf 777 is printed 779. Do not infer missing text.",
+    "Ad leaves 781 and 782 remain excluded. The final page ends within O surnames; Vol. 2 is outside this plan.",
+    "Raw rows include headers, ditto artifacts, fragments and firms. Stage 3 conditions and later entry reconstruction still apply."
+  ],
+  "policy": {
+    "max_page_attempts": 2,
+    "engine_timeout_s": 120,
+    "sample_interval_s": 0.1,
+    "retry_backoff_s": 2,
+    "source": {
+      "iiif_timeout_s": 15,
+      "bookreader_timeout_s": 30,
+      "bookreader_attempts": 2,
+      "backoff_s": 1,
+      "bookreader_base": "https://ia600507.us.archive.org/BookReader/BookReaderImages.php",
+      "bookreader_zip": "/10/items/bostonmassachuse1916112samp/bostonmassachuse1916112samp_jp2.zip"
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "format": "bpl-batch-summary-v1",
+  "batch_id": "2a203e76b08d4a0d9ab4d02012202bf1",
+  "plan_id": "1d461c391b15e7b8891a083b8bbde069b4ad698529d5880b74cafa0e97346318",
+  "manifest_id": "fb7f669e132db65533a95ab87a80cd8d3c8933e83ebfd62cd7b519b78554e331",
+  "status": "needs_attention",
+  "planned_pages": 60,
+  "page_statuses": {
+    "completed": 59,
+    "quarantined": 1
+  },
+  "attempt_statuses": {
+    "completed": 59,
+    "interrupted": 1,
+    "quarantined": 1
+  },
+  "detected_lines": 14176,
+  "exported_lines": 14176,
+  "captured_native_lines": 14329,
+  "quarantined_lines": 153,
+  "recognized_words": 95200,
+  "accepted_recognized_words": 93505,
+  "capture_attempt_statuses": {
+    "completed": 60,
+    "interrupted": 1
+  },
+  "flag_counts": {
+    "header_candidate": 100,
+    "vertical_symbol_candidate": 390,
+    "tall_line_candidate": 618,
+    "order_backtrack_candidate": 184,
+    "cross_gutter_candidate": 85
+  },
+  "source_methods": {
+    "iiif_native_or_verified_cache": 12,
+    "iiif_native": 28,
+    "bookreader_exact_member": 18,
+    "bookreader_native_alias": 2
+  },
+  "source_cache_reused_pages": 19,
+  "measured_session_wall_s": 1129.6113874204457,
+  "unknown_duration_sessions": 0,
+  "successful_engine_s": 724.0295147504658,
+  "captured_native_engine_s": 736.1263400427997,
+  "all_recorded_attempt_wall_s": 1128.8936369214207,
+  "peak_process_tree_rss_bytes": 430178304,
+  "tree_enumeration_failures": 0,
+  "scope_notes": [
+    "59 primary pages and one supplementary page (leaf 162 / printed 160). Leaf 163 is a mixed abbreviations/directory page.",
+    "Printed labels 775–778 are absent from source metadata. Leaf 776 is printed 774; leaf 777 is printed 779. Do not infer missing text.",
+    "Ad leaves 781 and 782 remain excluded. The final page ends within O surnames; Vol. 2 is outside this plan.",
+    "Raw rows include headers, ditto artifacts, fragments and firms. Stage 3 conditions and later entry reconstruction still apply."
+  ],
+  "meaning": "Checked raw captures and diagnostic candidates, not validated entries, error rates or people. All attempts, including interrupted/failed ones, are retained. Sampled RSS is a process sum and CPU is a sampled lower bound; measured sessions exclude downtime and unknown hard-stop durations."
+}

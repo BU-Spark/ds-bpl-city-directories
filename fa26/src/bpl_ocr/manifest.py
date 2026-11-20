@@ -4,6 +4,7 @@ from collections import Counter
 from datetime import datetime, timezone
 import hashlib
 from pathlib import Path
+import re
 import xml.etree.ElementTree as ET
 
 from .io import download, identity, load_config, read_json, sha256_file, write_csv, write_json
@@ -37,8 +38,10 @@ def classify(config, leaf, page_type, available):
     if page_type == "Cover":
         return "cover", "excluded", "Book cover, not directory entries."
     if leaf > last:
-        return "end_matter", "excluded", "Blank/endpaper material after the final directory page."
-    return "front_matter_street_directory_and_city_record", "excluded", "Before p160/p161; reference sections, not the target general directory."
+        return scope.get("after_directory_section", "end_matter"), "excluded", scope.get(
+            "after_directory_reason", "Blank/endpaper material after the final directory page.")
+    return scope.get("before_directory_section", "front_matter_street_directory_and_city_record"), "excluded", scope.get(
+        "before_directory_reason", "Before p160/p161; reference sections, not the target general directory.")
 
 
 def build_pages(config, scandata_path, page_numbers):
@@ -146,7 +149,19 @@ def prepare_manifest(config_path, destination, *, refresh=False, offline=False):
     write_json(destination / "manifest.json", manifest)
     write_csv(destination / "pages.csv", pages, FIELDS)
     primary = [p for p in pages if p["ocr_role"] == "primary"]
-    labels = {int(p["printed_page"]) for p in primary if p["printed_page"].isdecimal()}
+    labels, composite_labels = set(), []
+    for page in primary:
+        if page["printed_page"].isdecimal():
+            labels.add(int(page["printed_page"]))
+        else:
+            composite = re.fullmatch(r"(\d+)[–-](\d+)", page["printed_page"])
+            if composite and page["page_label_source"] == "visual_override":
+                first, last = map(int, composite.groups())
+                if not first <= last <= first + 200:
+                    raise ValueError("Invalid visually documented composite page label")
+                labels.update(range(first, last + 1))
+                composite_labels.append({"leaf_num": page["leaf_num"], "printed_page": page["printed_page"],
+                                         "physical_scans": 1, "meaning": "One physical page with a visually checked composite label, not additional scans."})
     missing_labels = sorted(set(range(min(labels), max(labels) + 1)) - labels) if labels else []
     report = {"format": FORMAT, "manifest_id": manifest["manifest_id"],
               "generated_at_utc": datetime.now(timezone.utc).isoformat(),
@@ -155,6 +170,7 @@ def prepare_manifest(config_path, destination, *, refresh=False, offline=False):
               "sections": dict(Counter(p["section"] for p in pages)),
               "primary_printed_page_range": [min(labels), max(labels)] if labels else [],
               "absent_primary_printed_labels": missing_labels, "issues": source_issues(pages),
+              "composite_primary_labels": composite_labels,
               "scope_note": config["scope"]["review_notes"],
               "ocr_completion": "No OCR completion is implied by source-manifest inclusion."}
     write_json(destination / "scope_report.json", report)

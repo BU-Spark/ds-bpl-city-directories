@@ -1,0 +1,739 @@
+{
+  "format": "bpl-volume-manifest-v1",
+  "manifest_id": "7819b7078ed7092ad3dae02f2ba6c4e602558cdea81ff6c8e5c15a7460cdb1ab",
+  "generated_at_utc": "2026-11-19T22:51:28.463052+00:00",
+  "scanned_leaves": 1522,
+  "access_pages": 1516,
+  "ocr_roles": {
+    "excluded": 956,
+    "primary": 566
+  },
+  "sections": {
+    "non_access_scan": 6,
+    "cover": 2,
+    "front_matter": 5,
+    "general_directory": 566,
+    "business_directory_and_later_reference_sections": 943
+  },
+  "primary_printed_page_range": [
+    1535,
+    2144
+  ],
+  "absent_primary_printed_labels": [],
+  "issues": [
+    {
+      "type": "page_label_sources_disagree",
+      "leaf_num": 569,
+      "scandata": "2097",
+      "page_numbers_json": "",
+      "resolution": "Keep both; use scandata unless a documented visual override exists."
+    },
+    {
+      "type": "page_label_sources_disagree",
+      "leaf_num": 570,
+      "scandata": "2098",
+      "page_numbers_json": "",
+      "resolution": "Keep both; use scandata unless a documented visual override exists."
+    },
+    {
+      "type": "scandata_label_gap",
+      "before_leaf": 570,
+      "after_leaf": 571,
+      "before_label": 2098,
+      "after_label": 2143,
+      "meaning": "A metadata pagination discontinuity; not automatically proof of missing physical pages."
+    },
+    {
+      "type": "page_label_sources_disagree",
+      "leaf_num": 571,
+      "scandata": "2143",
+      "page_numbers_json": "",
+      "resolution": "Keep both; use scandata unless a documented visual override exists."
+    },
+    {
+      "type": "visual_label_override",
+      "leaf_num": 571,
+      "scandata": "2143",
+      "printed_page": "2099–2143"
+    },
+    {
+      "type": "page_label_sources_disagree",
+      "leaf_num": 870,
+      "scandata": "2442",
+      "page_numbers_json": "",
+      "resolution": "Keep both; use scandata unless a documented visual override exists."
+    },
+    {
+      "type": "scandata_label_gap",
+      "before_leaf": 870,
+      "after_leaf": 871,
+      "before_label": 2442,
+      "after_label": 2579,
+      "meaning": "A metadata pagination discontinuity; not automatically proof of missing physical pages."
+    },
+    {
+      "type": "page_label_sources_disagree",
+      "leaf_num": 871,
+      "scandata": "2579",
+      "page_numbers_json": "",
+      "resolution": "Keep both; use scandata unless a documented visual override exists."
+    },
+    {
+      "type": "page_label_sources_disagree",
+      "leaf_num": 872,
+      "scandata": "2580",
+      "page_numbers_json": "",
+      "resolution": "Keep both; use scandata unless a documented visual override exists."
+    },
+    {
+      "type": "scandata_label_gap",
+      "before_leaf": 888,
+      "after_leaf": 889,
+      "before_label": 2594,
+      "after_label": 2599,
+      "meaning": "A metadata pagination discontinuity; not automatically proof of missing physical pages."
+    },
+    {
+      "type": "page_label_sources_disagree",
+      "leaf_num": 889,
+      "scandata": "2599",
+      "page_numbers_json": "2595",
+      "resolution": "Keep both; use scandata unless a documented visual override exists."
+    },
+    {
+      "type": "page_label_sources_disagree",
+      "leaf_num": 890,
+      "scandata": "2600",
+      "page_numbers_json": "2596",
+      "resolution": "Keep both; use scandata unless a documented visual override exists."
+    },
+    {
+      "type": "page_label_sources_disagree",
+      "leaf_num": 891,
+      "scandata": "2601",
+      "page_numbers_json": "2597",
+      "resolution": "Keep both; use scandata unless a documented visual override exists."
+    },
+    {
+      "type": "page_label_sources_disagree",
+      "leaf_num": 892,
+      "scandata": "2602",
+      "page_numbers_json": "2598",
+      "resolution": "Keep both; use scandata unless a documented visual override exists."
+    },
+    {
+      "type": "page_label_sources_disagree",
+      "leaf_num": 893,
+      "scandata": "2603",
+      "page_numbers_json": "2599",
+      "resolution": "Keep both; use scandata unless a documented visual override exists."
+    },
+    {
+      "type": "page_label_sources_disagree",
+      "leaf_num": 894,
+      "scandata": "2604",
+      "page_numbers_json": "2600",
+      "resolution": "Keep both; use scandata unless a documented visual override exists."
+    },
+    {
+      "type": "page_label_sources_disagree",
+      "leaf_num": 895,
+      "scandata": "2605",
+      "page_numbers_json": "2601",
+      "resolution": "Keep both; use scandata unless a documented visual override exists."
+    },
+    {
+      "type": "page_label_sources_disagree",
+      "leaf_num": 896,
+      "scandata": "2606",
+      "page_numbers_json": "2602",
+      "resolution": "Keep both; use scandata unless a documented visual override exists."
+    },
+    {
+      "type": "page_label_sources_disagree",
+      "leaf_num": 897,
+      "scandata": "2607",
+      "page_numbers_json": "2603",
+      "resolution": "Keep both; use scandata unless a documented visual override exists."
+    },
+    {
+      "type": "page_label_sources_disagree",
+      "leaf_num": 898,
+      "scandata": "2608",
+      "page_numbers_json": "2604",
+      "resolution": "Keep both; use scandata unless a documented visual override exists."
+    },
+    {
+      "type": "page_label_sources_disagree",
+      "leaf_num": 899,
+      "scandata": "2609",
+      "page_numbers_json": "2605",
+      "resolution": "Keep both; use scandata unless a documented visual override exists."
+    },
+    {
+      "type": "page_label_sources_disagree",
+      "leaf_num": 900,
+      "scandata": "2610",
+      "page_numbers_json": "2606",
+      "resolution": "Keep both; use scandata unless a documented visual override exists."
+    },
+    {
+      "type": "page_label_sources_disagree",
+      "leaf_num": 901,
+      "scandata": "2611",
+      "page_numbers_json": "2607",
+      "resolution": "Keep both; use scandata unless a documented visual override exists."
+    },
+    {
+      "type": "page_label_sources_disagree",
+      "leaf_num": 902,
+      "scandata": "2612",
+      "page_numbers_json": "2608",
+      "resolution": "Keep both; use scandata unless a documented visual override exists."
+    },
+    {
+      "type": "page_label_sources_disagree",
+      "leaf_num": 903,
+      "scandata": "2613",
+      "page_numbers_json": "2609",
+      "resolution": "Keep both; use scandata unless a documented visual override exists."
+    },
+    {
+      "type": "page_label_sources_disagree",
+      "leaf_num": 904,
+      "scandata": "2614",
+      "page_numbers_json": "2610",
+      "resolution": "Keep both; use scandata unless a documented visual override exists."
+    },
+    {
+      "type": "page_label_sources_disagree",
+      "leaf_num": 905,
+      "scandata": "2615",
+      "page_numbers_json": "2611",
+      "resolution": "Keep both; use scandata unless a documented visual override exists."
+    },
+    {
+      "type": "page_label_sources_disagree",
+      "leaf_num": 906,
+      "scandata": "2616",
+      "page_numbers_json": "2612",
+      "resolution": "Keep both; use scandata unless a documented visual override exists."
+    },
+    {
+      "type": "page_label_sources_disagree",
+      "leaf_num": 907,
+      "scandata": "2617",
+      "page_numbers_json": "2613",
+      "resolution": "Keep both; use scandata unless a documented visual override exists."
+    },
+    {
+      "type": "page_label_sources_disagree",
+      "leaf_num": 908,
+      "scandata": "2618",
+      "page_numbers_json": "2614",
+      "resolution": "Keep both; use scandata unless a documented visual override exists."
+    },
+    {
+      "type": "page_label_sources_disagree",
+      "leaf_num": 909,
+      "scandata": "2619",
+      "page_numbers_json": "2615",
+      "resolution": "Keep both; use scandata unless a documented visual override exists."
+    },
+    {
+      "type": "page_label_sources_disagree",
+      "leaf_num": 910,
+      "scandata": "2620",
+      "page_numbers_json": "2616",
+      "resolution": "Keep both; use scandata unless a documented visual override exists."
+    },
+    {
+      "type": "page_label_sources_disagree",
+      "leaf_num": 911,
+      "scandata": "2621",
+      "page_numbers_json": "2617",
+      "resolution": "Keep both; use scandata unless a documented visual override exists."
+    },
+    {
+      "type": "page_label_sources_disagree",
+      "leaf_num": 912,
+      "scandata": "2622",
+      "page_numbers_json": "2618",
+      "resolution": "Keep both; use scandata unless a documented visual override exists."
+    },
+    {
+      "type": "page_label_sources_disagree",
+      "leaf_num": 913,
+      "scandata": "2623",
+      "page_numbers_json": "2619",
+      "resolution": "Keep both; use scandata unless a documented visual override exists."
+    },
+    {
+      "type": "page_label_sources_disagree",
+      "leaf_num": 914,
+      "scandata": "2624",
+      "page_numbers_json": "2620",
+      "resolution": "Keep both; use scandata unless a documented visual override exists."
+    },
+    {
+      "type": "page_label_sources_disagree",
+      "leaf_num": 915,
+      "scandata": "2625",
+      "page_numbers_json": "2621",
+      "resolution": "Keep both; use scandata unless a documented visual override exists."
+    },
+    {
+      "type": "scandata_label_gap",
+      "before_leaf": 915,
+      "after_leaf": 916,
+      "before_label": 2625,
+      "after_label": 2625,
+      "meaning": "A metadata pagination discontinuity; not automatically proof of missing physical pages."
+    },
+    {
+      "type": "page_label_sources_disagree",
+      "leaf_num": 916,
+      "scandata": "2625",
+      "page_numbers_json": "2622",
+      "resolution": "Keep both; use scandata unless a documented visual override exists."
+    },
+    {
+      "type": "page_label_sources_disagree",
+      "leaf_num": 917,
+      "scandata": "2626",
+      "page_numbers_json": "2623",
+      "resolution": "Keep both; use scandata unless a documented visual override exists."
+    },
+    {
+      "type": "scandata_label_gap",
+      "before_leaf": 917,
+      "after_leaf": 918,
+      "before_label": 2626,
+      "after_label": 2626,
+      "meaning": "A metadata pagination discontinuity; not automatically proof of missing physical pages."
+    },
+    {
+      "type": "page_label_sources_disagree",
+      "leaf_num": 918,
+      "scandata": "2626",
+      "page_numbers_json": "2624",
+      "resolution": "Keep both; use scandata unless a documented visual override exists."
+    },
+    {
+      "type": "page_label_sources_disagree",
+      "leaf_num": 919,
+      "scandata": "2627",
+      "page_numbers_json": "2625",
+      "resolution": "Keep both; use scandata unless a documented visual override exists."
+    },
+    {
+      "type": "page_label_sources_disagree",
+      "leaf_num": 920,
+      "scandata": "2628",
+      "page_numbers_json": "2626",
+      "resolution": "Keep both; use scandata unless a documented visual override exists."
+    },
+    {
+      "type": "page_label_sources_disagree",
+      "leaf_num": 921,
+      "scandata": "2629",
+      "page_numbers_json": "2627",
+      "resolution": "Keep both; use scandata unless a documented visual override exists."
+    },
+    {
+      "type": "page_label_sources_disagree",
+      "leaf_num": 922,
+      "scandata": "2630",
+      "page_numbers_json": "2628",
+      "resolution": "Keep both; use scandata unless a documented visual override exists."
+    },
+    {
+      "type": "page_label_sources_disagree",
+      "leaf_num": 923,
+      "scandata": "2631",
+      "page_numbers_json": "2629",
+      "resolution": "Keep both; use scandata unless a documented visual override exists."
+    },
+    {
+      "type": "page_label_sources_disagree",
+      "leaf_num": 924,
+      "scandata": "2632",
+      "page_numbers_json": "2630",
+      "resolution": "Keep both; use scandata unless a documented visual override exists."
+    },
+    {
+      "type": "page_label_sources_disagree",
+      "leaf_num": 925,
+      "scandata": "2633",
+      "page_numbers_json": "2631",
+      "resolution": "Keep both; use scandata unless a documented visual override exists."
+    },
+    {
+      "type": "page_label_sources_disagree",
+      "leaf_num": 926,
+      "scandata": "2634",
+      "page_numbers_json": "2632",
+      "resolution": "Keep both; use scandata unless a documented visual override exists."
+    },
+    {
+      "type": "page_label_sources_disagree",
+      "leaf_num": 927,
+      "scandata": "2635",
+      "page_numbers_json": "2633",
+      "resolution": "Keep both; use scandata unless a documented visual override exists."
+    },
+    {
+      "type": "page_label_sources_disagree",
+      "leaf_num": 928,
+      "scandata": "2636",
+      "page_numbers_json": "2634",
+      "resolution": "Keep both; use scandata unless a documented visual override exists."
+    },
+    {
+      "type": "page_label_sources_disagree",
+      "leaf_num": 929,
+      "scandata": "2637",
+      "page_numbers_json": "2635",
+      "resolution": "Keep both; use scandata unless a documented visual override exists."
+    },
+    {
+      "type": "page_label_sources_disagree",
+      "leaf_num": 930,
+      "scandata": "2638",
+      "page_numbers_json": "2636",
+      "resolution": "Keep both; use scandata unless a documented visual override exists."
+    },
+    {
+      "type": "page_label_sources_disagree",
+      "leaf_num": 931,
+      "scandata": "2639",
+      "page_numbers_json": "2637",
+      "resolution": "Keep both; use scandata unless a documented visual override exists."
+    },
+    {
+      "type": "page_label_sources_disagree",
+      "leaf_num": 932,
+      "scandata": "2640",
+      "page_numbers_json": "2638",
+      "resolution": "Keep both; use scandata unless a documented visual override exists."
+    },
+    {
+      "type": "page_label_sources_disagree",
+      "leaf_num": 933,
+      "scandata": "2641",
+      "page_numbers_json": "2639",
+      "resolution": "Keep both; use scandata unless a documented visual override exists."
+    },
+    {
+      "type": "page_label_sources_disagree",
+      "leaf_num": 934,
+      "scandata": "2642",
+      "page_numbers_json": "2640",
+      "resolution": "Keep both; use scandata unless a documented visual override exists."
+    },
+    {
+      "type": "page_label_sources_disagree",
+      "leaf_num": 935,
+      "scandata": "2643",
+      "page_numbers_json": "2641",
+      "resolution": "Keep both; use scandata unless a documented visual override exists."
+    },
+    {
+      "type": "page_label_sources_disagree",
+      "leaf_num": 936,
+      "scandata": "2644",
+      "page_numbers_json": "2642",
+      "resolution": "Keep both; use scandata unless a documented visual override exists."
+    },
+    {
+      "type": "page_label_sources_disagree",
+      "leaf_num": 937,
+      "scandata": "2645",
+      "page_numbers_json": "2643",
+      "resolution": "Keep both; use scandata unless a documented visual override exists."
+    },
+    {
+      "type": "page_label_sources_disagree",
+      "leaf_num": 938,
+      "scandata": "2646",
+      "page_numbers_json": "2644",
+      "resolution": "Keep both; use scandata unless a documented visual override exists."
+    },
+    {
+      "type": "page_label_sources_disagree",
+      "leaf_num": 939,
+      "scandata": "2647",
+      "page_numbers_json": "2645",
+      "resolution": "Keep both; use scandata unless a documented visual override exists."
+    },
+    {
+      "type": "page_label_sources_disagree",
+      "leaf_num": 940,
+      "scandata": "2648",
+      "page_numbers_json": "2646",
+      "resolution": "Keep both; use scandata unless a documented visual override exists."
+    },
+    {
+      "type": "page_label_sources_disagree",
+      "leaf_num": 941,
+      "scandata": "2649",
+      "page_numbers_json": "2647",
+      "resolution": "Keep both; use scandata unless a documented visual override exists."
+    },
+    {
+      "type": "page_label_sources_disagree",
+      "leaf_num": 942,
+      "scandata": "2650",
+      "page_numbers_json": "2648",
+      "resolution": "Keep both; use scandata unless a documented visual override exists."
+    },
+    {
+      "type": "page_label_sources_disagree",
+      "leaf_num": 943,
+      "scandata": "",
+      "page_numbers_json": "2649",
+      "resolution": "Keep both; use scandata unless a documented visual override exists."
+    },
+    {
+      "type": "page_label_sources_disagree",
+      "leaf_num": 944,
+      "scandata": "2651",
+      "page_numbers_json": "2650",
+      "resolution": "Keep both; use scandata unless a documented visual override exists."
+    },
+    {
+      "type": "scandata_label_gap",
+      "before_leaf": 944,
+      "after_leaf": 945,
+      "before_label": 2651,
+      "after_label": 2651,
+      "meaning": "A metadata pagination discontinuity; not automatically proof of missing physical pages."
+    },
+    {
+      "type": "page_label_sources_disagree",
+      "leaf_num": 985,
+      "scandata": "2691",
+      "page_numbers_json": "",
+      "resolution": "Keep both; use scandata unless a documented visual override exists."
+    },
+    {
+      "type": "page_label_sources_disagree",
+      "leaf_num": 986,
+      "scandata": "2692",
+      "page_numbers_json": "",
+      "resolution": "Keep both; use scandata unless a documented visual override exists."
+    },
+    {
+      "type": "page_label_sources_disagree",
+      "leaf_num": 987,
+      "scandata": "2693",
+      "page_numbers_json": "",
+      "resolution": "Keep both; use scandata unless a documented visual override exists."
+    },
+    {
+      "type": "page_label_sources_disagree",
+      "leaf_num": 988,
+      "scandata": "2694",
+      "page_numbers_json": "",
+      "resolution": "Keep both; use scandata unless a documented visual override exists."
+    },
+    {
+      "type": "page_label_sources_disagree",
+      "leaf_num": 989,
+      "scandata": "2695",
+      "page_numbers_json": "",
+      "resolution": "Keep both; use scandata unless a documented visual override exists."
+    },
+    {
+      "type": "scandata_label_gap",
+      "before_leaf": 989,
+      "after_leaf": 990,
+      "before_label": 2695,
+      "after_label": 2695,
+      "meaning": "A metadata pagination discontinuity; not automatically proof of missing physical pages."
+    },
+    {
+      "type": "page_label_sources_disagree",
+      "leaf_num": 990,
+      "scandata": "2695",
+      "page_numbers_json": "",
+      "resolution": "Keep both; use scandata unless a documented visual override exists."
+    },
+    {
+      "type": "scandata_label_gap",
+      "before_leaf": 990,
+      "after_leaf": 991,
+      "before_label": 2695,
+      "after_label": 2695,
+      "meaning": "A metadata pagination discontinuity; not automatically proof of missing physical pages."
+    },
+    {
+      "type": "page_label_sources_disagree",
+      "leaf_num": 991,
+      "scandata": "2695",
+      "page_numbers_json": "",
+      "resolution": "Keep both; use scandata unless a documented visual override exists."
+    },
+    {
+      "type": "page_label_sources_disagree",
+      "leaf_num": 992,
+      "scandata": "2696",
+      "page_numbers_json": "",
+      "resolution": "Keep both; use scandata unless a documented visual override exists."
+    },
+    {
+      "type": "page_label_sources_disagree",
+      "leaf_num": 996,
+      "scandata": "2700",
+      "page_numbers_json": "",
+      "resolution": "Keep both; use scandata unless a documented visual override exists."
+    },
+    {
+      "type": "page_label_sources_disagree",
+      "leaf_num": 1018,
+      "scandata": "2720",
+      "page_numbers_json": "",
+      "resolution": "Keep both; use scandata unless a documented visual override exists."
+    },
+    {
+      "type": "scandata_label_gap",
+      "before_leaf": 1018,
+      "after_leaf": 1019,
+      "before_label": 2720,
+      "after_label": 2720,
+      "meaning": "A metadata pagination discontinuity; not automatically proof of missing physical pages."
+    },
+    {
+      "type": "page_label_sources_disagree",
+      "leaf_num": 1019,
+      "scandata": "2720",
+      "page_numbers_json": "",
+      "resolution": "Keep both; use scandata unless a documented visual override exists."
+    },
+    {
+      "type": "scandata_label_gap",
+      "before_leaf": 1019,
+      "after_leaf": 1020,
+      "before_label": 2720,
+      "after_label": 2720,
+      "meaning": "A metadata pagination discontinuity; not automatically proof of missing physical pages."
+    },
+    {
+      "type": "page_label_sources_disagree",
+      "leaf_num": 1020,
+      "scandata": "2720",
+      "page_numbers_json": "",
+      "resolution": "Keep both; use scandata unless a documented visual override exists."
+    },
+    {
+      "type": "page_label_sources_disagree",
+      "leaf_num": 1216,
+      "scandata": "2916",
+      "page_numbers_json": "",
+      "resolution": "Keep both; use scandata unless a documented visual override exists."
+    },
+    {
+      "type": "page_label_sources_disagree",
+      "leaf_num": 1217,
+      "scandata": "2917",
+      "page_numbers_json": "",
+      "resolution": "Keep both; use scandata unless a documented visual override exists."
+    },
+    {
+      "type": "page_label_sources_disagree",
+      "leaf_num": 1218,
+      "scandata": "2918",
+      "page_numbers_json": "",
+      "resolution": "Keep both; use scandata unless a documented visual override exists."
+    },
+    {
+      "type": "page_label_sources_disagree",
+      "leaf_num": 1221,
+      "scandata": "2919",
+      "page_numbers_json": "",
+      "resolution": "Keep both; use scandata unless a documented visual override exists."
+    },
+    {
+      "type": "page_label_sources_disagree",
+      "leaf_num": 1222,
+      "scandata": "2920",
+      "page_numbers_json": "",
+      "resolution": "Keep both; use scandata unless a documented visual override exists."
+    },
+    {
+      "type": "page_label_sources_disagree",
+      "leaf_num": 1475,
+      "scandata": "3169",
+      "page_numbers_json": "",
+      "resolution": "Keep both; use scandata unless a documented visual override exists."
+    },
+    {
+      "type": "scandata_label_gap",
+      "before_leaf": 1475,
+      "after_leaf": 1476,
+      "before_label": 3169,
+      "after_label": 3169,
+      "meaning": "A metadata pagination discontinuity; not automatically proof of missing physical pages."
+    },
+    {
+      "type": "page_label_sources_disagree",
+      "leaf_num": 1476,
+      "scandata": "3169",
+      "page_numbers_json": "",
+      "resolution": "Keep both; use scandata unless a documented visual override exists."
+    },
+    {
+      "type": "scandata_label_gap",
+      "before_leaf": 1476,
+      "after_leaf": 1477,
+      "before_label": 3169,
+      "after_label": 3169,
+      "meaning": "A metadata pagination discontinuity; not automatically proof of missing physical pages."
+    },
+    {
+      "type": "page_label_sources_disagree",
+      "leaf_num": 1477,
+      "scandata": "3169",
+      "page_numbers_json": "",
+      "resolution": "Keep both; use scandata unless a documented visual override exists."
+    },
+    {
+      "type": "page_label_sources_disagree",
+      "leaf_num": 1478,
+      "scandata": "3170",
+      "page_numbers_json": "",
+      "resolution": "Keep both; use scandata unless a documented visual override exists."
+    },
+    {
+      "type": "page_label_sources_disagree",
+      "leaf_num": 1479,
+      "scandata": "3171",
+      "page_numbers_json": "",
+      "resolution": "Keep both; use scandata unless a documented visual override exists."
+    },
+    {
+      "type": "page_label_sources_disagree",
+      "leaf_num": 1509,
+      "scandata": "3201",
+      "page_numbers_json": "",
+      "resolution": "Keep both; use scandata unless a documented visual override exists."
+    },
+    {
+      "type": "page_label_sources_disagree",
+      "leaf_num": 1510,
+      "scandata": "3202",
+      "page_numbers_json": "",
+      "resolution": "Keep both; use scandata unless a documented visual override exists."
+    }
+  ],
+  "composite_primary_labels": [
+    {
+      "leaf_num": 571,
+      "printed_page": "2099–2143",
+      "physical_scans": 1,
+      "meaning": "One physical page with a visually checked composite label, not additional scans."
+    }
+  ],
+  "scope_note": "General alphabetical directory only: 566 physical pages, printed p1535–2144 including the single composite 2099–2143 page. Visually checked first/last pages and business transition; all accessible leaves/indices/dimensions cross-checked against official BookReader data. No exhaustive transcription or classification of individual entries is implied.",
+  "ocr_completion": "No OCR completion is implied by source-manifest inclusion."
+}

@@ -1,0 +1,46 @@
+{
+  "format": "bpl-stage4-quarantine-review-v1",
+  "reviewer": "Codex assistant visual diagnostic review; not an independent gold transcription",
+  "leaf_num": 518,
+  "printed_page": "516",
+  "run_id": "20261119T204247-leaf0518-3b561afa",
+  "source_image_sha256": "cb939ce380cb9296c8336ae76b6e8f632a6f2bf0b9faa7522ce7170e537474c9",
+  "source_size": [
+    1668,
+    2825
+  ],
+  "source_page_url": "https://archive.org/details/bostonmassachuse1916112samp/page/n517/mode/1up",
+  "old_gutter_x": 1244.5,
+  "corrected_gutter_x": 887.0,
+  "native_lines_retained": 153,
+  "cross_gutter_candidates": 85,
+  "finding": "Visual overlay confirms many native TSV groups combine text from the physical left and right columns. Merged full-width boxes had also contaminated the old gutter estimate. Excluding full-width boxes from left-edge estimation restores a gutter before the right starts, and systematic cross-gutter groups now trigger quarantine.",
+  "examples": [
+    {
+      "line_id": "boston-1916-vol1-ao-leaf0518:e5147ec550e9:b0002-p0001-l0002",
+      "native_reading_order": 3,
+      "source_bbox": [
+        178.5,
+        188.5,
+        1545.0,
+        235.5
+      ],
+      "native_text": "Copplertan Esther Mrs remnants 93 Salem h 10 « Frederick J student b 47 Binney Fen [dor do"
+    },
+    {
+      "line_id": "boston-1916-vol1-ao-leaf0518:e5147ec550e9:b0009-p0003-l0001",
+      "native_reading_order": 44,
+      "source_bbox": [
+        178.0,
+        513.5,
+        1546.5,
+        541.5
+      ],
+      "native_text": "Oopponi Luigi laborer h 15 Meehan 1 P « Harriet E h 393 Mass av [h do"
+    }
+  ],
+  "disposition": "All 153 raw rows and native outputs retained; excluded from accepted lines.csv and placed in quarantined_lines.csv. Layout repair requires a separate reviewed segmentation strategy; selected OCR parameters remain unchanged.",
+  "figure": "leaf0518_quarantine.jpg",
+  "figure_sha256": "5a074c551a3b0edf0727721ddbce87c504b56dbf7a23e3b60e2fed178d1c70df",
+  "accuracy_scoring": false
+}

@@ -1,0 +1,170 @@
+{
+  "format": "bpl-project-plan-v1",
+  "batch_size": 100,
+  "total_pages": 1937,
+  "assignments": [
+    {
+      "assignment_id": "katherine-vol1",
+      "owner": "Katherine",
+      "volume_id": "boston-1916-vol1-ao",
+      "manifest": "fa26/manifests/vol1/manifest.json",
+      "manifest_id": "fb7f669e132db65533a95ab87a80cd8d3c8933e83ebfd62cd7b519b78554e331",
+      "pages": 1371,
+      "model": {
+        "engine_version": "5.3.4",
+        "language": "eng",
+        "oem": 1,
+        "psm": 3,
+        "scale": 2,
+        "border": 10,
+        "pillow_version": "11.3.0",
+        "english_revision": "e12c65a915945e4c28e237a9b52bc4a8f39a0cec",
+        "english_sha256": "8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba"
+      },
+      "batches": [
+        {
+          "batch_id": "vol1-001",
+          "plan_file": "vol1/vol1-001.json",
+          "plan_id": "6822247bf925d34b9b8b0186625895ff768f33a2787e3ae56c2989fdcaf2b3ab",
+          "pages": 100
+        },
+        {
+          "batch_id": "vol1-002",
+          "plan_file": "vol1/vol1-002.json",
+          "plan_id": "5175842f40fcb5abf3066afc0da4496208eb54b9d241f61cccee65d9d7acdec5",
+          "pages": 100
+        },
+        {
+          "batch_id": "vol1-003",
+          "plan_file": "vol1/vol1-003.json",
+          "plan_id": "0ca455d7db27b57185b4665444ef1dad8b6b7aeca25b64422dd95d44c6a7b475",
+          "pages": 100
+        },
+        {
+          "batch_id": "vol1-004",
+          "plan_file": "vol1/vol1-004.json",
+          "plan_id": "b21858a9d438a52b2934984f08ac79ebe7fcdb6b51a4bd48a8cbc2792d3a92eb",
+          "pages": 100
+        },
+        {
+          "batch_id": "vol1-005",
+          "plan_file": "vol1/vol1-005.json",
+          "plan_id": "d89f354e2a9a612cca09a30cf8d99d2b2136008ddedd41dcf558ba975b1c60d2",
+          "pages": 100
+        },
+        {
+          "batch_id": "vol1-006",
+          "plan_file": "vol1/vol1-006.json",
+          "plan_id": "f1ef82dcdbe1317384a83e94076f0991f3b10ae5d9ab0c5b9706454a1ffef97c",
+          "pages": 100
+        },
+        {
+          "batch_id": "vol1-007",
+          "plan_file": "vol1/vol1-007.json",
+          "plan_id": "642c7426cc914fdbd87270075c60036310ee7d06f4238ff1b40e6146fc2dd7f1",
+          "pages": 100
+        },
+        {
+          "batch_id": "vol1-008",
+          "plan_file": "vol1/vol1-008.json",
+          "plan_id": "1d23f283a98acae8c139cf06804777449ba7758655f029c65df0ecf40015d90d",
+          "pages": 100
+        },
+        {
+          "batch_id": "vol1-009",
+          "plan_file": "vol1/vol1-009.json",
+          "plan_id": "370e1d1cde4ff64aac85e7642a1b0e56c6146a5515b31c0da892a47d57b86ae8",
+          "pages": 100
+        },
+        {
+          "batch_id": "vol1-010",
+          "plan_file": "vol1/vol1-010.json",
+          "plan_id": "0fcaedf81923a2f1ce123941c019b92f1a6af1a457942d21db62a02294f330bb",
+          "pages": 100
+        },
+        {
+          "batch_id": "vol1-011",
+          "plan_file": "vol1/vol1-011.json",
+          "plan_id": "abdea2b7aa1d63adbb931ba78a48dd19a64d88c7f66551094180a56cdbafa739",
+          "pages": 100
+        },
+        {
+          "batch_id": "vol1-012",
+          "plan_file": "vol1/vol1-012.json",
+          "plan_id": "cd6c542af110e7401b3880dae5afd2aaeb33b43e376dbca11983029a95e90815",
+          "pages": 100
+        },
+        {
+          "batch_id": "vol1-013",
+          "plan_file": "vol1/vol1-013.json",
+          "plan_id": "c0b83628a0d6a7d8ec40b36840ed53e6858459b110e998aef321d593d440df3c",
+          "pages": 100
+        },
+        {
+          "batch_id": "vol1-014",
+          "plan_file": "vol1/vol1-014.json",
+          "plan_id": "e95045541830b3dc94ca3a0379ecb3b1016cdb1df5fb9b66b96da2ddfcc14594",
+          "pages": 71
+        }
+      ]
+    },
+    {
+      "assignment_id": "yanlun-vol2",
+      "owner": "Yanlun",
+      "volume_id": "boston-1916-vol2-oz",
+      "manifest": "fa26/manifests/vol2/manifest.json",
+      "manifest_id": "7819b7078ed7092ad3dae02f2ba6c4e602558cdea81ff6c8e5c15a7460cdb1ab",
+      "pages": 566,
+      "model": {
+        "engine_version": "5.3.4",
+        "language": "eng",
+        "oem": 1,
+        "psm": 3,
+        "scale": 2,
+        "border": 10,
+        "pillow_version": "11.3.0",
+        "english_revision": "e12c65a915945e4c28e237a9b52bc4a8f39a0cec",
+        "english_sha256": "8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba"
+      },
+      "batches": [
+        {
+          "batch_id": "vol2-001",
+          "plan_file": "vol2/vol2-001.json",
+          "plan_id": "9c5867d1bfe7f498b9b6794086480414c7af4516bfbb707f3c5208ab119191b2",
+          "pages": 100
+        },
+        {
+          "batch_id": "vol2-002",
+          "plan_file": "vol2/vol2-002.json",
+          "plan_id": "6f27a8d630a7972a8964673d1d1681253cd6a7622309becc5e7ed805135123d2",
+          "pages": 100
+        },
+        {
+          "batch_id": "vol2-003",
+          "plan_file": "vol2/vol2-003.json",
+          "plan_id": "f429fdbe94a5c53fe2d9414c2eebb22d50c0b0e3a4793a23ef89ecff599348e5",
+          "pages": 100
+        },
+        {
+          "batch_id": "vol2-004",
+          "plan_file": "vol2/vol2-004.json",
+          "plan_id": "d8759d6f54d0cc6747c37aee31df7ea5d8b72fd9efe113c030b434562ec67df5",
+          "pages": 100
+        },
+        {
+          "batch_id": "vol2-005",
+          "plan_file": "vol2/vol2-005.json",
+          "plan_id": "12f79b146a69491fc0c215c6b33ac7cc9eee9e0d81ad1ebcc859a7233fca952a",
+          "pages": 100
+        },
+        {
+          "batch_id": "vol2-006",
+          "plan_file": "vol2/vol2-006.json",
+          "plan_id": "1d29778fb6b69e25a8aeb9f875d0e5436c3acc3726c0117f264e95efeaf45760",
+          "pages": 66
+        }
+      ]
+    }
+  ],
+  "project_id": "e0217b4b26e811d696d64dada6fac36601ac981b71eaae0d8d29b73f95ae69f2"
+}

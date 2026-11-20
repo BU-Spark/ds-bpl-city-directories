@@ -1,0 +1,219 @@
+{
+  "format": "bpl-stage3-manual-review-v1",
+  "review_date": "2026-11-19",
+  "reviewer": "Codex assistant visual review; not an independent human reference set",
+  "inference_commit": "b9ab926dc73276fc90ff0251fa2f0293aa5b2a3a",
+  "inference_settings_ids": [
+    "9e6356fe232934aeda160eea00b14e3043a1b9f2d08e934245019ba64304c893"
+  ],
+  "page_reviews": [
+    {
+      "leaf_num": 162,
+      "printed_page": "160",
+      "full_page_overlay_reviewed": true,
+      "spatial_bands_reviewed": 6,
+      "whole_column_dropout_observed": false,
+      "coordinate_alignment": "No systematic image/box shift observed; symbol boxes align with printed ditto strips rather than entry lines.",
+      "reading_order": "Main substantive columns are left then right; detached suffixes and symbol fragments remain unsafe for direct entry concatenation.",
+      "source_conditions": "Targeted diagnostic scan; not a measured image-quality ranking",
+      "source_alias": false,
+      "role": "supplementary"
+    },
+    {
+      "leaf_num": 163,
+      "printed_page": "161",
+      "full_page_overlay_reviewed": true,
+      "spatial_bands_reviewed": 6,
+      "whole_column_dropout_observed": false,
+      "coordinate_alignment": "No systematic image/box shift observed; symbol boxes align with printed ditto strips rather than entry lines.",
+      "reading_order": "Main substantive columns are left then right; detached suffixes and symbol fragments remain unsafe for direct entry concatenation.",
+      "source_conditions": "Targeted diagnostic scan; not a measured image-quality ranking",
+      "source_alias": false,
+      "role": "primary"
+    },
+    {
+      "leaf_num": 164,
+      "printed_page": "162",
+      "full_page_overlay_reviewed": true,
+      "spatial_bands_reviewed": 6,
+      "whole_column_dropout_observed": false,
+      "coordinate_alignment": "No systematic image/box shift observed; symbol boxes align with printed ditto strips rather than entry lines.",
+      "reading_order": "Main substantive columns are left then right; detached suffixes and symbol fragments remain unsafe for direct entry concatenation.",
+      "source_conditions": "Targeted diagnostic scan; not a measured image-quality ranking",
+      "source_alias": false,
+      "role": "primary"
+    },
+    {
+      "leaf_num": 302,
+      "printed_page": "300",
+      "full_page_overlay_reviewed": true,
+      "spatial_bands_reviewed": 6,
+      "whole_column_dropout_observed": false,
+      "coordinate_alignment": "No systematic image/box shift observed; symbol boxes align with printed ditto strips rather than entry lines.",
+      "reading_order": "Main substantive columns are left then right; detached suffixes and symbol fragments remain unsafe for direct entry concatenation.",
+      "source_conditions": "Targeted diagnostic scan; not a measured image-quality ranking",
+      "source_alias": false,
+      "role": "primary"
+    },
+    {
+      "leaf_num": 514,
+      "printed_page": "512",
+      "full_page_overlay_reviewed": true,
+      "spatial_bands_reviewed": 6,
+      "whole_column_dropout_observed": false,
+      "coordinate_alignment": "No systematic image/box shift observed; symbol boxes align with printed ditto strips rather than entry lines.",
+      "reading_order": "Main substantive columns are left then right; detached suffixes and symbol fragments remain unsafe for direct entry concatenation.",
+      "source_conditions": "Targeted diagnostic scan; not a measured image-quality ranking",
+      "source_alias": false,
+      "role": "primary"
+    },
+    {
+      "leaf_num": 515,
+      "printed_page": "513",
+      "full_page_overlay_reviewed": true,
+      "spatial_bands_reviewed": 6,
+      "whole_column_dropout_observed": false,
+      "coordinate_alignment": "No systematic image/box shift observed; symbol boxes align with printed ditto strips rather than entry lines.",
+      "reading_order": "Main substantive columns are left then right; detached suffixes and symbol fragments remain unsafe for direct entry concatenation.",
+      "source_conditions": "Targeted diagnostic scan; not a measured image-quality ranking",
+      "source_alias": false,
+      "role": "primary"
+    },
+    {
+      "leaf_num": 776,
+      "printed_page": "774",
+      "full_page_overlay_reviewed": true,
+      "spatial_bands_reviewed": 6,
+      "whole_column_dropout_observed": false,
+      "coordinate_alignment": "No systematic image/box shift observed; symbol boxes align with printed ditto strips rather than entry lines.",
+      "reading_order": "Main substantive columns are left then right; detached suffixes and symbol fragments remain unsafe for direct entry concatenation.",
+      "source_conditions": "Targeted diagnostic scan; not a measured image-quality ranking",
+      "source_alias": false,
+      "role": "primary"
+    },
+    {
+      "leaf_num": 777,
+      "printed_page": "779",
+      "full_page_overlay_reviewed": true,
+      "spatial_bands_reviewed": 6,
+      "whole_column_dropout_observed": false,
+      "coordinate_alignment": "No systematic image/box shift observed; symbol boxes align with printed ditto strips rather than entry lines.",
+      "reading_order": "Main substantive columns are left then right; detached suffixes and symbol fragments remain unsafe for direct entry concatenation.",
+      "source_conditions": "Targeted diagnostic scan; not a measured image-quality ranking",
+      "source_alias": false,
+      "role": "primary"
+    },
+    {
+      "leaf_num": 780,
+      "printed_page": "782",
+      "full_page_overlay_reviewed": true,
+      "spatial_bands_reviewed": 6,
+      "whole_column_dropout_observed": false,
+      "coordinate_alignment": "No systematic image/box shift observed; symbol boxes align with printed ditto strips rather than entry lines.",
+      "reading_order": "Main substantive columns are left then right; detached suffixes and symbol fragments remain unsafe for direct entry concatenation.",
+      "source_conditions": "Targeted diagnostic scan; not a measured image-quality ranking",
+      "source_alias": false,
+      "role": "primary"
+    },
+    {
+      "leaf_num": 783,
+      "printed_page": "783",
+      "full_page_overlay_reviewed": true,
+      "spatial_bands_reviewed": 6,
+      "whole_column_dropout_observed": false,
+      "coordinate_alignment": "No systematic image/box shift observed; symbol boxes align with printed ditto strips rather than entry lines.",
+      "reading_order": "Main substantive columns are left then right; detached suffixes and symbol fragments remain unsafe for direct entry concatenation.",
+      "source_conditions": "Targeted diagnostic scan; not a measured image-quality ranking",
+      "source_alias": true,
+      "role": "primary"
+    },
+    {
+      "leaf_num": 1000,
+      "printed_page": "1000",
+      "full_page_overlay_reviewed": true,
+      "spatial_bands_reviewed": 6,
+      "whole_column_dropout_observed": false,
+      "coordinate_alignment": "No systematic image/box shift observed; symbol boxes align with printed ditto strips rather than entry lines.",
+      "reading_order": "Main substantive columns are left then right; detached suffixes and symbol fragments remain unsafe for direct entry concatenation.",
+      "source_conditions": "Targeted diagnostic scan; not a measured image-quality ranking",
+      "source_alias": false,
+      "role": "primary"
+    },
+    {
+      "leaf_num": 1001,
+      "printed_page": "1001",
+      "full_page_overlay_reviewed": true,
+      "spatial_bands_reviewed": 6,
+      "whole_column_dropout_observed": false,
+      "coordinate_alignment": "No systematic image/box shift observed; symbol boxes align with printed ditto strips rather than entry lines.",
+      "reading_order": "Main substantive columns are left then right; detached suffixes and symbol fragments remain unsafe for direct entry concatenation.",
+      "source_conditions": "Targeted diagnostic scan; not a measured image-quality ranking",
+      "source_alias": false,
+      "role": "primary"
+    },
+    {
+      "leaf_num": 1200,
+      "printed_page": "1200",
+      "full_page_overlay_reviewed": true,
+      "spatial_bands_reviewed": 6,
+      "whole_column_dropout_observed": false,
+      "coordinate_alignment": "No systematic image/box shift observed; symbol boxes align with printed ditto strips rather than entry lines.",
+      "reading_order": "Main substantive columns are left then right; detached suffixes and symbol fragments remain unsafe for direct entry concatenation.",
+      "source_conditions": "Targeted diagnostic scan; not a measured image-quality ranking",
+      "source_alias": true,
+      "role": "primary"
+    },
+    {
+      "leaf_num": 1201,
+      "printed_page": "1201",
+      "full_page_overlay_reviewed": true,
+      "spatial_bands_reviewed": 6,
+      "whole_column_dropout_observed": false,
+      "coordinate_alignment": "No systematic image/box shift observed; symbol boxes align with printed ditto strips rather than entry lines.",
+      "reading_order": "Main substantive columns are left then right; detached suffixes and symbol fragments remain unsafe for direct entry concatenation.",
+      "source_conditions": "Targeted diagnostic scan; not a measured image-quality ranking",
+      "source_alias": false,
+      "role": "primary"
+    },
+    {
+      "leaf_num": 1533,
+      "printed_page": "1533",
+      "full_page_overlay_reviewed": true,
+      "spatial_bands_reviewed": 6,
+      "whole_column_dropout_observed": false,
+      "coordinate_alignment": "No systematic image/box shift observed; symbol boxes align with printed ditto strips rather than entry lines.",
+      "reading_order": "Main substantive columns are left then right; detached suffixes and symbol fragments remain unsafe for direct entry concatenation.",
+      "source_conditions": "Targeted diagnostic scan; not a measured image-quality ranking",
+      "source_alias": false,
+      "role": "primary"
+    },
+    {
+      "leaf_num": 1534,
+      "printed_page": "1534",
+      "full_page_overlay_reviewed": true,
+      "spatial_bands_reviewed": 6,
+      "whole_column_dropout_observed": false,
+      "coordinate_alignment": "No systematic image/box shift observed; symbol boxes align with printed ditto strips rather than entry lines.",
+      "reading_order": "Main substantive columns are left then right; detached suffixes and symbol fragments remain unsafe for direct entry concatenation.",
+      "source_conditions": "Faint/degraded typography and fragmented surname headings",
+      "source_alias": false,
+      "role": "primary"
+    }
+  ],
+  "reviewed_spatial_bands": 96,
+  "no_exhaustive_transcription": true,
+  "cer_wer_computed": false,
+  "decision": {
+    "stage3_status": "complete_with_conditions",
+    "next_stage": "Proceed only to stage-4 bounded raw-capture/batch engineering validation; retain selected full-page OCR settings.",
+    "capture_findings": "All 16 pages completed and passed source/output/export checks. Both text columns were represented in the 16 full-page overlays and 96 bands; no whole-column dropout was observed.",
+    "limits": "This is not proof of no missing physical lines. Local character loss, broken surname headings, symbol pseudo-lines and detached suffixes prevent treating native lines as verified entries.",
+    "required_stage4_controls": [
+      "Per-page download retry/receipt handling; keep actual retrieval aliases and hashes",
+      "Non-destructive line/page quality flags alongside every batch output",
+      "Stop or quarantine suspect column/geometry/missing-output cases for review",
+      "Keep supplementary/mixed first-page scopes and known pagination gaps explicit",
+      "Do not count residents or perform unreviewed entry concatenation from native rows"
+    ]
+  }
+}
