@@ -1,0 +1,113 @@
+{
+  "format": "bpl-project-plan-v1",
+  "batch_size": 100,
+  "total_pages": 1371,
+  "assignments": [
+    {
+      "assignment_id": "worker-vol1",
+      "owner": "Worker",
+      "volume_id": "boston-1916-vol1-ao",
+      "manifest": "manifests/vol1/manifest.json",
+      "manifest_id": "fb7f669e132db65533a95ab87a80cd8d3c8933e83ebfd62cd7b519b78554e331",
+      "pages": 1371,
+      "model": {
+        "engine_version": "5.3.4",
+        "language": "eng",
+        "oem": 1,
+        "psm": 3,
+        "scale": 2,
+        "border": 10,
+        "pillow_version": "11.3.0",
+        "english_revision": "e12c65a915945e4c28e237a9b52bc4a8f39a0cec",
+        "english_sha256": "8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba"
+      },
+      "batches": [
+        {
+          "batch_id": "vol1-001",
+          "plan_file": "vol1/vol1-001.json",
+          "plan_id": "ac0f38911d45d4930e34cab97ac2aba88ec364bb979a1be99087150faa15bd98",
+          "pages": 100
+        },
+        {
+          "batch_id": "vol1-002",
+          "plan_file": "vol1/vol1-002.json",
+          "plan_id": "6afaaf63149ca690cf5687dda3736bb97b400ce27b153f069de0a9c9bde7e2e5",
+          "pages": 100
+        },
+        {
+          "batch_id": "vol1-003",
+          "plan_file": "vol1/vol1-003.json",
+          "plan_id": "8cc516e26299e2c64b2e9eb116d45a78a28264610bdc571fc9ccd93db6ea1bc2",
+          "pages": 100
+        },
+        {
+          "batch_id": "vol1-004",
+          "plan_file": "vol1/vol1-004.json",
+          "plan_id": "e221a3b5bc8b4912164d14277eac3ea53f4f5520eabf09a0b1fbcafb9c4989f7",
+          "pages": 100
+        },
+        {
+          "batch_id": "vol1-005",
+          "plan_file": "vol1/vol1-005.json",
+          "plan_id": "15545a549790009ba3ed9260eeacefe608bfee41d628d914c72c82b9bddbd647",
+          "pages": 100
+        },
+        {
+          "batch_id": "vol1-006",
+          "plan_file": "vol1/vol1-006.json",
+          "plan_id": "569c8a68679b1477860176230eaa9bd6e1b2e9cd2fa538f2d101ea7bc3bcc432",
+          "pages": 100
+        },
+        {
+          "batch_id": "vol1-007",
+          "plan_file": "vol1/vol1-007.json",
+          "plan_id": "1f5beebff2813703b92d53de17194b3d7c0f68cc1c3428c1624ec9c93ae6a1dc",
+          "pages": 100
+        },
+        {
+          "batch_id": "vol1-008",
+          "plan_file": "vol1/vol1-008.json",
+          "plan_id": "a335656fc2b6c414e458c64a25210a98fa1af5e9a10445064770c03b77ade1f4",
+          "pages": 100
+        },
+        {
+          "batch_id": "vol1-009",
+          "plan_file": "vol1/vol1-009.json",
+          "plan_id": "adb6541db287708b3d5972a854d829ccd7f8da918532940f028981f98fd45bfc",
+          "pages": 100
+        },
+        {
+          "batch_id": "vol1-010",
+          "plan_file": "vol1/vol1-010.json",
+          "plan_id": "5749578a613a795e6c2d4d2424eaa931d1ddd9ccaa09d2a3ac3ad9217aa39d5f",
+          "pages": 100
+        },
+        {
+          "batch_id": "vol1-011",
+          "plan_file": "vol1/vol1-011.json",
+          "plan_id": "770077b0a351d1d34b6c7546e9f01292f15e867c433a4fee27aed52335e4644c",
+          "pages": 100
+        },
+        {
+          "batch_id": "vol1-012",
+          "plan_file": "vol1/vol1-012.json",
+          "plan_id": "50587ae8d2fb253f641ae1f6bb6b58bd681ecc879320fc671138246fe74e230e",
+          "pages": 100
+        },
+        {
+          "batch_id": "vol1-013",
+          "plan_file": "vol1/vol1-013.json",
+          "plan_id": "34444001946e0700a997e260995f53aceb7dc5066758aa3e4c761bbbbe6da1fd",
+          "pages": 100
+        },
+        {
+          "batch_id": "vol1-014",
+          "plan_file": "vol1/vol1-014.json",
+          "plan_id": "395504a48e09c1498d6a93345bb73370aee1eadac63b62394ccd776c99797cef",
+          "pages": 71
+        }
+      ]
+    }
+  ],
+  "project_id": "db053e6beb487905a7fdc44fce06f5d4c020e6c77096a733311668aa5b2fa09b"
+}

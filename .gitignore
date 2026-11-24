@@ -1,1 +1,8 @@
 .DS_Store
+
+# Reproducible local runtimes and generated OCR working files.
+/.runtime/
+/.venv/
+/.cache/
+/fa26/work/
+*.egg-info/

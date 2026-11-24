@@ -1,3 +1,9 @@
+## Selected Tesseract OCR
+
+For the fixed 1916 Volume 1 capture job, use [the OCR runner](ocr/README.md).
+It has a small pinned environment, 14 resumable batches and separate local
+results. Existing notebooks and ground-truth files keep their current setup.
+
 
 <h1 align="center">
   <br>
