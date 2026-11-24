@@ -4,12 +4,12 @@
   "total_pages": 1371,
   "assignments": [
     {
-      "assignment_id": "worker-vol1",
-      "owner": "Worker",
+      "assignment_id": "worker-1",
+      "owner": "TBD-1",
       "volume_id": "boston-1916-vol1-ao",
       "manifest": "manifests/vol1/manifest.json",
       "manifest_id": "fb7f669e132db65533a95ab87a80cd8d3c8933e83ebfd62cd7b519b78554e331",
-      "pages": 1371,
+      "pages": 500,
       "model": {
         "engine_version": "5.3.4",
         "language": "eng",
@@ -25,89 +25,131 @@
         {
           "batch_id": "vol1-001",
           "plan_file": "vol1/vol1-001.json",
-          "plan_id": "ac0f38911d45d4930e34cab97ac2aba88ec364bb979a1be99087150faa15bd98",
+          "plan_id": "a30b7d1ef0ddb7239cb58a184125766993bbb8312db34c64f39a34f6910aacdc",
           "pages": 100
         },
         {
           "batch_id": "vol1-002",
           "plan_file": "vol1/vol1-002.json",
-          "plan_id": "6afaaf63149ca690cf5687dda3736bb97b400ce27b153f069de0a9c9bde7e2e5",
+          "plan_id": "6e6156bcb743edc30e9bb3213e84c0bde32abadf09f3466be503818e2e1daae7",
           "pages": 100
         },
         {
           "batch_id": "vol1-003",
           "plan_file": "vol1/vol1-003.json",
-          "plan_id": "8cc516e26299e2c64b2e9eb116d45a78a28264610bdc571fc9ccd93db6ea1bc2",
+          "plan_id": "2338c5dfbf1c645998330f4c962699494ce015dcb4afbc568df07841bbaa5994",
           "pages": 100
         },
         {
           "batch_id": "vol1-004",
           "plan_file": "vol1/vol1-004.json",
-          "plan_id": "e221a3b5bc8b4912164d14277eac3ea53f4f5520eabf09a0b1fbcafb9c4989f7",
+          "plan_id": "8424cae5808924f5d492d391367eeb341e768e3a9c2e4cadd4051f212b139083",
           "pages": 100
         },
         {
           "batch_id": "vol1-005",
           "plan_file": "vol1/vol1-005.json",
-          "plan_id": "15545a549790009ba3ed9260eeacefe608bfee41d628d914c72c82b9bddbd647",
+          "plan_id": "47b7ae0f6b7bcb14ce8208e589c73cc78f7411c29d189551f5a17aa878ab61d0",
           "pages": 100
-        },
+        }
+      ]
+    },
+    {
+      "assignment_id": "worker-2",
+      "owner": "TBD-2",
+      "volume_id": "boston-1916-vol1-ao",
+      "manifest": "manifests/vol1/manifest.json",
+      "manifest_id": "fb7f669e132db65533a95ab87a80cd8d3c8933e83ebfd62cd7b519b78554e331",
+      "pages": 500,
+      "model": {
+        "engine_version": "5.3.4",
+        "language": "eng",
+        "oem": 1,
+        "psm": 3,
+        "scale": 2,
+        "border": 10,
+        "pillow_version": "11.3.0",
+        "english_revision": "e12c65a915945e4c28e237a9b52bc4a8f39a0cec",
+        "english_sha256": "8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba"
+      },
+      "batches": [
         {
           "batch_id": "vol1-006",
           "plan_file": "vol1/vol1-006.json",
-          "plan_id": "569c8a68679b1477860176230eaa9bd6e1b2e9cd2fa538f2d101ea7bc3bcc432",
+          "plan_id": "8128e92fc916ce98b9dfdfef447f380982dc75733ad5d916f5544da607fcf9fe",
           "pages": 100
         },
         {
           "batch_id": "vol1-007",
           "plan_file": "vol1/vol1-007.json",
-          "plan_id": "1f5beebff2813703b92d53de17194b3d7c0f68cc1c3428c1624ec9c93ae6a1dc",
+          "plan_id": "4f7c9f19457bb3488ceecb986be663f5168d8551348f9c8d3a9549550b0f1ead",
           "pages": 100
         },
         {
           "batch_id": "vol1-008",
           "plan_file": "vol1/vol1-008.json",
-          "plan_id": "a335656fc2b6c414e458c64a25210a98fa1af5e9a10445064770c03b77ade1f4",
+          "plan_id": "c033fc3a65e66aa5c346a0143eee1f11183b7e64ee2ba0d072f03863e24e3148",
           "pages": 100
         },
         {
           "batch_id": "vol1-009",
           "plan_file": "vol1/vol1-009.json",
-          "plan_id": "adb6541db287708b3d5972a854d829ccd7f8da918532940f028981f98fd45bfc",
+          "plan_id": "cbf233c1447761705f64a0ed66f98eaca5640707967492c14c383d31c7f49670",
           "pages": 100
         },
         {
           "batch_id": "vol1-010",
           "plan_file": "vol1/vol1-010.json",
-          "plan_id": "5749578a613a795e6c2d4d2424eaa931d1ddd9ccaa09d2a3ac3ad9217aa39d5f",
+          "plan_id": "42fd23ab588121a08f148e00415607b54ccf94b20b94491cb68ad262fb3c811b",
           "pages": 100
-        },
+        }
+      ]
+    },
+    {
+      "assignment_id": "worker-3",
+      "owner": "TBD-3",
+      "volume_id": "boston-1916-vol1-ao",
+      "manifest": "manifests/vol1/manifest.json",
+      "manifest_id": "fb7f669e132db65533a95ab87a80cd8d3c8933e83ebfd62cd7b519b78554e331",
+      "pages": 371,
+      "model": {
+        "engine_version": "5.3.4",
+        "language": "eng",
+        "oem": 1,
+        "psm": 3,
+        "scale": 2,
+        "border": 10,
+        "pillow_version": "11.3.0",
+        "english_revision": "e12c65a915945e4c28e237a9b52bc4a8f39a0cec",
+        "english_sha256": "8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba"
+      },
+      "batches": [
         {
           "batch_id": "vol1-011",
           "plan_file": "vol1/vol1-011.json",
-          "plan_id": "770077b0a351d1d34b6c7546e9f01292f15e867c433a4fee27aed52335e4644c",
+          "plan_id": "ee0f97c984ee9d6d415a64f3f303a64b2fcccc799e8796bbc53ae623b4a18f7e",
           "pages": 100
         },
         {
           "batch_id": "vol1-012",
           "plan_file": "vol1/vol1-012.json",
-          "plan_id": "50587ae8d2fb253f641ae1f6bb6b58bd681ecc879320fc671138246fe74e230e",
+          "plan_id": "bb895aaa5ba0ff2f0d181626d159ab02eaef60e6d702455c53b2d33d6630487f",
           "pages": 100
         },
         {
           "batch_id": "vol1-013",
           "plan_file": "vol1/vol1-013.json",
-          "plan_id": "34444001946e0700a997e260995f53aceb7dc5066758aa3e4c761bbbbe6da1fd",
+          "plan_id": "bcc44e215e338c9981237186a9235efcdafa094bf7cc2dec2c1f8b84ba083cee",
           "pages": 100
         },
         {
           "batch_id": "vol1-014",
           "plan_file": "vol1/vol1-014.json",
-          "plan_id": "395504a48e09c1498d6a93345bb73370aee1eadac63b62394ccd776c99797cef",
+          "plan_id": "9439a3b594d941a7fcbbfeeca020b8ee167400805864b04b5f695ef68fe8646c",
           "pages": 71
         }
       ]
     }
   ],
-  "project_id": "db053e6beb487905a7fdc44fce06f5d4c020e6c77096a733311668aa5b2fa09b"
+  "project_id": "a43a1acd390bee4ba45fa346061e8ae7987be56ce18099f1eb6470872c6b00ba"
 }
