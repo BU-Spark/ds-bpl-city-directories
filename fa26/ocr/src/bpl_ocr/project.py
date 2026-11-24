@@ -78,6 +78,10 @@ def partition(assignments, output, *, batch_size=100, repo_root=None):
     return project
 
 
+def project_selected_leaves(manifest):
+    return [p["leaf_num"] for p in manifest["pages"] if p["selected_for_ocr"]]
+
+
 def load_assignment(project_path, assignment_id, repo_root=None):
     project_path = Path(project_path).resolve()
     project = read_json(project_path)
@@ -86,7 +90,8 @@ def load_assignment(project_path, assignment_id, repo_root=None):
         raise ValueError("Project plan changed without a valid identity")
     choices = [a for a in project["assignments"] if a["assignment_id"] == assignment_id]
     if len(choices) != 1:
-        raise ValueError("Select exactly one listed assignment ID")
+        available = ", ".join(a["assignment_id"] for a in project["assignments"]) or "(none)"
+        raise ValueError(f"Unknown assignment ID {assignment_id!r}. Available: {available}")
     assignment = choices[0]
     root = Path(repo_root or Path.cwd()).resolve()
     manifest_path = root / assignment["manifest"]
@@ -100,12 +105,55 @@ def load_assignment(project_path, assignment_id, repo_root=None):
         plan = load_plan(path, manifest)
         if identity(plan) != batch["plan_id"] or len(plan["leaves"]) != batch["pages"]:
             raise ValueError("Batch plan changed")
+        if plan.get("assignment_id") != assignment_id:
+            raise ValueError("Batch plan assignment_id does not match selected worker")
         all_leaves.extend(plan["leaves"])
         batches.append((batch, path, plan))
-    expected = [p["leaf_num"] for p in manifest["pages"] if p["selected_for_ocr"]]
-    if all_leaves != expected or len(set(all_leaves)) != len(all_leaves) or len(all_leaves) != assignment["pages"]:
-        raise ValueError("Assignment coverage is duplicated, missing or out of order")
+    selected = project_selected_leaves(manifest)
+    selected_set = set(selected)
+    if len(set(all_leaves)) != len(all_leaves) or len(all_leaves) != assignment["pages"]:
+        raise ValueError("Assignment coverage is duplicated or page count mismatch")
+    if not set(all_leaves).issubset(selected_set):
+        raise ValueError("Assignment includes pages outside the selected OCR scope")
+    expected_subset = [leaf for leaf in selected if leaf in set(all_leaves)]
+    if all_leaves != expected_subset:
+        raise ValueError("Assignment coverage is out of selected-page order")
+    verify_project_coverage(project_path, repo_root=root)
     return project, assignment, manifest_path, batches
+
+
+def verify_project_coverage(project_path, *, repo_root=None):
+    """Ensure the union of all assignments covers every selected page exactly once."""
+    project_path = Path(project_path).resolve()
+    project = read_json(project_path)
+    root = Path(repo_root or Path.cwd()).resolve()
+    if not project.get("assignments"):
+        raise ValueError("Project has no assignments")
+    owned = {}
+    selected = None
+    for assignment in project["assignments"]:
+        manifest = load_manifest(root / assignment["manifest"])
+        current = project_selected_leaves(manifest)
+        if selected is None:
+            selected = current
+        elif current != selected:
+            raise ValueError("Assignments disagree about selected page coverage")
+        leaves = []
+        for batch in assignment["batches"]:
+            plan = load_plan((project_path.parent / batch["plan_file"]).resolve(), manifest)
+            if plan.get("assignment_id") != assignment["assignment_id"]:
+                raise ValueError("Batch plan assignment_id does not match project assignment")
+            leaves.extend(plan["leaves"])
+        if len(set(leaves)) != len(leaves) or len(leaves) != assignment["pages"]:
+            raise ValueError(f"Assignment {assignment['assignment_id']} has duplicate or mismatched pages")
+        for leaf in leaves:
+            if leaf in owned:
+                raise ValueError(
+                    f"Leaf {leaf} is assigned to both {owned[leaf]} and {assignment['assignment_id']}")
+            owned[leaf] = assignment["assignment_id"]
+    if set(owned) != set(selected) or len(owned) != project["total_pages"]:
+        raise ValueError("Project assignments do not cover the selected OCR pages exactly once")
+    return True
 
 
 def assignment_status(project_path, assignment_id, data_dir, *, repo_root=None):

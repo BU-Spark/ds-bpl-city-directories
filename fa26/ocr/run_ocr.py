@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Run the fixed volume-1 OCR queue with one CPU worker."""
+"""Run a selected Volume-1 OCR worker assignment with one CPU worker."""
 
 import argparse
 import hashlib
@@ -12,23 +12,40 @@ import subprocess
 import sys
 
 ROOT = Path(__file__).resolve().parent
-ASSIGNMENT = "worker-vol1"
 PROJECT = "plans/1916/project.json"
 
 
-def verify_package():
+def load_project():
+    return json.loads((ROOT / PROJECT).read_text(encoding="utf-8"))
+
+
+def listed_assignment_ids(project):
+    return [a["assignment_id"] for a in project["assignments"]]
+
+
+def verify_package(assignment_id=None):
     entries = json.loads((ROOT / "CHECKSUMS.json").read_text(encoding="utf-8"))
     for name, digest in entries.items():
         path = ROOT / name
         if not path.is_file() or hashlib.sha256(path.read_bytes()).hexdigest() != digest:
             raise ValueError("Package file missing or changed: " + name)
-    project = json.loads((ROOT / PROJECT).read_text(encoding="utf-8"))
-    if [a["assignment_id"] for a in project["assignments"]] != [ASSIGNMENT]:
-        raise ValueError("This package must contain only the volume-1 assignment")
-    assignment = project["assignments"][0]
-    if assignment["pages"] != 1371 or len(assignment["batches"]) != 14:
-        raise ValueError("Unexpected volume-1 scope")
-    return assignment
+    project = load_project()
+    ids = listed_assignment_ids(project)
+    if not ids:
+        raise ValueError("Project has no worker assignments")
+    if len(set(ids)) != len(ids):
+        raise ValueError("Duplicate assignment IDs in project.json")
+    if sum(a["pages"] for a in project["assignments"]) != project["total_pages"]:
+        raise ValueError("Assignment page counts do not sum to total_pages")
+    if project["total_pages"] != 1371:
+        raise ValueError("Unexpected Volume-1 total page count")
+    if assignment_id is None:
+        return project, None
+    choices = [a for a in project["assignments"] if a["assignment_id"] == assignment_id]
+    if len(choices) != 1:
+        raise ValueError(
+            f"Unknown assignment ID {assignment_id!r}. Available: {', '.join(ids)}")
+    return project, choices[0]
 
 
 def invoke(arguments, environment, log_path):
@@ -54,37 +71,67 @@ def invoke(arguments, environment, log_path):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--data-dir", type=Path, default=ROOT / "results", help="Persistent result root; reuse the same path to resume")
+    parser.add_argument("--assignment",
+                        help="Worker assignment ID from plans/1916/project.json, e.g. worker-1")
+    parser.add_argument("--list-assignments", action="store_true",
+                        help="List configured worker assignments and exit")
+    parser.add_argument("--data-dir", type=Path, default=ROOT / "results",
+                        help="Persistent result root; reuse the same path to resume")
     mode = parser.add_mutually_exclusive_group()
-    mode.add_argument("--dry-run", action="store_true", help="Verify bundle and display assignment without OCR/dependencies")
-    mode.add_argument("--check", action="store_true", help="Verify engine and download/check pinned English weights without OCR")
+    mode.add_argument("--dry-run", action="store_true",
+                      help="Verify package/assignment without OCR/dependencies")
+    mode.add_argument("--check", action="store_true",
+                      help="Verify engine and download/check pinned English weights without OCR")
     mode.add_argument("--status", action="store_true", help="Read local coverage without OCR")
-    parser.add_argument("--max-batches", type=int, help="Process only this many additional unfinished batches")
+    parser.add_argument("--max-batches", type=int,
+                        help="Process only this many additional unfinished batches")
     args = parser.parse_args()
     if args.max_batches is not None and args.max_batches < 1:
         parser.error("--max-batches must be positive")
-    assignment = verify_package()
+
+    if args.list_assignments:
+        project, _ = verify_package()
+        for assignment in project["assignments"]:
+            batches = ", ".join(b["batch_id"] for b in assignment["batches"])
+            print(f"{assignment['assignment_id']}: owner={assignment['owner']} "
+                  f"pages={assignment['pages']} batches=[{batches}]")
+        return 0
+
+    if not args.assignment:
+        parser.error("--assignment is required (use --list-assignments to see options)")
+
+    project, assignment = verify_package(args.assignment)
     data = args.data_dir.expanduser().resolve()
-    command = ["run-assignment", "--project", PROJECT, "--assignment", ASSIGNMENT, "--data-dir", str(data)]
+    command = ["run-assignment", "--project", PROJECT, "--assignment", args.assignment,
+               "--data-dir", str(data)]
     if args.max_batches is not None:
         command += ["--max-batches", str(args.max_batches)]
     if args.dry_run:
-        print(json.dumps({"package": "verified", "owner": assignment["owner"], "assignment_id": ASSIGNMENT,
-                          "volume": assignment["volume_id"], "physical_pages": assignment["pages"],
-                          "batches": len(assignment["batches"]), "data_directory": str(data),
-                          "command": shlex.join([sys.executable, "-m", "bpl_ocr", *command]),
-                          "ocr_started": False}, indent=2))
+        print(json.dumps({
+            "package": "verified",
+            "owner": assignment["owner"],
+            "assignment_id": args.assignment,
+            "available_assignments": listed_assignment_ids(project),
+            "volume": assignment["volume_id"],
+            "physical_pages": assignment["pages"],
+            "batches": len(assignment["batches"]),
+            "batch_ids": [b["batch_id"] for b in assignment["batches"]],
+            "data_directory": str(data / args.assignment),
+            "command": shlex.join([sys.executable, "-m", "bpl_ocr", *command]),
+            "ocr_started": False,
+        }, indent=2))
         return 0
     if os.name != "posix":
         raise RuntimeError("On Windows, run this package inside WSL2 with a Linux Conda environment")
     environment = {**os.environ, "OMP_THREAD_LIMIT": "1"}
-    folder = data / ASSIGNMENT
+    folder = data / args.assignment
     folder.mkdir(parents=True, exist_ok=True)
     log = folder / "runner.log"
     if args.status:
-        return invoke(["assignment-status", "--project", PROJECT, "--assignment", ASSIGNMENT,
+        return invoke(["assignment-status", "--project", PROJECT, "--assignment", args.assignment,
                        "--data-dir", str(data)], environment, log)
-    checked = invoke(["doctor", "--config", "config/vol1.json", "--work-dir", str(folder / "work")], environment, log)
+    checked = invoke(["doctor", "--config", "config/vol1.json", "--work-dir", str(folder / "work")],
+                     environment, log)
     if checked or args.check:
         return checked
     return invoke(command, environment, log)
