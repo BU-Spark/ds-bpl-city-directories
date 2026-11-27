@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Run a selected Volume-1 OCR worker assignment with one CPU worker."""
+"""Run a selected 1916 directory volume assignment with one CPU worker."""
 
 import argparse
 import hashlib
@@ -13,23 +13,30 @@ import sys
 
 ROOT = Path(__file__).resolve().parent
 PROJECT = "plans/1916/project.json"
+VOLUMES = {
+    "vol1": {"project": PROJECT, "config": "config/vol1.json", "pages": 1371,
+             "batches": 14, "volume_id": "boston-1916-vol1-ao"},
+    "vol2": {"project": "plans/1916/vol2-project.json", "config": "config/vol2.json",
+             "pages": 566, "batches": 6, "volume_id": "boston-1916-vol2-oz"},
+}
 
 
-def load_project():
-    return json.loads((ROOT / PROJECT).read_text(encoding="utf-8"))
+def load_project(volume="vol1"):
+    return json.loads((ROOT / VOLUMES[volume]["project"]).read_text(encoding="utf-8"))
 
 
 def listed_assignment_ids(project):
     return [a["assignment_id"] for a in project["assignments"]]
 
 
-def verify_package(assignment_id=None):
+def verify_package(assignment_id=None, volume="vol1"):
     entries = json.loads((ROOT / "CHECKSUMS.json").read_text(encoding="utf-8"))
     for name, digest in entries.items():
         path = ROOT / name
         if not path.is_file() or hashlib.sha256(path.read_bytes()).hexdigest() != digest:
             raise ValueError("Package file missing or changed: " + name)
-    project = load_project()
+    scope = VOLUMES[volume]
+    project = load_project(volume)
     ids = listed_assignment_ids(project)
     if not ids:
         raise ValueError("Project has no worker assignments")
@@ -37,8 +44,10 @@ def verify_package(assignment_id=None):
         raise ValueError("Duplicate assignment IDs in project.json")
     if sum(a["pages"] for a in project["assignments"]) != project["total_pages"]:
         raise ValueError("Assignment page counts do not sum to total_pages")
-    if project["total_pages"] != 1371:
-        raise ValueError("Unexpected Volume-1 total page count")
+    if (project["total_pages"] != scope["pages"] or
+            sum(len(a["batches"]) for a in project["assignments"]) != scope["batches"] or
+            any(a["volume_id"] != scope["volume_id"] for a in project["assignments"])):
+        raise ValueError("Unexpected " + volume + " scope")
     if assignment_id is None:
         return project, None
     choices = [a for a in project["assignments"] if a["assignment_id"] == assignment_id]
@@ -71,8 +80,10 @@ def invoke(arguments, environment, log_path):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--volume", choices=tuple(VOLUMES), default="vol1",
+                        help="Volume to run; defaults to vol1 for existing worker commands")
     parser.add_argument("--assignment",
-                        help="Worker assignment ID from plans/1916/project.json, e.g. worker-1")
+                        help="Assignment ID for the selected volume; use --list-assignments")
     parser.add_argument("--list-assignments", action="store_true",
                         help="List configured worker assignments and exit")
     parser.add_argument("--data-dir", type=Path, default=ROOT / "results",
@@ -90,7 +101,7 @@ def main():
         parser.error("--max-batches must be positive")
 
     if args.list_assignments:
-        project, _ = verify_package()
+        project, _ = verify_package(volume=args.volume)
         for assignment in project["assignments"]:
             batches = ", ".join(b["batch_id"] for b in assignment["batches"])
             print(f"{assignment['assignment_id']}: owner={assignment['owner']} "
@@ -100,9 +111,10 @@ def main():
     if not args.assignment:
         parser.error("--assignment is required (use --list-assignments to see options)")
 
-    project, assignment = verify_package(args.assignment)
+    project, assignment = verify_package(args.assignment, volume=args.volume)
+    scope = VOLUMES[args.volume]
     data = args.data_dir.expanduser().resolve()
-    command = ["run-assignment", "--project", PROJECT, "--assignment", args.assignment,
+    command = ["run-assignment", "--project", scope["project"], "--assignment", args.assignment,
                "--data-dir", str(data)]
     if args.max_batches is not None:
         command += ["--max-batches", str(args.max_batches)]
@@ -113,6 +125,7 @@ def main():
             "assignment_id": args.assignment,
             "available_assignments": listed_assignment_ids(project),
             "volume": assignment["volume_id"],
+            "project": scope["project"],
             "physical_pages": assignment["pages"],
             "batches": len(assignment["batches"]),
             "batch_ids": [b["batch_id"] for b in assignment["batches"]],
@@ -128,9 +141,9 @@ def main():
     folder.mkdir(parents=True, exist_ok=True)
     log = folder / "runner.log"
     if args.status:
-        return invoke(["assignment-status", "--project", PROJECT, "--assignment", args.assignment,
+        return invoke(["assignment-status", "--project", scope["project"], "--assignment", args.assignment,
                        "--data-dir", str(data)], environment, log)
-    checked = invoke(["doctor", "--config", "config/vol1.json", "--work-dir", str(folder / "work")],
+    checked = invoke(["doctor", "--config", scope["config"], "--work-dir", str(folder / "work")],
                      environment, log)
     if checked or args.check:
         return checked

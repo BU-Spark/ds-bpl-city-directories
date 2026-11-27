@@ -1,8 +1,9 @@
 ## Selected Tesseract OCR
 
-For the fixed 1916 Volume 1 capture job, use [the OCR runner](ocr/README.md).
-It has a small pinned environment, 14 resumable batches and separate local
-results. Existing notebooks and ground-truth files keep their current setup.
+For the fixed 1916 general-directory capture jobs, use [the OCR runner](ocr/README.md).
+It has a pinned environment, 14 Volume-1 batches, six Volume-2 batches and a
+separate four-page Volume-2 validation entry point. Existing notebooks and
+ground-truth files keep their current setup. Run validation before production.
 
 
 <h1 align="center">

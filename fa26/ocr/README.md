@@ -1,90 +1,139 @@
 # 1916 directory · selected Tesseract runner
 
-Run **Volume 1 only: 1,371 physical pages in 14 resumable batches**. This folder
-is the minimal OCR addition to the shared `dev` codebase. Model-comparison
-archives, old pilots, notebook environments and Volume 2 jobs remain separate.
+Capture the selected general directory pages with one CPU worker. Each volume
+has one person responsible. Volume 1 has three sequential task groups; their
+worker IDs describe tasks, not the number of people or machines.
+
+| Volume | Assignment | Physical pages | Batches |
+| --- | --- | ---: | --- |
+| Volume 1 | `worker-1` | 500 | `vol1-001`–`vol1-005` |
+| Volume 1 | `worker-2` | 500 | `vol1-006`–`vol1-010` |
+| Volume 1 | `worker-3` | 371 | `vol1-011`–`vol1-014` |
+| Volume 2 | `worker-vol2` | 566 | `vol2-001`–`vol2-006` |
+
+Volume 1 defaults remain compatible with the shared worker commands. Volume 2
+uses its own registry, `plans/1916/vol2-project.json`. The existing Volume-1
+registry, project/plan IDs and core `src/bpl_ocr/` files are unchanged.
 
 ## Setup from the repository root
-
-The existing `fa26/requirements.txt` is empty and does not define a shared Python
-environment. This runner supplies a small reproducible OCR profile. Existing
-notebooks and ground-truth workflows keep their current setup.
 
 ```sh
 conda env create --prefix .runtime/ocr --file fa26/ocr/environment.yml
 conda run --prefix .runtime/ocr python -m pip install -e ./fa26/ocr
-conda run --no-capture-output --prefix .runtime/ocr python fa26/ocr/run_ocr.py --check
 ```
 
-The profile uses Python 3.11 and native **Tesseract 5.3.4**; Python dependencies
-are **Pillow 11.3.0 and psutil 7.0.0**. The pinned English tessdata_best weights
-are downloaded and SHA-256 checked by `--check`. It does not recognize pages.
-No GPU, torch, pytesseract or notebook analytics packages are required.
-macOS arm64 has been exercised. Linux/Windows via WSL2 use the same profile but
-need the environment check on that machine; native Windows is not supported.
+The OCR profile uses Python 3.11, native **Tesseract 5.3.4**, Pillow 11.3.0 and
+psutil 7.0.0. It is separate from the existing notebooks and ground-truth setup.
+macOS arm64 has been exercised. Linux/WSL2 needs an environment check on that
+machine; native Windows is not supported. No GPU is required.
 
-## Run, resume, or inspect
+The baseline is English `tessdata_best`, OEM 1, full-page PSM 3, grayscale,
+2× Lanczos and a 10 px white border. There is no extra thresholding, denoising
+or text correction. `--check` verifies the engine and downloads/checks pinned
+English weights without recognizing pages.
+
+## Inspect assignments without OCR
 
 ```sh
-# All 14 batches; rerun the same command to resume.
-conda run --no-capture-output --prefix .runtime/ocr python fa26/ocr/run_ocr.py
-
-# Optional: only the next unfinished batch.
-conda run --no-capture-output --prefix .runtime/ocr python fa26/ocr/run_ocr.py --max-batches 1
-
-# Progress without OCR.
-conda run --no-capture-output --prefix .runtime/ocr python fa26/ocr/run_ocr.py --status
-
-# Validate the assignment without installing dependencies or starting OCR.
-python3 fa26/ocr/run_ocr.py --dry-run
+python3 fa26/ocr/run_ocr.py --list-assignments
+python3 fa26/ocr/run_ocr.py --assignment worker-1 --dry-run
+python3 fa26/ocr/run_ocr.py --volume vol2 --list-assignments
+python3 fa26/ocr/run_ocr.py --volume vol2 --assignment worker-vol2 --dry-run
 ```
 
-The script locates its configuration relative to itself, so these commands work
-from the repository root. One worker uses `OMP_THREAD_LIMIT=1`. Keep the machine
-awake during capture. Ctrl-C retains the current attempt and completed pages.
+`--volume` defaults to `vol1`. Assignment IDs are checked against the selected
+volume. Dry runs need only Python's standard library and create no result files.
 
-The selected baseline stays English/OEM 1/PSM 3, grayscale/2× Lanczos/10 px border.
-Captured strings and native reading order are preserved. Missing/corrupt outputs,
-unresolved columns and systematic cross-column groups are quarantined; the queue
-continues to later batches. Exit 2 means processing finished with review items;
-exit 130 means interrupted; exit 1 means setup/configuration/command failure.
-`completed` is an automated capture check, not verified transcription accuracy.
+## Bounded Volume-2 validation
 
-## Results and Git collaboration
+Before production, check the environment and recognize only four fixed pages:
+leaf **7, 288, 571 and 572** (first, interior, composite label and final page).
 
-Default output is **`fa26/ocr/results/worker-vol1/`**:
+```sh
+conda run --no-capture-output --prefix .runtime/ocr python fa26/ocr/run_ocr.py --volume vol2 --assignment worker-vol2 --check
+python3 fa26/ocr/validate_vol2.py --dry-run
+conda run --no-capture-output --prefix .runtime/ocr python fa26/ocr/validate_vol2.py --run --max-pages 2
+conda run --no-capture-output --prefix .runtime/ocr python fa26/ocr/validate_vol2.py --run
+python3 fa26/ocr/validate_vol2.py --status
+```
 
-- `status.json`, `coverage.csv`, `runner.log`: overall status and issues.
-- `batches/`: checkpoints, accepted/quarantined line CSVs, flags and receipts.
-- `work/source/`, `work/runs/`: source JPEGs and native TXT/TSV/HOCR outputs.
+The first recognition command stops after two pages; the next resumes the same
+checkpoint. Repeating the completed command revalidates saved captures. All
+validation output stays under **`fa26/ocr/results/validation-vol2/`**, with its
+own `work/` and `batch/` directories. `--data-dir` can select another persistent
+validation directory. This sample does not initialize or complete a production
+assignment, and historical preflight results are not substituted for new runs.
 
-A persistent external data root can be set with `--data-dir /path/to/data`.
-Use the same path when resuming; existing checkpoints pin their work location.
-Share the complete `worker-vol1/` data folder through the team's data storage.
-Git carries the code, environment recipe and plans; generated data and weights
-are ignored. The team's existing `fa26/results/` files are not changed or ignored.
+## Production run and status
 
-This integration has `dev` as its base, so normal Git pull/push and PR workflows
-apply. Only this folder, an entry link in `fa26/README.md`, local-runtime ignore
-rules and one offline test module are added. There is no wholesale merge of the
-research branch or unrelated-history standalone runner branch.
+The following commands start full assignments. Run them when production is
+intended, after validation. One person runs all three Volume-1 groups in sequence
+to cover the complete volume:
 
-After the integration is available on the shared branch, teammates pull that
-branch and use the commands above. Recreate/update the OCR environment when its
-recipe changes. Unrelated notebook/ground-truth updates do not require reinstalling
-OCR. During an active capture, leave the OCR code/configuration unchanged: package
-checksums and execution fingerprints prevent mixing incompatible runs.
+```sh
+conda run --no-capture-output --prefix .runtime/ocr python fa26/ocr/run_ocr.py --assignment worker-1
+conda run --no-capture-output --prefix .runtime/ocr python fa26/ocr/run_ocr.py --assignment worker-2
+conda run --no-capture-output --prefix .runtime/ocr python fa26/ocr/run_ocr.py --assignment worker-3
 
-## Scope and files
+# Volume 2: six production batches.
+conda run --no-capture-output --prefix .runtime/ocr python fa26/ocr/run_ocr.py --volume vol2 --assignment worker-vol2
+```
 
-The 1,371 selected scans comprise 1,370 primary pages and supplementary p160.
-Ad leaves 781/782 remain excluded; the source gap in printed labels 775–778 is
-retained. Printed p161 mixes abbreviations and directory text. Printed p516 /
-leaf 518 previously showed cross-column merges and should remain quarantined
-if reproduced. A raw line is not necessarily one person or one entry.
+Repeat the same command to resume. Add `--max-batches 1` to process only the next
+unfinished batch. Read Volume-2 coverage without OCR:
 
-`plans/1916/project.json` pins the 14 batch plans. `manifests/vol1/manifest.json`
-contains source URLs, page identities and scope flags. `config/vol1.json` pins
-model/preprocessing settings. `src/` is the runtime; `CHECKSUMS.json` checks the
-fixed run package. Source-scope rebuilding snapshots and experiment evidence
-stay in the research branch. No OCR starts from cloning or installing this folder.
+```sh
+conda run --no-capture-output --prefix .runtime/ocr python fa26/ocr/run_ocr.py --volume vol2 --assignment worker-vol2 --status
+```
+
+The script resolves its inputs relative to itself. One worker uses
+`OMP_THREAD_LIMIT=1`. Keep the machine awake during capture. Ctrl-C retains the
+current attempt and completed pages. Quarantined/failed pages remain visible
+while the queue continues to later batches. Exit 2 means review items, 130 means
+interrupted, and 1 means a setup/configuration/command failure.
+
+## Results and collaboration
+
+Default production output is `fa26/ocr/results/<assignment>/`, containing:
+
+- `assignment.json`, `status.json`, `coverage.csv`, `runner.log`;
+- `batches/` with checkpoints, accepted/quarantined rows, flags and receipts;
+- `work/source/` and `work/runs/` with source JPEGs and native TXT/TSV/HOCR.
+
+Use `--data-dir /persistent/data/root` for external storage. Reuse the same path
+on resume: checkpoints pin the resolved work directory, engine/runtime controls,
+plan and core code hashes. Leave those inputs stable during capture. New
+Volume-2 support does not migrate checkpoints from the older `worker-vol1`
+release into the current Volume-1 task groups.
+
+Git carries code, fixed environment/configuration, manifests and plans. Share
+complete result directories through team data storage; images, weights, logs
+and generated OCR remain Git-ignored. Existing `fa26/results/` is unaffected.
+
+## Scope and interpretation
+
+Volume 1 includes 1,370 primary scans and supplementary p160. Ad leaves 781/782
+are excluded; the printed-label gap 775–778 remains documented. P161 mixes an
+abbreviation key with listings. Printed p516/leaf 518 previously showed merged
+columns and remains subject to quarantine if reproduced.
+
+Volume 2 uses IA item `bostonmassachuse19162112samp`: leaves **7–572**, printed
+p1535–2144. Leaf **571** is one physical page labelled **2099–2143**. Leaf 573 /
+p2145 starts the separate Boston Business Directory, which is excluded together
+with later reference/advertisement material. The 1,516 accessible source pages
+were checked against official BookReader data; the IIIF manifest request timed
+out during that audit. The batch fallback pins the Volume-2 server/archive path.
+The lower part of p2144 also contains "Removals, Additions, Etc." with personal
+and firm notices. Capture retains the full physical page; later entry extraction
+must distinguish this material from the main alphabetical listings.
+
+Use `(volume_id, leaf_num)` across volumes. Preserve native strings and reading
+order. `completed` describes automated capture checks; transcription accuracy
+and reconstructed person entries require separate validation. OCR rows may
+include firms, notices, headers, continuations and artifacts.
+
+Run the offline regression suite from the repository root:
+
+```sh
+conda run --prefix .runtime/ocr python -m unittest discover -s fa26/tests -v
+```

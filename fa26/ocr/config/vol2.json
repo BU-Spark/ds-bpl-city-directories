@@ -1,0 +1,39 @@
+{
+  "format": "bpl-volume-config-v1",
+  "volume_id": "boston-1916-vol2-oz",
+  "ia_identifier": "bostonmassachuse19162112samp",
+  "scandata_file": "bostonmassachuse19162112samp_scandata.xml",
+  "page_numbers_file": "bostonmassachuse19162112samp_page_numbers.json",
+  "image_archive": "bostonmassachuse19162112samp_jp2.zip",
+  "image_prefix": "bostonmassachuse19162112samp",
+  "scope": {
+    "general_directory_leaf_range": [7, 572],
+    "excluded_advertisement_leaves": [],
+    "supplementary_leaves": [],
+    "mixed_abbreviations_leaf": null,
+    "mixed_page_body_y": [],
+    "label_overrides": {
+      "571": {
+        "printed_page": "2099–2143",
+        "reason": "Visual check: the single physical general-directory page is headed 2099–2143; scandata records only 2143. Do not invent 44 additional scans."
+      }
+    },
+    "before_directory_section": "front_matter",
+    "before_directory_reason": "Cover, endpaper and title/copyright material before the general-directory continuation at printed p1535.",
+    "after_directory_section": "business_directory_and_later_reference_sections",
+    "after_directory_reason": "The general alphabetical directory ends at leaf 572 / printed 2144; leaf 573 / printed 2145 starts the separate Boston Business Directory. Later reference, advertisement and endpaper scans remain outside the declared scope.",
+    "review_date": "2026-11-19",
+    "review_notes": "General alphabetical directory only: 566 physical pages, printed p1535–2144 including the single composite 2099–2143 page. Visually checked first/last pages and business transition; all accessible leaves/indices/dimensions cross-checked against official BookReader data. No exhaustive transcription or classification of individual entries is implied."
+  },
+  "ocr": {
+    "engine_version": "5.3.4",
+    "language": "eng",
+    "oem": 1,
+    "psm": 3,
+    "scale": 2,
+    "border": 10,
+    "pillow_version": "11.3.0",
+    "english_revision": "e12c65a915945e4c28e237a9b52bc4a8f39a0cec",
+    "english_sha256": "8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba"
+  }
+}
