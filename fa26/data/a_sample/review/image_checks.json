@@ -1,0 +1,182 @@
+{
+  "reviewer": "Codex assistant; not a human reviewer",
+  "review_scope": "15 development spot checks against the downloaded original scan; not held-out evaluation or human gold standard",
+  "source_page_id": "bostonmassachuse1916112samp_leaf0163",
+  "source_image": "images/bostonmassachuse1916112samp_leaf0163_p161.jpg",
+  "human_review_status": "pending",
+  "transcription_convention": "image_text joins printed continuations; [ditto] represents a printed surname ditto. Expected raw fields retain abbreviations but join entry continuations. Normalized fields follow this pilot's documented rules.",
+  "expected_defaults": {
+    "surname": "", "given_name": "", "name_qualifier": "",
+    "occupation_raw": "", "occupation_normalized": "", "affiliation_raw": "",
+    "work_address_raw": "", "work_address_normalized": "",
+    "residence_type_raw": "", "residence_type_normalized": "",
+    "residence_address_raw": "", "residence_address_normalized": "",
+    "neighborhood_raw": "", "neighborhood_normalized": "",
+    "record_status": "listed", "status_detail_raw": ""
+  },
+  "entries": [
+    {
+      "sample_id": "A001",
+      "image_text": "Aalto J tailor h 61 Myrtle",
+      "note": "The raised [ren Rox] beside this line belongs to the following Aaron Abraham L entry, not Aalto.",
+      "expected": {
+        "surname": "Aalto", "given_name": "J", "occupation_raw": "tailor", "occupation_normalized": "tailor",
+        "residence_type_raw": "h", "residence_type_normalized": "house",
+        "residence_address_raw": "61 Myrtle", "residence_address_normalized": "61 Myrtle"
+      }
+    },
+    {
+      "sample_id": "A002",
+      "image_text": "Aaron Abraham L jeweler 1915 Wash h 624 Warren Rox",
+      "note": "Join printed War- to the raised continuation ren Rox. Preserve Wash/Rox in raw fields.",
+      "expected": {
+        "surname": "Aaron", "given_name": "Abraham L", "occupation_raw": "jeweler", "occupation_normalized": "jeweler",
+        "work_address_raw": "1915 Wash", "work_address_normalized": "1915 Washington",
+        "residence_type_raw": "h", "residence_type_normalized": "house",
+        "residence_address_raw": "624 Warren Rox", "residence_address_normalized": "624 Warren, Roxbury",
+        "neighborhood_raw": "Rox", "neighborhood_normalized": "Roxbury"
+      }
+    },
+    {
+      "sample_id": "A003",
+      "image_text": "[ditto] Barney com trav h 568 Blue Hill av Dor",
+      "note": "The scan reads 568; existing OCR reads 668. This is an OCR value error that regex cannot reliably repair.",
+      "expected": {
+        "surname": "Aaron", "given_name": "Barney", "occupation_raw": "com trav", "occupation_normalized": "commercial traveler",
+        "residence_type_raw": "h", "residence_type_normalized": "house",
+        "residence_address_raw": "568 Blue Hill av Dor", "residence_address_normalized": "568 Blue Hill Avenue, Dorchester",
+        "neighborhood_raw": "Dor", "neighborhood_normalized": "Dorchester"
+      }
+    },
+    {
+      "sample_id": "A007",
+      "image_text": "[ditto] Harry F salesman 40 Central rm 305 bds 737 E Broadway",
+      "note": "E Broadway continues Harry's entry. The raised [Broadway do] on that same physical line belongs to Herman below.",
+      "expected": {
+        "surname": "Aaron", "given_name": "Harry F", "occupation_raw": "salesman", "occupation_normalized": "salesman",
+        "work_address_raw": "40 Central rm 305", "work_address_normalized": "40 Central Room 305",
+        "residence_type_raw": "bds", "residence_type_normalized": "boards",
+        "residence_address_raw": "737 E Broadway", "residence_address_normalized": "737 East Broadway"
+      }
+    },
+    {
+      "sample_id": "A008",
+      "image_text": "[ditto] Herman mgr 628 E Fourth S B bds 737 E Broadway do",
+      "note": "The raised continuation completes the residence. Final do repeats S B, not the entire workplace address.",
+      "expected": {
+        "surname": "Aaron", "given_name": "Herman", "occupation_raw": "mgr", "occupation_normalized": "manager",
+        "work_address_raw": "628 E Fourth S B", "work_address_normalized": "628 East Fourth, South Boston",
+        "residence_type_raw": "bds", "residence_type_normalized": "boards",
+        "residence_address_raw": "737 E Broadway do", "residence_address_normalized": "737 East Broadway, South Boston",
+        "neighborhood_raw": "do", "neighborhood_normalized": "South Boston"
+      }
+    },
+    {
+      "sample_id": "A011",
+      "image_text": "[ditto] Joseph porter 72 Franklin h at Stoneham",
+      "note": "The residence is only a locality. Do not invent a street address or assign a Boston neighborhood.",
+      "expected": {
+        "surname": "Aaron", "given_name": "Joseph", "occupation_raw": "porter", "occupation_normalized": "porter",
+        "work_address_raw": "72 Franklin", "work_address_normalized": "72 Franklin",
+        "residence_type_raw": "h", "residence_type_normalized": "house",
+        "residence_address_raw": "at Stoneham", "residence_address_normalized": "Stoneham"
+      }
+    },
+    {
+      "sample_id": "A017",
+      "image_text": "[ditto] Manuel H (Aarons & Golosov) 162 Hanover h 884 Harrison av",
+      "note": "A business affiliation is printed but no occupation is explicitly supplied in this personal entry.",
+      "expected": {
+        "surname": "Aarons", "given_name": "Manuel H", "affiliation_raw": "Aarons & Golosov",
+        "work_address_raw": "162 Hanover", "work_address_normalized": "162 Hanover",
+        "residence_type_raw": "h", "residence_type_normalized": "house",
+        "residence_address_raw": "884 Harrison av", "residence_address_normalized": "884 Harrison Avenue"
+      }
+    },
+    {
+      "sample_id": "A020",
+      "image_text": "Aaronson Abraham M laborer bds 177 Magnolia Dor",
+      "note": "The scan supplies Aaronson and the full residence; both are absent from this entry's available OCR fragment. This missing surname also affects subsequent ditto entries.",
+      "expected": {
+        "surname": "Aaronson", "given_name": "Abraham M", "occupation_raw": "laborer", "occupation_normalized": "laborer",
+        "residence_type_raw": "bds", "residence_type_normalized": "boards",
+        "residence_address_raw": "177 Magnolia Dor", "residence_address_normalized": "177 Magnolia, Dorchester",
+        "neighborhood_raw": "Dor", "neighborhood_normalized": "Dorchester"
+      }
+    },
+    {
+      "sample_id": "A021",
+      "image_text": "[ditto] Barnard died Aug 31 1915",
+      "note": "This is a death notice, not a current residence. Existing OCR repeats parts of the date.",
+      "expected": {
+        "surname": "Aaronson", "given_name": "Barnard", "record_status": "deceased", "status_detail_raw": "Aug 31 1915"
+      }
+    },
+    {
+      "sample_id": "A027",
+      "image_text": "Abaid Alexander baker 23 Hudson h do",
+      "note": "Here do repeats the entire preceding work address, 23 Hudson.",
+      "expected": {
+        "surname": "Abaid", "given_name": "Alexander", "occupation_raw": "baker", "occupation_normalized": "baker",
+        "work_address_raw": "23 Hudson", "work_address_normalized": "23 Hudson",
+        "residence_type_raw": "h", "residence_type_normalized": "house",
+        "residence_address_raw": "do", "residence_address_normalized": "23 Hudson"
+      }
+    },
+    {
+      "sample_id": "A031",
+      "image_text": "Abate Angelo laborer h 960 Bennington E B",
+      "note": "The entire selected personal entry is missing from the existing OCR. Do not fill it from the sample name list. Its missing surname anchor causes Abare to propagate into later Abate candidates.",
+      "expected": {
+        "surname": "Abate", "given_name": "Angelo", "occupation_raw": "laborer", "occupation_normalized": "laborer",
+        "residence_type_raw": "h", "residence_type_normalized": "house",
+        "residence_address_raw": "960 Bennington E B", "residence_address_normalized": "960 Bennington, East Boston",
+        "neighborhood_raw": "E B", "neighborhood_normalized": "East Boston"
+      }
+    },
+    {
+      "sample_id": "A041",
+      "image_text": "Abazorius Anthony shoe repairer 208 W B'way S B h 194 Athens do",
+      "note": "Join the continuation line; do repeats only the work-address neighborhood S B.",
+      "expected": {
+        "surname": "Abazorius", "given_name": "Anthony", "occupation_raw": "shoe repairer", "occupation_normalized": "shoe repairer",
+        "work_address_raw": "208 W B'way S B", "work_address_normalized": "208 West Broadway, South Boston",
+        "residence_type_raw": "h", "residence_type_normalized": "house",
+        "residence_address_raw": "194 Athens do", "residence_address_normalized": "194 Athens, South Boston",
+        "neighborhood_raw": "do", "neighborhood_normalized": "South Boston"
+      }
+    },
+    {
+      "sample_id": "A045",
+      "image_text": "[ditto] Elizabeth M physician 45 Dale Rox h do",
+      "note": "Full-address ditto also carries the work address's Rox neighborhood into the residence. The original residence text itself only says do.",
+      "expected": {
+        "surname": "Abbe", "given_name": "Elizabeth M", "occupation_raw": "physician", "occupation_normalized": "physician",
+        "work_address_raw": "45 Dale Rox", "work_address_normalized": "45 Dale, Roxbury",
+        "residence_type_raw": "h", "residence_type_normalized": "house",
+        "residence_address_raw": "do", "residence_address_normalized": "45 Dale, Roxbury",
+        "neighborhood_normalized": "Roxbury"
+      }
+    },
+    {
+      "sample_id": "A050",
+      "image_text": "Abber Annie Mrs rem to Malden",
+      "note": "The scan reads Malden; OCR reads Maiden. Store the removal notice separately from a current residential address.",
+      "expected": {
+        "surname": "Abber", "given_name": "Annie", "name_qualifier": "Mrs",
+        "record_status": "removed", "status_detail_raw": "Malden"
+      }
+    },
+    {
+      "sample_id": "A051",
+      "image_text": "Abberton James F mason h 1972 Centre W R",
+      "note": "The scan's final R is omitted by OCR. A lone W does not justify inferring West Roxbury.",
+      "expected": {
+        "surname": "Abberton", "given_name": "James F", "occupation_raw": "mason", "occupation_normalized": "mason",
+        "residence_type_raw": "h", "residence_type_normalized": "house",
+        "residence_address_raw": "1972 Centre W R", "residence_address_normalized": "1972 Centre, West Roxbury",
+        "neighborhood_raw": "W R", "neighborhood_normalized": "West Roxbury"
+      }
+    }
+  ]
+}

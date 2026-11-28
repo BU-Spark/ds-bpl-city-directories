@@ -1,0 +1,65 @@
+{
+  "format": "bpl-project-plan-v1",
+  "batch_size": 100,
+  "total_pages": 566,
+  "assignments": [
+    {
+      "assignment_id": "worker-vol2",
+      "owner": "Worker",
+      "volume_id": "boston-1916-vol2-oz",
+      "manifest": "manifests/vol2/manifest.json",
+      "manifest_id": "7819b7078ed7092ad3dae02f2ba6c4e602558cdea81ff6c8e5c15a7460cdb1ab",
+      "pages": 566,
+      "model": {
+        "engine_version": "5.3.4",
+        "language": "eng",
+        "oem": 1,
+        "psm": 3,
+        "scale": 2,
+        "border": 10,
+        "pillow_version": "11.3.0",
+        "english_revision": "e12c65a915945e4c28e237a9b52bc4a8f39a0cec",
+        "english_sha256": "8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba"
+      },
+      "batches": [
+        {
+          "batch_id": "vol2-001",
+          "plan_file": "vol2/vol2-001.json",
+          "plan_id": "0432eb5fb2723a9bbcb48afe13cd19bd6d27aba9711e5329f6e863cc0f216e72",
+          "pages": 100
+        },
+        {
+          "batch_id": "vol2-002",
+          "plan_file": "vol2/vol2-002.json",
+          "plan_id": "0696f07f7232d06985256d461501b75fba13833b0ff9a7118cf93eae68403dbe",
+          "pages": 100
+        },
+        {
+          "batch_id": "vol2-003",
+          "plan_file": "vol2/vol2-003.json",
+          "plan_id": "e67f406eae28d1c8ad49137a8a6cbd2a76de52cc866f15ce07de70963fa1885a",
+          "pages": 100
+        },
+        {
+          "batch_id": "vol2-004",
+          "plan_file": "vol2/vol2-004.json",
+          "plan_id": "e4e0255df9b04a84560e71be24381e5f336a66e51259f3c5d4421c035c8eca74",
+          "pages": 100
+        },
+        {
+          "batch_id": "vol2-005",
+          "plan_file": "vol2/vol2-005.json",
+          "plan_id": "8f9f020978b17ef850cde2e28c5827e3ab9f9db96a1aa49f6c9c0f18db3a1d18",
+          "pages": 100
+        },
+        {
+          "batch_id": "vol2-006",
+          "plan_file": "vol2/vol2-006.json",
+          "plan_id": "3da3f4ee84518faa428e5679abaecfba48ee464cf332bf80445c24877ff8eace",
+          "pages": 66
+        }
+      ]
+    }
+  ],
+  "project_id": "b6a6f906c7c0edf70e3b7a483fd2be8a69969855df7a4b8c9cb3055501fe6bc1"
+}

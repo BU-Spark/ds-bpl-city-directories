@@ -1,0 +1,35 @@
+{
+  "format": "bpl-volume-config-v1",
+  "volume_id": "boston-1916-vol1-ao",
+  "ia_identifier": "bostonmassachuse1916112samp",
+  "scandata_file": "bostonmassachuse1916112samp_scandata.xml",
+  "page_numbers_file": "bostonmassachuse1916112samp_page_numbers.json",
+  "image_archive": "bostonmassachuse1916112samp_jp2.zip",
+  "image_prefix": "bostonmassachuse1916112samp",
+  "scope": {
+    "general_directory_leaf_range": [163, 1534],
+    "excluded_advertisement_leaves": [781, 782],
+    "supplementary_leaves": [162],
+    "mixed_abbreviations_leaf": 163,
+    "mixed_page_body_y": [1645, 2678],
+    "label_overrides": {
+      "161": {
+        "printed_page": "153–159",
+        "reason": "Visual check: the single physical page is headed 153–159; scandata stores only 159."
+      }
+    },
+    "review_date": "2026-11-18",
+    "review_notes": "Boundary and anomaly checks, not an exhaustive visual classification of every page. Directory entries include firms and deceased/removed people as well as residents; individual records need later parsing."
+  },
+  "ocr": {
+    "engine_version": "5.3.4",
+    "language": "eng",
+    "oem": 1,
+    "psm": 3,
+    "scale": 2,
+    "border": 10,
+    "pillow_version": "11.3.0",
+    "english_revision": "e12c65a915945e4c28e237a9b52bc4a8f39a0cec",
+    "english_sha256": "8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba"
+  }
+}
